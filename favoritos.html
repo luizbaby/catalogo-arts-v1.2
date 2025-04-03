@@ -22,20 +22,21 @@
 </head>
 <body>
 <div class="top-bar">
-  <a href="index.html" class="btn">&larr; Voltar</a>
+  <a href="https://catalogo.artspapeisdeparede.com.br/index.html" class="btn">&larr; Voltar</a>
   <button class="btn" onclick="selecionarTodos()">☑️ Marcar todos</button>
   <button class="btn" onclick="desmarcarTodos()">❌ Desmarcar todos</button>
   <button class="btn" onclick="baixarSelecionadas()">📥 Baixar selecionadas</button>
   <button class="btn" onclick="removerSelecionadas()">💔 Remover selecionadas</button>
 </div>
 <div class="grid" id="grid"></div>
-<p class="mensagem-final">ATENÇÃO! Encaminhe suas imagens favoritas antes de fechar o navegador. Ao fechar o navegador você perderá seus favoritos.</p>
+<p class="mensagem-final" id="mensagem-final"></p>
 <script>
   const grid = document.getElementById('grid');
   const favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+  const msgFinal = document.getElementById('mensagem-final');
 
   if (favoritos.length === 0) {
-    grid.innerHTML = '<p style="padding: 20px;">Adicione modelos aos favoritos e veja todos os seus modelos aqui.</p>';
+    grid.innerHTML = '<p style="padding: 20px; text-align: center;">Adicione modelos aos favoritos e veja todos os seus modelos aqui.</p>';
   } else {
     favoritos.sort((a, b) => a.localeCompare(b));
     favoritos.forEach(src => {
@@ -50,6 +51,7 @@
       `;
       grid.appendChild(card);
     });
+    msgFinal.innerHTML = 'ATENÇÃO! Encaminhe suas imagens favoritas antes de fechar o navegador. Ao fechar o navegador você perderá seus favoritos.';
   }
 
   function toggleFavorito(src, el) {
