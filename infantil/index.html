@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Infantil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; font-weight: 200; margin: 0; background: #343532; color: #bfbaba; }
+    .top-bar { position: sticky; top: 0; background: #343532; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 10px 20px; gap: 10px; z-index: 1000; text-align: center; flex-direction: column; }
+    .top-bar h1 { margin: 0; font-weight: 400; font-size: 1.2rem; word-break: break-word; }
+    .top-buttons { display: flex; justify-content: space-between; width: 100%; max-width: 1000px; align-items: center; }
+    .btn { background: #8bc4ba; color: #bfbaba; border: none; padding: 8px 14px; border-radius: 6px; font-size: 14px; cursor: pointer; text-decoration: none; }
+    .grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 20px; padding: 20px; }
+    @media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+    .card { background: white; color: black; padding: 10px; border-radius: 10px; box-shadow: 0 2px 8px rgba(255,255,255,0.1); text-align: center; position: relative; }
+    .card img { width: 100%; border-radius: 8px; cursor: pointer; }
+    .card span { display: block; margin-top: 8px; font-weight: 200; color: black; }
+    .favorito-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer; }
+    .favorito-btn.favorito { color: red; }
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; }
+    .modal img { max-width: 90vw; max-height: 80vh; }
+    .modal-btns { margin-top: 10px; display: flex; gap: 10px; }
+  </style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="top-buttons">
+    <button class="btn" onclick="history.back()">&larr; Voltar</button>
+    <h1>Infantil</h1>
+    <a href="https://catalogo.artspapeisdeparede.com.br/favoritos.html" class="btn">❤️ Ver favoritos</a>
+  </div>
+</div>
+<div class="grid">
+<a href="abstrato.html" class="card">
+        <img src="abstrato/capa.jpg" alt="Abstrato">
+        <span>Abstrato</span>
+        </a><a href="adolescente.html" class="card">
+        <img src="adolescente/capa.jpg" alt="Adolescente">
+        <span>Adolescente</span>
+        </a><a href="arco-íris.html" class="card">
+        <img src="arco-íris/capa.jpg" alt="Arco Íris">
+        <span>Arco Íris</span>
+        </a><a href="bailarina.html" class="card">
+        <img src="bailarina/capa.jpg" alt="Bailarina">
+        <span>Bailarina</span>
+        </a><a href="balões.html" class="card">
+        <img src="balões/capa.jpg" alt="Balões">
+        <span>Balões</span>
+        </a><a href="bichinhos.html" class="card">
+        <img src="bichinhos/capa.jpg" alt="Bichinhos">
+        <span>Bichinhos</span>
+        </a><a href="boiserie.html" class="card">
+        <img src="boiserie/capa.jpg" alt="Boiserie">
+        <span>Boiserie</span>
+        </a><a href="borboletas.html" class="card">
+        <img src="borboletas/capa.jpg" alt="Borboletas">
+        <span>Borboletas</span>
+        </a><a href="carrinhos.html" class="card">
+        <img src="carrinhos/capa.jpg" alt="Carrinhos">
+        <span>Carrinhos</span>
+        </a><a href="céu.html" class="card">
+        <img src="céu/capa.jpg" alt="Céu">
+        <span>Céu</span>
+        </a><a href="dinossauros.html" class="card">
+        <img src="dinossauros/capa.jpg" alt="Dinossauros">
+        <span>Dinossauros</span>
+        </a><a href="esportes.html" class="card">
+        <img src="esportes/capa.jpg" alt="Esportes">
+        <span>Esportes</span>
+        </a><a href="fazendinha.html" class="card">
+        <img src="fazendinha/capa.jpg" alt="Fazendinha">
+        <span>Fazendinha</span>
+        </a><a href="floral.html" class="card">
+        <img src="floral/capa.jpg" alt="Floral">
+        <span>Floral</span>
+        </a><a href="folhagem.html" class="card">
+        <img src="folhagem/capa.jpg" alt="Folhagem">
+        <span>Folhagem</span>
+        </a><a href="fundo-do-mar.html" class="card">
+        <img src="fundo-do-mar/capa.jpg" alt="Fundo do Mar">
+        <span>Fundo do Mar</span>
+        </a><a href="galáxia.html" class="card">
+        <img src="galáxia/capa.jpg" alt="Galáxia">
+        <span>Galáxia</span>
+        </a><a href="gamer.html" class="card">
+        <img src="gamer/capa.jpg" alt="Gamer">
+        <span>Gamer</span>
+        </a><a href="geométrico.html" class="card">
+        <img src="geométrico/capa.jpg" alt="Geométrico">
+        <span>Geométrico</span>
+        </a><a href="granilite.html" class="card">
+        <img src="granilite/capa.jpg" alt="Granilite">
+        <span>Granilite</span>
+        </a><a href="listrado.html" class="card">
+        <img src="listrado/capa.jpg" alt="Listrado">
+        <span>Listrado</span>
+        </a><a href="mapa-mundi.html" class="card">
+        <img src="mapa-mundi/capa.jpg" alt="Mapa Mundi">
+        <span>Mapa Mundi</span>
+        </a><a href="marvel.html" class="card">
+        <img src="marvel/capa.jpg" alt="Marvel">
+        <span>Marvel</span>
+        </a><a href="painel.html" class="card">
+        <img src="painel/capa.jpg" alt="Painel">
+        <span>Painel</span>
+        </a><a href="poa.html" class="card">
+        <img src="poa/capa.jpg" alt="Poa">
+        <span>Poa</span>
+        </a><a href="quadriculado.html" class="card">
+        <img src="quadriculado/capa.jpg" alt="Quadriculado">
+        <span>Quadriculado</span>
+        </a><a href="safari.html" class="card">
+        <img src="safari/capa.jpg" alt="Safari">
+        <span>Safari</span>
+        </a><a href="unicórnios.html" class="card">
+        <img src="unicórnios/capa.jpg" alt="Unicórnios">
+        <span>Unicórnios</span>
+        </a><a href="xadrez.html" class="card">
+        <img src="xadrez/capa.jpg" alt="Xadrez">
+        <span>Xadrez</span>
+        </a>
+</div>
+<div class="modal" id="modal">
+  <img id="modal-img" src="">
+  <div class="modal-btns">
+    <button onclick="baixarAtual()" class="btn">📥 Salvar imagem</button>
+    <button onclick="fecharModal()" class="btn">✖ Fechar</button>
+  </div>
+</div>
+<script src="https://unpkg.com/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
+<script>
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  let panzoomInstance;
+  function abrirModal(src) { modal.style.display = 'flex'; modalImg.src = src; panzoomInstance = Panzoom(modalImg); }
+  function fecharModal() { modal.style.display = 'none'; if (panzoomInstance) panzoomInstance.destroy(); }
+  function baixarAtual() {
+    const link = document.createElement('a');
+    link.href = modalImg.src;
+    link.download = decodeURIComponent(modalImg.src.split('/').pop());
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+  function toggleFavorito(src, el) { let f = JSON.parse(localStorage.getItem('favoritos'))||[]; const i = f.indexOf(src); if (i>=0) { f.splice(i,1); el.textContent='🤍'; } else { f.push(src); el.textContent='❤️'; } localStorage.setItem('favoritos', JSON.stringify(f)); }
+</script>
+</body>
+</html>

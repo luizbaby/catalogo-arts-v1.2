@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cimento Queimado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; font-weight: 200; margin: 0; background: #343532; color: #bfbaba; }
+    .top-bar { position: sticky; top: 0; background: #343532; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 10px 20px; gap: 10px; z-index: 1000; text-align: center; flex-direction: column; }
+    .top-bar h1 { margin: 0; font-weight: 400; font-size: 1.2rem; word-break: break-word; }
+    .top-buttons { display: flex; justify-content: space-between; width: 100%; max-width: 1000px; align-items: center; }
+    .btn { background: #8bc4ba; color: #bfbaba; border: none; padding: 8px 14px; border-radius: 6px; font-size: 14px; cursor: pointer; text-decoration: none; }
+    .grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 20px; padding: 20px; }
+    @media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+    .card { background: white; color: black; padding: 10px; border-radius: 10px; box-shadow: 0 2px 8px rgba(255,255,255,0.1); text-align: center; position: relative; }
+    .card img { width: 100%; border-radius: 8px; cursor: pointer; }
+    .card span { display: block; margin-top: 8px; font-weight: 200; color: black; }
+    .favorito-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer; }
+    .favorito-btn.favorito { color: red; }
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; }
+    .modal img { max-width: 90vw; max-height: 80vh; }
+    .modal-btns { margin-top: 10px; display: flex; gap: 10px; }
+  </style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="top-buttons">
+    <button class="btn" onclick="history.back()">&larr; Voltar</button>
+    <h1>Cimento Queimado</h1>
+    <a href="https://catalogo.artspapeisdeparede.com.br/favoritos.html" class="btn">❤️ Ver favoritos</a>
+  </div>
+</div>
+<div class="grid">
+<div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Chevron%20Preto%20Cimento%20Queimado%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Chevron%20Preto%20Cimento%20Queimado%20%28STILL%29.jpg" alt="Chevron Preto Cimento Queimado (STILL)" onclick="abrirModal('cimento-queimado/Chevron%20Preto%20Cimento%20Queimado%20%28STILL%29.jpg')">
+      <span>Chevron Preto Cimento Queimado (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Chevron%20Preto%20Cimento%20Queimado.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Chevron%20Preto%20Cimento%20Queimado.jpg" alt="Chevron Preto Cimento Queimado" onclick="abrirModal('cimento-queimado/Chevron%20Preto%20Cimento%20Queimado.jpg')">
+      <span>Chevron Preto Cimento Queimado</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20%282%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20%282%29.jpg" alt="Cimento Queimado" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20%282%29.jpg')">
+      <span>Cimento Queimado</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20%28STILL%29.jpg" alt="Cimento Queimado (STILL)" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20%28STILL%29.jpg')">
+      <span>Cimento Queimado (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%202.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%202.jpg" alt="Cimento Queimado" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%202.jpg')">
+      <span>Cimento Queimado</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Amarelo%20%282%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Amarelo%20%282%29.jpg" alt="Cimento Queimado Amarelo" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Amarelo%20%282%29.jpg')">
+      <span>Cimento Queimado Amarelo</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Amarelo%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Amarelo%20%28STILL%29.jpg" alt="Cimento Queimado Amarelo (STILL)" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Amarelo%20%28STILL%29.jpg')">
+      <span>Cimento Queimado Amarelo (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Amarelo%202.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Amarelo%202.jpg" alt="Cimento Queimado Amarelo" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Amarelo%202.jpg')">
+      <span>Cimento Queimado Amarelo</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Amarelo.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Amarelo.jpg" alt="Cimento Queimado Amarelo" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Amarelo.jpg')">
+      <span>Cimento Queimado Amarelo</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Areia%20%282%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Areia%20%282%29.jpg" alt="Cimento Queimado Areia" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Areia%20%282%29.jpg')">
+      <span>Cimento Queimado Areia</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Areia%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Areia%20%28STILL%29.jpg" alt="Cimento Queimado Areia (STILL)" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Areia%20%28STILL%29.jpg')">
+      <span>Cimento Queimado Areia (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Areia.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Areia.jpg" alt="Cimento Queimado Areia" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Areia.jpg')">
+      <span>Cimento Queimado Areia</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Azul%20%282%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Azul%20%282%29.jpg" alt="Cimento Queimado Azul" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Azul%20%282%29.jpg')">
+      <span>Cimento Queimado Azul</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Azul%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Azul%20%28STILL%29.jpg" alt="Cimento Queimado Azul (STILL)" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Azul%20%28STILL%29.jpg')">
+      <span>Cimento Queimado Azul (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Azul.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Azul.jpg" alt="Cimento Queimado Azul" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Azul.jpg')">
+      <span>Cimento Queimado Azul</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Escuro%20%282%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Escuro%20%282%29.jpg" alt="Cimento Queimado Escuro" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Escuro%20%282%29.jpg')">
+      <span>Cimento Queimado Escuro</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Escuro%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Escuro%20%28STILL%29.jpg" alt="Cimento Queimado Escuro (STILL)" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Escuro%20%28STILL%29.jpg')">
+      <span>Cimento Queimado Escuro (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/CImento%20Queimado%20Escuro%202%20%282%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/CImento%20Queimado%20Escuro%202%20%282%29.jpg" alt="CImento Queimado Escuro 2" onclick="abrirModal('cimento-queimado/CImento%20Queimado%20Escuro%202%20%282%29.jpg')">
+      <span>CImento Queimado Escuro 2</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Escuro%202.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Escuro%202.jpg" alt="Cimento Queimado Escuro" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Escuro%202.jpg')">
+      <span>Cimento Queimado Escuro</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Escuro.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Escuro.jpg" alt="Cimento Queimado Escuro" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Escuro.jpg')">
+      <span>Cimento Queimado Escuro</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Nude%20%282%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Nude%20%282%29.jpg" alt="Cimento Queimado Nude" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Nude%20%282%29.jpg')">
+      <span>Cimento Queimado Nude</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Nude%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Nude%20%28STILL%29.jpg" alt="Cimento Queimado Nude (STILL)" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Nude%20%28STILL%29.jpg')">
+      <span>Cimento Queimado Nude (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Nude.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Nude.jpg" alt="Cimento Queimado Nude" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Nude.jpg')">
+      <span>Cimento Queimado Nude</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Rose%20%282%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Rose%20%282%29.jpg" alt="Cimento Queimado Rose" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Rose%20%282%29.jpg')">
+      <span>Cimento Queimado Rose</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Rose%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Rose%20%28STILL%29.jpg" alt="Cimento Queimado Rose (STILL)" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Rose%20%28STILL%29.jpg')">
+      <span>Cimento Queimado Rose (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Rose%202.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Rose%202.jpg" alt="Cimento Queimado Rose" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Rose%202.jpg')">
+      <span>Cimento Queimado Rose</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Rose.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Rose.jpg" alt="Cimento Queimado Rose" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Rose.jpg')">
+      <span>Cimento Queimado Rose</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Verde%20Agua%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Verde%20Agua%20%28STILL%29.jpg" alt="Cimento Queimado Verde Agua (STILL)" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Verde%20Agua%20%28STILL%29.jpg')">
+      <span>Cimento Queimado Verde Agua (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Verde%20Agua.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Verde%20Agua.jpg" alt="Cimento Queimado Verde Agua" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Verde%20Agua.jpg')">
+      <span>Cimento Queimado Verde Agua</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Verde%20%C3%81gua%20%282%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Verde%20%C3%81gua%20%282%29.jpg" alt="Cimento Queimado Verde Água" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Verde%20%C3%81gua%20%282%29.jpg')">
+      <span>Cimento Queimado Verde Água</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado%20Verde%20%C3%81gua.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado%20Verde%20%C3%81gua.jpg" alt="Cimento Queimado Verde Água" onclick="abrirModal('cimento-queimado/Cimento%20Queimado%20Verde%20%C3%81gua.jpg')">
+      <span>Cimento Queimado Verde Água</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Cimento%20Queimado.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Cimento%20Queimado.jpg" alt="Cimento Queimado" onclick="abrirModal('cimento-queimado/Cimento%20Queimado.jpg')">
+      <span>Cimento Queimado</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Concreto%20Aparente%20Textura%20%282%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Concreto%20Aparente%20Textura%20%282%29.jpg" alt="Concreto Aparente Textura" onclick="abrirModal('cimento-queimado/Concreto%20Aparente%20Textura%20%282%29.jpg')">
+      <span>Concreto Aparente Textura</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Concreto%20Aparente%20Textura%20%283%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Concreto%20Aparente%20Textura%20%283%29.jpg" alt="Concreto Aparente Textura" onclick="abrirModal('cimento-queimado/Concreto%20Aparente%20Textura%20%283%29.jpg')">
+      <span>Concreto Aparente Textura</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Concreto%20Aparente%20Textura%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Concreto%20Aparente%20Textura%20%28STILL%29.jpg" alt="Concreto Aparente Textura (STILL)" onclick="abrirModal('cimento-queimado/Concreto%20Aparente%20Textura%20%28STILL%29.jpg')">
+      <span>Concreto Aparente Textura (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Concreto%20Aparente%20Textura%202.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Concreto%20Aparente%20Textura%202.jpg" alt="Concreto Aparente Textura" onclick="abrirModal('cimento-queimado/Concreto%20Aparente%20Textura%202.jpg')">
+      <span>Concreto Aparente Textura</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Concreto%20Aparente%20Textura.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Concreto%20Aparente%20Textura.jpg" alt="Concreto Aparente Textura" onclick="abrirModal('cimento-queimado/Concreto%20Aparente%20Textura.jpg')">
+      <span>Concreto Aparente Textura</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Esportes%20Cimento%20Queimado%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Esportes%20Cimento%20Queimado%20%28STILL%29.jpg" alt="Esportes Cimento Queimado (STILL)" onclick="abrirModal('cimento-queimado/Esportes%20Cimento%20Queimado%20%28STILL%29.jpg')">
+      <span>Esportes Cimento Queimado (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Esportes%20Cimento%20Queimado.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Esportes%20Cimento%20Queimado.jpg" alt="Esportes Cimento Queimado" onclick="abrirModal('cimento-queimado/Esportes%20Cimento%20Queimado.jpg')">
+      <span>Esportes Cimento Queimado</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Areia%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Areia%20%28STILL%29.jpg" alt="Folhagem em Muro Rústico Areia (STILL)" onclick="abrirModal('cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Areia%20%28STILL%29.jpg')">
+      <span>Folhagem em Muro Rústico Areia (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Areia%202.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Areia%202.jpg" alt="Folhagem em Muro Rústico Areia" onclick="abrirModal('cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Areia%202.jpg')">
+      <span>Folhagem em Muro Rústico Areia</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Cinza%20%28STILL%29.jpg" alt="Folhagem em Muro Rústico Cinza (STILL)" onclick="abrirModal('cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Cinza%20%28STILL%29.jpg')">
+      <span>Folhagem em Muro Rústico Cinza (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Cinza%202.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Cinza%202.jpg" alt="Folhagem em Muro Rústico Cinza" onclick="abrirModal('cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Cinza%202.jpg')">
+      <span>Folhagem em Muro Rústico Cinza</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Terracota%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Terracota%20%28STILL%29.jpg" alt="Folhagem em Muro Rústico Terracota (STILL)" onclick="abrirModal('cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Terracota%20%28STILL%29.jpg')">
+      <span>Folhagem em Muro Rústico Terracota (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Terracota%202.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Terracota%202.jpg" alt="Folhagem em Muro Rústico Terracota" onclick="abrirModal('cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Terracota%202.jpg')">
+      <span>Folhagem em Muro Rústico Terracota</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Verde%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Verde%20%28STILL%29.jpg" alt="Folhagem em Muro Rústico Verde (STILL)" onclick="abrirModal('cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Verde%20%28STILL%29.jpg')">
+      <span>Folhagem em Muro Rústico Verde (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Verde%202.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Verde%202.jpg" alt="Folhagem em Muro Rústico Verde" onclick="abrirModal('cimento-queimado/Folhagem%20em%20Muro%20R%C3%BAstico%20Verde%202.jpg')">
+      <span>Folhagem em Muro Rústico Verde</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Mapa%20Estonado%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Mapa%20Estonado%20Cinza%20%28STILL%29.jpg" alt="Mapa Estonado Cinza (STILL)" onclick="abrirModal('cimento-queimado/Mapa%20Estonado%20Cinza%20%28STILL%29.jpg')">
+      <span>Mapa Estonado Cinza (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Mapa%20Estonado%20Cinza.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Mapa%20Estonado%20Cinza.jpg" alt="Mapa Estonado Cinza" onclick="abrirModal('cimento-queimado/Mapa%20Estonado%20Cinza.jpg')">
+      <span>Mapa Estonado Cinza</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Mapa%20Estonado%20Marrom%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Mapa%20Estonado%20Marrom%20%28STILL%29.jpg" alt="Mapa Estonado Marrom (STILL)" onclick="abrirModal('cimento-queimado/Mapa%20Estonado%20Marrom%20%28STILL%29.jpg')">
+      <span>Mapa Estonado Marrom (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Mapa%20Estonado%20Marrom.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Mapa%20Estonado%20Marrom.jpg" alt="Mapa Estonado Marrom" onclick="abrirModal('cimento-queimado/Mapa%20Estonado%20Marrom.jpg')">
+      <span>Mapa Estonado Marrom</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20%28STILL%29.jpg" alt="Mapa Mundi Cimento Queimado (STILL)" onclick="abrirModal('cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20%28STILL%29.jpg')">
+      <span>Mapa Mundi Cimento Queimado (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20Azul%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20Azul%20%28STILL%29.jpg" alt="Mapa Mundi Cimento Queimado Azul (STILL)" onclick="abrirModal('cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20Azul%20%28STILL%29.jpg')">
+      <span>Mapa Mundi Cimento Queimado Azul (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20Azul.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20Azul.jpg" alt="Mapa Mundi Cimento Queimado Azul" onclick="abrirModal('cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20Azul.jpg')">
+      <span>Mapa Mundi Cimento Queimado Azul</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20Rosa%20%28STILL%29.jpg" alt="Mapa Mundi Cimento Queimado Rosa (STILL)" onclick="abrirModal('cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20Rosa%20%28STILL%29.jpg')">
+      <span>Mapa Mundi Cimento Queimado Rosa (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20Rosa.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20Rosa.jpg" alt="Mapa Mundi Cimento Queimado Rosa" onclick="abrirModal('cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado%20Rosa.jpg')">
+      <span>Mapa Mundi Cimento Queimado Rosa</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado.jpg" alt="Mapa Mundi Cimento Queimado" onclick="abrirModal('cimento-queimado/Mapa%20Mundi%20Cimento%20Queimado.jpg')">
+      <span>Mapa Mundi Cimento Queimado</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Areia%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Areia%20%28STILL%29.jpg" alt="Textura Desgastada Areia (STILL)" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Areia%20%28STILL%29.jpg')">
+      <span>Textura Desgastada Areia (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Areia%202.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Areia%202.jpg" alt="Textura Desgastada Areia" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Areia%202.jpg')">
+      <span>Textura Desgastada Areia</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Azul%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Azul%20%28STILL%29.jpg" alt="Textura Desgastada Azul (STILL)" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Azul%20%28STILL%29.jpg')">
+      <span>Textura Desgastada Azul (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Azul.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Azul.jpg" alt="Textura Desgastada Azul" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Azul.jpg')">
+      <span>Textura Desgastada Azul</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Cinza%20%28STILL%29.jpg" alt="Textura Desgastada Cinza (STILL)" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Cinza%20%28STILL%29.jpg')">
+      <span>Textura Desgastada Cinza (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Cinza.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Cinza.jpg" alt="Textura Desgastada Cinza" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Cinza.jpg')">
+      <span>Textura Desgastada Cinza</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Grafite%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Grafite%20%28STILL%29.jpg" alt="Textura Desgastada Grafite (STILL)" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Grafite%20%28STILL%29.jpg')">
+      <span>Textura Desgastada Grafite (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Grafite.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Grafite.jpg" alt="Textura Desgastada Grafite" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Grafite.jpg')">
+      <span>Textura Desgastada Grafite</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Off%20White%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Off%20White%20%28STILL%29.jpg" alt="Textura Desgastada Off White (STILL)" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Off%20White%20%28STILL%29.jpg')">
+      <span>Textura Desgastada Off White (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Off%20White%202.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Off%20White%202.jpg" alt="Textura Desgastada Off White" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Off%20White%202.jpg')">
+      <span>Textura Desgastada Off White</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Rose%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Rose%20%28STILL%29.jpg" alt="Textura Desgastada Rose (STILL)" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Rose%20%28STILL%29.jpg')">
+      <span>Textura Desgastada Rose (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Rose%202.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Rose%202.jpg" alt="Textura Desgastada Rose" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Rose%202.jpg')">
+      <span>Textura Desgastada Rose</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Verde%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Verde%20%28STILL%29.jpg" alt="Textura Desgastada Verde (STILL)" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Verde%20%28STILL%29.jpg')">
+      <span>Textura Desgastada Verde (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Textura%20Desgastada%20Verde.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Textura%20Desgastada%20Verde.jpg" alt="Textura Desgastada Verde" onclick="abrirModal('cimento-queimado/Textura%20Desgastada%20Verde.jpg')">
+      <span>Textura Desgastada Verde</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Zara%20Cimento%20Queimado%20Black%20%282%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Zara%20Cimento%20Queimado%20Black%20%282%29.jpg" alt="Zara Cimento Queimado Black" onclick="abrirModal('cimento-queimado/Zara%20Cimento%20Queimado%20Black%20%282%29.jpg')">
+      <span>Zara Cimento Queimado Black</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Zara%20Cimento%20Queimado%20Black%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Zara%20Cimento%20Queimado%20Black%20%28STILL%29.jpg" alt="Zara Cimento Queimado Black (STILL)" onclick="abrirModal('cimento-queimado/Zara%20Cimento%20Queimado%20Black%20%28STILL%29.jpg')">
+      <span>Zara Cimento Queimado Black (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Zara%20Cimento%20Queimado%20Black.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Zara%20Cimento%20Queimado%20Black.jpg" alt="Zara Cimento Queimado Black" onclick="abrirModal('cimento-queimado/Zara%20Cimento%20Queimado%20Black.jpg')">
+      <span>Zara Cimento Queimado Black</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Zara%20Gold%20Cimento%20Queimado%20Rose%20%282%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Zara%20Gold%20Cimento%20Queimado%20Rose%20%282%29.jpg" alt="Zara Gold Cimento Queimado Rose" onclick="abrirModal('cimento-queimado/Zara%20Gold%20Cimento%20Queimado%20Rose%20%282%29.jpg')">
+      <span>Zara Gold Cimento Queimado Rose</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Zara%20Gold%20Cimento%20Queimado%20Rose%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Zara%20Gold%20Cimento%20Queimado%20Rose%20%28STILL%29.jpg" alt="Zara Gold Cimento Queimado Rose (STILL)" onclick="abrirModal('cimento-queimado/Zara%20Gold%20Cimento%20Queimado%20Rose%20%28STILL%29.jpg')">
+      <span>Zara Gold Cimento Queimado Rose (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Zara%20Gold%20Cimento%20Queimado%20Rose.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Zara%20Gold%20Cimento%20Queimado%20Rose.jpg" alt="Zara Gold Cimento Queimado Rose" onclick="abrirModal('cimento-queimado/Zara%20Gold%20Cimento%20Queimado%20Rose.jpg')">
+      <span>Zara Gold Cimento Queimado Rose</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Zara%20Rose%20Gold%20Cimento%20Queimado%20%282%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Zara%20Rose%20Gold%20Cimento%20Queimado%20%282%29.jpg" alt="Zara Rose Gold Cimento Queimado" onclick="abrirModal('cimento-queimado/Zara%20Rose%20Gold%20Cimento%20Queimado%20%282%29.jpg')">
+      <span>Zara Rose Gold Cimento Queimado</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Zara%20Rose%20Gold%20Cimento%20Queimado%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Zara%20Rose%20Gold%20Cimento%20Queimado%20%28STILL%29.jpg" alt="Zara Rose Gold Cimento Queimado (STILL)" onclick="abrirModal('cimento-queimado/Zara%20Rose%20Gold%20Cimento%20Queimado%20%28STILL%29.jpg')">
+      <span>Zara Rose Gold Cimento Queimado (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('adulto/cimento-queimado/Zara%20Rose%20Gold%20Cimento%20Queimado.jpg', this)">🤍</button>
+      <img src="cimento-queimado/Zara%20Rose%20Gold%20Cimento%20Queimado.jpg" alt="Zara Rose Gold Cimento Queimado" onclick="abrirModal('cimento-queimado/Zara%20Rose%20Gold%20Cimento%20Queimado.jpg')">
+      <span>Zara Rose Gold Cimento Queimado</span>
+    </div>
+</div>
+<div class="modal" id="modal">
+  <img id="modal-img" src="">
+  <div class="modal-btns">
+    <button onclick="baixarAtual()" class="btn">📥 Salvar imagem</button>
+    <button onclick="fecharModal()" class="btn">✖ Fechar</button>
+  </div>
+</div>
+<script src="https://unpkg.com/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
+<script>
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  let panzoomInstance;
+  function abrirModal(src) { modal.style.display = 'flex'; modalImg.src = src; panzoomInstance = Panzoom(modalImg); }
+  function fecharModal() { modal.style.display = 'none'; if (panzoomInstance) panzoomInstance.destroy(); }
+  function baixarAtual() {
+    const link = document.createElement('a');
+    link.href = modalImg.src;
+    link.download = decodeURIComponent(modalImg.src.split('/').pop());
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+  function toggleFavorito(src, el) { let f = JSON.parse(localStorage.getItem('favoritos'))||[]; const i = f.indexOf(src); if (i>=0) { f.splice(i,1); el.textContent='🤍'; } else { f.push(src); el.textContent='❤️'; } localStorage.setItem('favoritos', JSON.stringify(f)); }
+</script>
+</body>
+</html>

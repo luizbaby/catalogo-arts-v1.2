@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Adolescente</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; font-weight: 200; margin: 0; background: #343532; color: #bfbaba; }
+    .top-bar { position: sticky; top: 0; background: #343532; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 10px 20px; gap: 10px; z-index: 1000; text-align: center; flex-direction: column; }
+    .top-bar h1 { margin: 0; font-weight: 400; font-size: 1.2rem; word-break: break-word; }
+    .top-buttons { display: flex; justify-content: space-between; width: 100%; max-width: 1000px; align-items: center; }
+    .btn { background: #8bc4ba; color: #bfbaba; border: none; padding: 8px 14px; border-radius: 6px; font-size: 14px; cursor: pointer; text-decoration: none; }
+    .grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 20px; padding: 20px; }
+    @media (min-width: 768px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+    .card { background: white; color: black; padding: 10px; border-radius: 10px; box-shadow: 0 2px 8px rgba(255,255,255,0.1); text-align: center; position: relative; }
+    .card img { width: 100%; border-radius: 8px; cursor: pointer; }
+    .card span { display: block; margin-top: 8px; font-weight: 200; color: black; }
+    .favorito-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer; }
+    .favorito-btn.favorito { color: red; }
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; }
+    .modal img { max-width: 90vw; max-height: 80vh; }
+    .modal-btns { margin-top: 10px; display: flex; gap: 10px; }
+  </style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="top-buttons">
+    <button class="btn" onclick="history.back()">&larr; Voltar</button>
+    <h1>Adolescente</h1>
+    <a href="https://catalogo.artspapeisdeparede.com.br/favoritos.html" class="btn">❤️ Ver favoritos</a>
+  </div>
+</div>
+<div class="grid">
+<div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/3D%20Geom%C3%A9trico%20Gamer%20Azul%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/3D%20Geom%C3%A9trico%20Gamer%20Azul%20%28STILL%29.jpg" alt="3D Geométrico Gamer Azul (STILL)" onclick="abrirModal('adolescente/3D%20Geom%C3%A9trico%20Gamer%20Azul%20%28STILL%29.jpg')">
+      <span>3D Geométrico Gamer Azul (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/3D%20Geom%C3%A9trico%20Gamer%20Azul.jpg', this)">🤍</button>
+      <img src="adolescente/3D%20Geom%C3%A9trico%20Gamer%20Azul.jpg" alt="3D Geométrico Gamer Azul" onclick="abrirModal('adolescente/3D%20Geom%C3%A9trico%20Gamer%20Azul.jpg')">
+      <span>3D Geométrico Gamer Azul</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/3D%20Geom%C3%A9trico%20Gamer%20Laranja%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/3D%20Geom%C3%A9trico%20Gamer%20Laranja%20%28STILL%29.jpg" alt="3D Geométrico Gamer Laranja (STILL)" onclick="abrirModal('adolescente/3D%20Geom%C3%A9trico%20Gamer%20Laranja%20%28STILL%29.jpg')">
+      <span>3D Geométrico Gamer Laranja (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/3D%20Geom%C3%A9trico%20Gamer%20Laranja.jpg', this)">🤍</button>
+      <img src="adolescente/3D%20Geom%C3%A9trico%20Gamer%20Laranja.jpg" alt="3D Geométrico Gamer Laranja" onclick="abrirModal('adolescente/3D%20Geom%C3%A9trico%20Gamer%20Laranja.jpg')">
+      <span>3D Geométrico Gamer Laranja</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/3D%20Geom%C3%A9trico%20Gamer%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/3D%20Geom%C3%A9trico%20Gamer%20Rosa%20%28STILL%29.jpg" alt="3D Geométrico Gamer Rosa (STILL)" onclick="abrirModal('adolescente/3D%20Geom%C3%A9trico%20Gamer%20Rosa%20%28STILL%29.jpg')">
+      <span>3D Geométrico Gamer Rosa (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/3D%20Geom%C3%A9trico%20Gamer%20Rosa.jpg', this)">🤍</button>
+      <img src="adolescente/3D%20Geom%C3%A9trico%20Gamer%20Rosa.jpg" alt="3D Geométrico Gamer Rosa" onclick="abrirModal('adolescente/3D%20Geom%C3%A9trico%20Gamer%20Rosa.jpg')">
+      <span>3D Geométrico Gamer Rosa</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/3D%20Geom%C3%A9trico%20Gamer%20Tiffany%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/3D%20Geom%C3%A9trico%20Gamer%20Tiffany%20%28STILL%29.jpg" alt="3D Geométrico Gamer Tiffany (STILL)" onclick="abrirModal('adolescente/3D%20Geom%C3%A9trico%20Gamer%20Tiffany%20%28STILL%29.jpg')">
+      <span>3D Geométrico Gamer Tiffany (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/3D%20Geom%C3%A9trico%20Gamer%20Tiffany.jpg', this)">🤍</button>
+      <img src="adolescente/3D%20Geom%C3%A9trico%20Gamer%20Tiffany.jpg" alt="3D Geométrico Gamer Tiffany" onclick="abrirModal('adolescente/3D%20Geom%C3%A9trico%20Gamer%20Tiffany.jpg')">
+      <span>3D Geométrico Gamer Tiffany</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/3D%20Geom%C3%A9trico%20Gamer%20Verde%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/3D%20Geom%C3%A9trico%20Gamer%20Verde%20%28STILL%29.jpg" alt="3D Geométrico Gamer Verde (STILL)" onclick="abrirModal('adolescente/3D%20Geom%C3%A9trico%20Gamer%20Verde%20%28STILL%29.jpg')">
+      <span>3D Geométrico Gamer Verde (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/3D%20Geom%C3%A9trico%20Gamer%20Verde.jpg', this)">🤍</button>
+      <img src="adolescente/3D%20Geom%C3%A9trico%20Gamer%20Verde.jpg" alt="3D Geométrico Gamer Verde" onclick="abrirModal('adolescente/3D%20Geom%C3%A9trico%20Gamer%20Verde.jpg')">
+      <span>3D Geométrico Gamer Verde</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/3D%20Geom%C3%A9trico%20Gamer%20Vermelho%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/3D%20Geom%C3%A9trico%20Gamer%20Vermelho%20%28STILL%29.jpg" alt="3D Geométrico Gamer Vermelho (STILL)" onclick="abrirModal('adolescente/3D%20Geom%C3%A9trico%20Gamer%20Vermelho%20%28STILL%29.jpg')">
+      <span>3D Geométrico Gamer Vermelho (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/3D%20Geom%C3%A9trico%20Gamer%20Vermelho.jpg', this)">🤍</button>
+      <img src="adolescente/3D%20Geom%C3%A9trico%20Gamer%20Vermelho.jpg" alt="3D Geométrico Gamer Vermelho" onclick="abrirModal('adolescente/3D%20Geom%C3%A9trico%20Gamer%20Vermelho.jpg')">
+      <span>3D Geométrico Gamer Vermelho</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Aquarela%20Jardim%20com%20Borboletas%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Aquarela%20Jardim%20com%20Borboletas%20%28STILL%29.jpg" alt="Aquarela Jardim com Borboletas (STILL)" onclick="abrirModal('adolescente/Aquarela%20Jardim%20com%20Borboletas%20%28STILL%29.jpg')">
+      <span>Aquarela Jardim com Borboletas (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Aquarela%20Pendente%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Aquarela%20Pendente%20%28STILL%29.jpg" alt="Aquarela Pendente (STILL)" onclick="abrirModal('adolescente/Aquarela%20Pendente%20%28STILL%29.jpg')">
+      <span>Aquarela Pendente (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Aquarela%20Pendente%202.jpg', this)">🤍</button>
+      <img src="adolescente/Aquarela%20Pendente%202.jpg" alt="Aquarela Pendente" onclick="abrirModal('adolescente/Aquarela%20Pendente%202.jpg')">
+      <span>Aquarela Pendente</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Arte%20Urbana%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Arte%20Urbana%20%282%29.jpg" alt="Arte Urbana" onclick="abrirModal('adolescente/Arte%20Urbana%20%282%29.jpg')">
+      <span>Arte Urbana</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Arte%20Urbana%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Arte%20Urbana%20%28STILL%29.jpg" alt="Arte Urbana (STILL)" onclick="abrirModal('adolescente/Arte%20Urbana%20%28STILL%29.jpg')">
+      <span>Arte Urbana (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Arte%20Urbana.jpg', this)">🤍</button>
+      <img src="adolescente/Arte%20Urbana.jpg" alt="Arte Urbana" onclick="abrirModal('adolescente/Arte%20Urbana.jpg')">
+      <span>Arte Urbana</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolas%20de%20Esportes%20Azul%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Bolas%20de%20Esportes%20Azul%20%282%29.jpg" alt="Bolas de Esportes Azul" onclick="abrirModal('adolescente/Bolas%20de%20Esportes%20Azul%20%282%29.jpg')">
+      <span>Bolas de Esportes Azul</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolas%20de%20Esportes%20Azul%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Bolas%20de%20Esportes%20Azul%20%28STILL%29.jpg" alt="Bolas de Esportes Azul (STILL)" onclick="abrirModal('adolescente/Bolas%20de%20Esportes%20Azul%20%28STILL%29.jpg')">
+      <span>Bolas de Esportes Azul (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolas%20de%20Esportes%20Azul.jpg', this)">🤍</button>
+      <img src="adolescente/Bolas%20de%20Esportes%20Azul.jpg" alt="Bolas de Esportes Azul" onclick="abrirModal('adolescente/Bolas%20de%20Esportes%20Azul.jpg')">
+      <span>Bolas de Esportes Azul</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolas%20de%20Esportes%20Cinza%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Bolas%20de%20Esportes%20Cinza%20%282%29.jpg" alt="Bolas de Esportes Cinza" onclick="abrirModal('adolescente/Bolas%20de%20Esportes%20Cinza%20%282%29.jpg')">
+      <span>Bolas de Esportes Cinza</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolas%20de%20Esportes%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Bolas%20de%20Esportes%20Cinza%20%28STILL%29.jpg" alt="Bolas de Esportes Cinza (STILL)" onclick="abrirModal('adolescente/Bolas%20de%20Esportes%20Cinza%20%28STILL%29.jpg')">
+      <span>Bolas de Esportes Cinza (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolas%20de%20Esportes%20Cinza.jpg', this)">🤍</button>
+      <img src="adolescente/Bolas%20de%20Esportes%20Cinza.jpg" alt="Bolas de Esportes Cinza" onclick="abrirModal('adolescente/Bolas%20de%20Esportes%20Cinza.jpg')">
+      <span>Bolas de Esportes Cinza</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolas%20de%20Esportes%20Rose%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Bolas%20de%20Esportes%20Rose%20%282%29.jpg" alt="Bolas de Esportes Rose" onclick="abrirModal('adolescente/Bolas%20de%20Esportes%20Rose%20%282%29.jpg')">
+      <span>Bolas de Esportes Rose</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolas%20de%20Esportes%20Rose%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Bolas%20de%20Esportes%20Rose%20%28STILL%29.jpg" alt="Bolas de Esportes Rose (STILL)" onclick="abrirModal('adolescente/Bolas%20de%20Esportes%20Rose%20%28STILL%29.jpg')">
+      <span>Bolas de Esportes Rose (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolas%20de%20Esportes%20Rose.jpg', this)">🤍</button>
+      <img src="adolescente/Bolas%20de%20Esportes%20Rose.jpg" alt="Bolas de Esportes Rose" onclick="abrirModal('adolescente/Bolas%20de%20Esportes%20Rose.jpg')">
+      <span>Bolas de Esportes Rose</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolinhas%20de%20Tinta%20Azul%20%281%29.jpg', this)">🤍</button>
+      <img src="adolescente/Bolinhas%20de%20Tinta%20Azul%20%281%29.jpg" alt="Bolinhas de Tinta Azul" onclick="abrirModal('adolescente/Bolinhas%20de%20Tinta%20Azul%20%281%29.jpg')">
+      <span>Bolinhas de Tinta Azul</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolinhas%20de%20Tinta%20Azul%20%28STILL%29%20%281%29.jpg', this)">🤍</button>
+      <img src="adolescente/Bolinhas%20de%20Tinta%20Azul%20%28STILL%29%20%281%29.jpg" alt="Bolinhas de Tinta Azul (STILL)" onclick="abrirModal('adolescente/Bolinhas%20de%20Tinta%20Azul%20%28STILL%29%20%281%29.jpg')">
+      <span>Bolinhas de Tinta Azul (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolinhas%20de%20Tinta%20Azul%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Bolinhas%20de%20Tinta%20Azul%20%28STILL%29.jpg" alt="Bolinhas de Tinta Azul (STILL)" onclick="abrirModal('adolescente/Bolinhas%20de%20Tinta%20Azul%20%28STILL%29.jpg')">
+      <span>Bolinhas de Tinta Azul (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolinhas%20de%20Tinta%20Azul.jpg', this)">🤍</button>
+      <img src="adolescente/Bolinhas%20de%20Tinta%20Azul.jpg" alt="Bolinhas de Tinta Azul" onclick="abrirModal('adolescente/Bolinhas%20de%20Tinta%20Azul.jpg')">
+      <span>Bolinhas de Tinta Azul</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolinhas%20de%20Tinta%20Coloridas%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Bolinhas%20de%20Tinta%20Coloridas%20%28STILL%29.jpg" alt="Bolinhas de Tinta Coloridas (STILL)" onclick="abrirModal('adolescente/Bolinhas%20de%20Tinta%20Coloridas%20%28STILL%29.jpg')">
+      <span>Bolinhas de Tinta Coloridas (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolinhas%20de%20Tinta%20Coloridas%202.jpg', this)">🤍</button>
+      <img src="adolescente/Bolinhas%20de%20Tinta%20Coloridas%202.jpg" alt="Bolinhas de Tinta Coloridas" onclick="abrirModal('adolescente/Bolinhas%20de%20Tinta%20Coloridas%202.jpg')">
+      <span>Bolinhas de Tinta Coloridas</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolinhas%20de%20Tinta%20Rosa%20e%20Cinza%20%28STILL%29%20%281%29.jpg', this)">🤍</button>
+      <img src="adolescente/Bolinhas%20de%20Tinta%20Rosa%20e%20Cinza%20%28STILL%29%20%281%29.jpg" alt="Bolinhas de Tinta Rosa e Cinza (STILL)" onclick="abrirModal('adolescente/Bolinhas%20de%20Tinta%20Rosa%20e%20Cinza%20%28STILL%29%20%281%29.jpg')">
+      <span>Bolinhas de Tinta Rosa e Cinza (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolinhas%20de%20Tinta%20Rosa%20e%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Bolinhas%20de%20Tinta%20Rosa%20e%20Cinza%20%28STILL%29.jpg" alt="Bolinhas de Tinta Rosa e Cinza (STILL)" onclick="abrirModal('adolescente/Bolinhas%20de%20Tinta%20Rosa%20e%20Cinza%20%28STILL%29.jpg')">
+      <span>Bolinhas de Tinta Rosa e Cinza (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Bolinhas%20de%20Tinta%20Rosa%20e%20Cinza.jpg', this)">🤍</button>
+      <img src="adolescente/Bolinhas%20de%20Tinta%20Rosa%20e%20Cinza.jpg" alt="Bolinhas de Tinta Rosa e Cinza" onclick="abrirModal('adolescente/Bolinhas%20de%20Tinta%20Rosa%20e%20Cinza.jpg')">
+      <span>Bolinhas de Tinta Rosa e Cinza</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Borboletas%20em%20Jardim%20Suspenso%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Borboletas%20em%20Jardim%20Suspenso%20%28STILL%29.jpg" alt="Borboletas em Jardim Suspenso (STILL)" onclick="abrirModal('adolescente/Borboletas%20em%20Jardim%20Suspenso%20%28STILL%29.jpg')">
+      <span>Borboletas em Jardim Suspenso (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Borboletas%20em%20Jardim%20Suspenso.jpg', this)">🤍</button>
+      <img src="adolescente/Borboletas%20em%20Jardim%20Suspenso.jpg" alt="Borboletas em Jardim Suspenso" onclick="abrirModal('adolescente/Borboletas%20em%20Jardim%20Suspenso.jpg')">
+      <span>Borboletas em Jardim Suspenso</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Borboletas%20Off%20White%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Borboletas%20Off%20White%20%28STILL%29.jpg" alt="Borboletas Off White (STILL)" onclick="abrirModal('adolescente/Borboletas%20Off%20White%20%28STILL%29.jpg')">
+      <span>Borboletas Off White (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Campo%20de%20Lavanda%20Aquarela.jpg', this)">🤍</button>
+      <img src="adolescente/Campo%20de%20Lavanda%20Aquarela.jpg" alt="Campo de Lavanda Aquarela" onclick="abrirModal('adolescente/Campo%20de%20Lavanda%20Aquarela.jpg')">
+      <span>Campo de Lavanda Aquarela</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Casa%20de%20Passarino%20e%20Arco%20%C3%8Dris%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Casa%20de%20Passarino%20e%20Arco%20%C3%8Dris%20%28STILL%29.jpg" alt="Casa de Passarino e Arco Íris (STILL)" onclick="abrirModal('adolescente/Casa%20de%20Passarino%20e%20Arco%20%C3%8Dris%20%28STILL%29.jpg')">
+      <span>Casa de Passarino e Arco Íris (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Cerejeira%20e%20Casa%20de%20Passarinho%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Cerejeira%20e%20Casa%20de%20Passarinho%20%28STILL%29.jpg" alt="Cerejeira e Casa de Passarinho (STILL)" onclick="abrirModal('adolescente/Cerejeira%20e%20Casa%20de%20Passarinho%20%28STILL%29.jpg')">
+      <span>Cerejeira e Casa de Passarinho (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Coisas%20de%20Paris%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Coisas%20de%20Paris%20%28STILL%29.jpg" alt="Coisas de Paris (STILL)" onclick="abrirModal('adolescente/Coisas%20de%20Paris%20%28STILL%29.jpg')">
+      <span>Coisas de Paris (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Coisas%20de%20Paris%20Rose%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Coisas%20de%20Paris%20Rose%20%28STILL%29.jpg" alt="Coisas de Paris Rose (STILL)" onclick="abrirModal('adolescente/Coisas%20de%20Paris%20Rose%20%28STILL%29.jpg')">
+      <span>Coisas de Paris Rose (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Coisas%20de%20Paris%20Rose.jpg', this)">🤍</button>
+      <img src="adolescente/Coisas%20de%20Paris%20Rose.jpg" alt="Coisas de Paris Rose" onclick="abrirModal('adolescente/Coisas%20de%20Paris%20Rose.jpg')">
+      <span>Coisas de Paris Rose</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Coisas%20de%20Paris%20Tiffany%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Coisas%20de%20Paris%20Tiffany%20%28STILL%29.jpg" alt="Coisas de Paris Tiffany (STILL)" onclick="abrirModal('adolescente/Coisas%20de%20Paris%20Tiffany%20%28STILL%29.jpg')">
+      <span>Coisas de Paris Tiffany (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Coisas%20de%20Paris%20Tiffany.jpg', this)">🤍</button>
+      <img src="adolescente/Coisas%20de%20Paris%20Tiffany.jpg" alt="Coisas de Paris Tiffany" onclick="abrirModal('adolescente/Coisas%20de%20Paris%20Tiffany.jpg')">
+      <span>Coisas de Paris Tiffany</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Coisas%20de%20Paris.jpg', this)">🤍</button>
+      <img src="adolescente/Coisas%20de%20Paris.jpg" alt="Coisas de Paris" onclick="abrirModal('adolescente/Coisas%20de%20Paris.jpg')">
+      <span>Coisas de Paris</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Confetti%20Gold%20Rose%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Confetti%20Gold%20Rose%20%282%29.jpg" alt="Confetti Gold Rose" onclick="abrirModal('adolescente/Confetti%20Gold%20Rose%20%282%29.jpg')">
+      <span>Confetti Gold Rose</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Confetti%20Gold%20Rose%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Confetti%20Gold%20Rose%20%28STILL%29.jpg" alt="Confetti Gold Rose (STILL)" onclick="abrirModal('adolescente/Confetti%20Gold%20Rose%20%28STILL%29.jpg')">
+      <span>Confetti Gold Rose (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Confetti%20Gold%20Rose.jpg', this)">🤍</button>
+      <img src="adolescente/Confetti%20Gold%20Rose.jpg" alt="Confetti Gold Rose" onclick="abrirModal('adolescente/Confetti%20Gold%20Rose.jpg')">
+      <span>Confetti Gold Rose</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Cora%C3%A7%C3%B5es%20Coloridos%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Cora%C3%A7%C3%B5es%20Coloridos%20%28STILL%29.jpg" alt="Corações Coloridos (STILL)" onclick="abrirModal('adolescente/Cora%C3%A7%C3%B5es%20Coloridos%20%28STILL%29.jpg')">
+      <span>Corações Coloridos (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Cora%C3%A7%C3%B5es%20Coloridos%202.jpg', this)">🤍</button>
+      <img src="adolescente/Cora%C3%A7%C3%B5es%20Coloridos%202.jpg" alt="Corações Coloridos" onclick="abrirModal('adolescente/Cora%C3%A7%C3%B5es%20Coloridos%202.jpg')">
+      <span>Corações Coloridos</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Cora%C3%A7%C3%B5es%20Coloridos.jpg', this)">🤍</button>
+      <img src="adolescente/Cora%C3%A7%C3%B5es%20Coloridos.jpg" alt="Corações Coloridos" onclick="abrirModal('adolescente/Cora%C3%A7%C3%B5es%20Coloridos.jpg')">
+      <span>Corações Coloridos</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Cute%20Folhagem%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Cute%20Folhagem%20%28STILL%29.jpg" alt="Cute Folhagem (STILL)" onclick="abrirModal('adolescente/Cute%20Folhagem%20%28STILL%29.jpg')">
+      <span>Cute Folhagem (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Cute%20Folhagem%2002.jpg', this)">🤍</button>
+      <img src="adolescente/Cute%20Folhagem%2002.jpg" alt="Cute Folhagem" onclick="abrirModal('adolescente/Cute%20Folhagem%2002.jpg')">
+      <span>Cute Folhagem</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Cute%20Folhagem.jpg', this)">🤍</button>
+      <img src="adolescente/Cute%20Folhagem.jpg" alt="Cute Folhagem" onclick="abrirModal('adolescente/Cute%20Folhagem.jpg')">
+      <span>Cute Folhagem</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Desenho%20Mapa%20Mundi%20Infantil%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Desenho%20Mapa%20Mundi%20Infantil%20%28STILL%29.jpg" alt="Desenho Mapa Mundi Infantil (STILL)" onclick="abrirModal('adolescente/Desenho%20Mapa%20Mundi%20Infantil%20%28STILL%29.jpg')">
+      <span>Desenho Mapa Mundi Infantil (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Dia%20de%20Praia%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Dia%20de%20Praia%20%28STILL%29.jpg" alt="Dia de Praia (STILL)" onclick="abrirModal('adolescente/Dia%20de%20Praia%20%28STILL%29.jpg')">
+      <span>Dia de Praia (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Dia%20de%20Praia.jpg', this)">🤍</button>
+      <img src="adolescente/Dia%20de%20Praia.jpg" alt="Dia de Praia" onclick="abrirModal('adolescente/Dia%20de%20Praia.jpg')">
+      <span>Dia de Praia</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Escandinavo%20Leaves%20Areia%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Escandinavo%20Leaves%20Areia%20%28STILL%29.jpg" alt="Escandinavo Leaves Areia (STILL)" onclick="abrirModal('adolescente/Escandinavo%20Leaves%20Areia%20%28STILL%29.jpg')">
+      <span>Escandinavo Leaves Areia (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Escandinavo%20Leaves%20Areia%202.jpg', this)">🤍</button>
+      <img src="adolescente/Escandinavo%20Leaves%20Areia%202.jpg" alt="Escandinavo Leaves Areia" onclick="abrirModal('adolescente/Escandinavo%20Leaves%20Areia%202.jpg')">
+      <span>Escandinavo Leaves Areia</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Esportes%20Cimento%20Queimado%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Esportes%20Cimento%20Queimado%20%282%29.jpg" alt="Esportes Cimento Queimado" onclick="abrirModal('adolescente/Esportes%20Cimento%20Queimado%20%282%29.jpg')">
+      <span>Esportes Cimento Queimado</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Esportes%20Cimento%20Queimado%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Esportes%20Cimento%20Queimado%20%28STILL%29.jpg" alt="Esportes Cimento Queimado (STILL)" onclick="abrirModal('adolescente/Esportes%20Cimento%20Queimado%20%28STILL%29.jpg')">
+      <span>Esportes Cimento Queimado (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Esportes%20Cimento%20Queimado.jpg', this)">🤍</button>
+      <img src="adolescente/Esportes%20Cimento%20Queimado.jpg" alt="Esportes Cimento Queimado" onclick="abrirModal('adolescente/Esportes%20Cimento%20Queimado.jpg')">
+      <span>Esportes Cimento Queimado</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Floral%20Aquarela%20com%20Borboletas%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Floral%20Aquarela%20com%20Borboletas%20%28STILL%29.jpg" alt="Floral Aquarela com Borboletas (STILL)" onclick="abrirModal('adolescente/Floral%20Aquarela%20com%20Borboletas%20%28STILL%29.jpg')">
+      <span>Floral Aquarela com Borboletas (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Floral%20Delicado.jpg', this)">🤍</button>
+      <img src="adolescente/Floral%20Delicado.jpg" alt="Floral Delicado" onclick="abrirModal('adolescente/Floral%20Delicado.jpg')">
+      <span>Floral Delicado</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Floral%20Pendente%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Floral%20Pendente%20%282%29.jpg" alt="Floral Pendente" onclick="abrirModal('adolescente/Floral%20Pendente%20%282%29.jpg')">
+      <span>Floral Pendente</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Floral%20Pendente%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Floral%20Pendente%20%28STILL%29.jpg" alt="Floral Pendente (STILL)" onclick="abrirModal('adolescente/Floral%20Pendente%20%28STILL%29.jpg')">
+      <span>Floral Pendente (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Floral%20Pendente%2002.jpg', this)">🤍</button>
+      <img src="adolescente/Floral%20Pendente%2002.jpg" alt="Floral Pendente" onclick="abrirModal('adolescente/Floral%20Pendente%2002.jpg')">
+      <span>Floral Pendente</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Floral%20Pendente%20Verde%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Floral%20Pendente%20Verde%20%28STILL%29.jpg" alt="Floral Pendente Verde (STILL)" onclick="abrirModal('adolescente/Floral%20Pendente%20Verde%20%28STILL%29.jpg')">
+      <span>Floral Pendente Verde (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Floral%20Pendente%20Verde.jpg', this)">🤍</button>
+      <img src="adolescente/Floral%20Pendente%20Verde.jpg" alt="Floral Pendente Verde" onclick="abrirModal('adolescente/Floral%20Pendente%20Verde.jpg')">
+      <span>Floral Pendente Verde</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Floral%20Pendente.jpg', this)">🤍</button>
+      <img src="adolescente/Floral%20Pendente.jpg" alt="Floral Pendente" onclick="abrirModal('adolescente/Floral%20Pendente.jpg')">
+      <span>Floral Pendente</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Flores%20de%20Cerejeira%20Suspensas.jpg', this)">🤍</button>
+      <img src="adolescente/Flores%20de%20Cerejeira%20Suspensas.jpg" alt="Flores de Cerejeira Suspensas" onclick="abrirModal('adolescente/Flores%20de%20Cerejeira%20Suspensas.jpg')">
+      <span>Flores de Cerejeira Suspensas</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Flores%20e%20Borboletas%20Allover%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Flores%20e%20Borboletas%20Allover%20%28STILL%29.jpg" alt="Flores e Borboletas Allover (STILL)" onclick="abrirModal('adolescente/Flores%20e%20Borboletas%20Allover%20%28STILL%29.jpg')">
+      <span>Flores e Borboletas Allover (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Floresta%20de%20Flores%20Rose%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Floresta%20de%20Flores%20Rose%20%28STILL%29.jpg" alt="Floresta de Flores Rose (STILL)" onclick="abrirModal('adolescente/Floresta%20de%20Flores%20Rose%20%28STILL%29.jpg')">
+      <span>Floresta de Flores Rose (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Floresta%20de%20Flores%20Rose.jpg', this)">🤍</button>
+      <img src="adolescente/Floresta%20de%20Flores%20Rose.jpg" alt="Floresta de Flores Rose" onclick="abrirModal('adolescente/Floresta%20de%20Flores%20Rose.jpg')">
+      <span>Floresta de Flores Rose</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Floresta%20de%20flores.jpg', this)">🤍</button>
+      <img src="adolescente/Floresta%20de%20flores.jpg" alt="Floresta de flores" onclick="abrirModal('adolescente/Floresta%20de%20flores.jpg')">
+      <span>Floresta de flores</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Folhagem%20Aquarela%20Clean%20Gold%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Folhagem%20Aquarela%20Clean%20Gold%20%28STILL%29.jpg" alt="Folhagem Aquarela Clean Gold (STILL)" onclick="abrirModal('adolescente/Folhagem%20Aquarela%20Clean%20Gold%20%28STILL%29.jpg')">
+      <span>Folhagem Aquarela Clean Gold (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Folhagem%20Jardim%20Suspenso%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Folhagem%20Jardim%20Suspenso%20%28STILL%29.jpg" alt="Folhagem Jardim Suspenso (STILL)" onclick="abrirModal('adolescente/Folhagem%20Jardim%20Suspenso%20%28STILL%29.jpg')">
+      <span>Folhagem Jardim Suspenso (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Folhagem%20Pendente%20Elegance.jpg', this)">🤍</button>
+      <img src="adolescente/Folhagem%20Pendente%20Elegance.jpg" alt="Folhagem Pendente Elegance" onclick="abrirModal('adolescente/Folhagem%20Pendente%20Elegance.jpg')">
+      <span>Folhagem Pendente Elegance</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Gaming%20Grafite%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Gaming%20Grafite%20%282%29.jpg" alt="Gaming Grafite" onclick="abrirModal('adolescente/Gaming%20Grafite%20%282%29.jpg')">
+      <span>Gaming Grafite</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Gaming%20Grafite%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Gaming%20Grafite%20%28STILL%29.jpg" alt="Gaming Grafite (STILL)" onclick="abrirModal('adolescente/Gaming%20Grafite%20%28STILL%29.jpg')">
+      <span>Gaming Grafite (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Gaming%20Grafite.jpg', this)">🤍</button>
+      <img src="adolescente/Gaming%20Grafite.jpg" alt="Gaming Grafite" onclick="abrirModal('adolescente/Gaming%20Grafite.jpg')">
+      <span>Gaming Grafite</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Gaming%20Grafite2.jpg', this)">🤍</button>
+      <img src="adolescente/Gaming%20Grafite2.jpg" alt="Gaming Grafite" onclick="abrirModal('adolescente/Gaming%20Grafite2.jpg')">
+      <span>Gaming Grafite</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Gaming%20Roxo%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Gaming%20Roxo%20%282%29.jpg" alt="Gaming Roxo" onclick="abrirModal('adolescente/Gaming%20Roxo%20%282%29.jpg')">
+      <span>Gaming Roxo</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Gaming%20Roxo%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Gaming%20Roxo%20%28STILL%29.jpg" alt="Gaming Roxo (STILL)" onclick="abrirModal('adolescente/Gaming%20Roxo%20%28STILL%29.jpg')">
+      <span>Gaming Roxo (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Gaming%20Roxo%2002.jpg', this)">🤍</button>
+      <img src="adolescente/Gaming%20Roxo%2002.jpg" alt="Gaming Roxo" onclick="abrirModal('adolescente/Gaming%20Roxo%2002.jpg')">
+      <span>Gaming Roxo</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Gaming%20Roxo.jpg', this)">🤍</button>
+      <img src="adolescente/Gaming%20Roxo.jpg" alt="Gaming Roxo" onclick="abrirModal('adolescente/Gaming%20Roxo.jpg')">
+      <span>Gaming Roxo</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Gaming%20Roxo2.jpg', this)">🤍</button>
+      <img src="adolescente/Gaming%20Roxo2.jpg" alt="Gaming Roxo" onclick="abrirModal('adolescente/Gaming%20Roxo2.jpg')">
+      <span>Gaming Roxo</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Grafite%20Crazy%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Grafite%20Crazy%20%28STILL%29.jpg" alt="Grafite Crazy (STILL)" onclick="abrirModal('adolescente/Grafite%20Crazy%20%28STILL%29.jpg')">
+      <span>Grafite Crazy (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Azul%20e%20Tiffany%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Azul%20e%20Tiffany%20%282%29.jpg" alt="Granilite Azul e Tiffany" onclick="abrirModal('adolescente/Granilite%20Azul%20e%20Tiffany%20%282%29.jpg')">
+      <span>Granilite Azul e Tiffany</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Azul%20e%20Tiffany%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Azul%20e%20Tiffany%20%28STILL%29.jpg" alt="Granilite Azul e Tiffany (STILL)" onclick="abrirModal('adolescente/Granilite%20Azul%20e%20Tiffany%20%28STILL%29.jpg')">
+      <span>Granilite Azul e Tiffany (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Azul%20e%20Tiffany%2002.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Azul%20e%20Tiffany%2002.jpg" alt="Granilite Azul e Tiffany" onclick="abrirModal('adolescente/Granilite%20Azul%20e%20Tiffany%2002.jpg')">
+      <span>Granilite Azul e Tiffany</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20e%20Azul%20Marinho%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20e%20Azul%20Marinho%20%28STILL%29.jpg" alt="Granilite Rose e Azul Marinho (STILL)" onclick="abrirModal('adolescente/Granilite%20Rose%20e%20Azul%20Marinho%20%28STILL%29.jpg')">
+      <span>Granilite Rose e Azul Marinho (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20e%20Azul%20Marinho%2002.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20e%20Azul%20Marinho%2002.jpg" alt="Granilite Rose e Azul Marinho" onclick="abrirModal('adolescente/Granilite%20Rose%20e%20Azul%20Marinho%2002.jpg')">
+      <span>Granilite Rose e Azul Marinho</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20e%20Azul%20Marinho.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20e%20Azul%20Marinho.jpg" alt="Granilite Rose e Azul Marinho" onclick="abrirModal('adolescente/Granilite%20Rose%20e%20Azul%20Marinho.jpg')">
+      <span>Granilite Rose e Azul Marinho</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20e%20Roxo%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20e%20Roxo%20%282%29.jpg" alt="Granilite Rose e Roxo" onclick="abrirModal('adolescente/Granilite%20Rose%20e%20Roxo%20%282%29.jpg')">
+      <span>Granilite Rose e Roxo</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20e%20Roxo%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20e%20Roxo%20%28STILL%29.jpg" alt="Granilite Rose e Roxo (STILL)" onclick="abrirModal('adolescente/Granilite%20Rose%20e%20Roxo%20%28STILL%29.jpg')">
+      <span>Granilite Rose e Roxo (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20e%20Roxo%2002.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20e%20Roxo%2002.jpg" alt="Granilite Rose e Roxo" onclick="abrirModal('adolescente/Granilite%20Rose%20e%20Roxo%2002.jpg')">
+      <span>Granilite Rose e Roxo</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20e%20Roxo.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20e%20Roxo.jpg" alt="Granilite Rose e Roxo" onclick="abrirModal('adolescente/Granilite%20Rose%20e%20Roxo.jpg')">
+      <span>Granilite Rose e Roxo</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20e%20Tiffany%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20e%20Tiffany%20%282%29.jpg" alt="Granilite Rose e Tiffany" onclick="abrirModal('adolescente/Granilite%20Rose%20e%20Tiffany%20%282%29.jpg')">
+      <span>Granilite Rose e Tiffany</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20e%20Tiffany%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20e%20Tiffany%20%28STILL%29.jpg" alt="Granilite Rose e Tiffany (STILL)" onclick="abrirModal('adolescente/Granilite%20Rose%20e%20Tiffany%20%28STILL%29.jpg')">
+      <span>Granilite Rose e Tiffany (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20e%20Tiffany%2002.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20e%20Tiffany%2002.jpg" alt="Granilite Rose e Tiffany" onclick="abrirModal('adolescente/Granilite%20Rose%20e%20Tiffany%2002.jpg')">
+      <span>Granilite Rose e Tiffany</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20e%20Tiffany.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20e%20Tiffany.jpg" alt="Granilite Rose e Tiffany" onclick="abrirModal('adolescente/Granilite%20Rose%20e%20Tiffany.jpg')">
+      <span>Granilite Rose e Tiffany</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20Gold%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20Gold%20%282%29.jpg" alt="Granilite Rose Gold" onclick="abrirModal('adolescente/Granilite%20Rose%20Gold%20%282%29.jpg')">
+      <span>Granilite Rose Gold</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20Gold%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20Gold%20%28STILL%29.jpg" alt="Granilite Rose Gold (STILL)" onclick="abrirModal('adolescente/Granilite%20Rose%20Gold%20%28STILL%29.jpg')">
+      <span>Granilite Rose Gold (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20Gold%2002.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20Gold%2002.jpg" alt="Granilite Rose Gold" onclick="abrirModal('adolescente/Granilite%20Rose%20Gold%2002.jpg')">
+      <span>Granilite Rose Gold</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Rose%20Gold.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Rose%20Gold.jpg" alt="Granilite Rose Gold" onclick="abrirModal('adolescente/Granilite%20Rose%20Gold.jpg')">
+      <span>Granilite Rose Gold</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Verde%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Verde%20%282%29.jpg" alt="Granilite Verde" onclick="abrirModal('adolescente/Granilite%20Verde%20%282%29.jpg')">
+      <span>Granilite Verde</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Verde%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Verde%20%28STILL%29.jpg" alt="Granilite Verde (STILL)" onclick="abrirModal('adolescente/Granilite%20Verde%20%28STILL%29.jpg')">
+      <span>Granilite Verde (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Granilite%20Verde.jpg', this)">🤍</button>
+      <img src="adolescente/Granilite%20Verde.jpg" alt="Granilite Verde" onclick="abrirModal('adolescente/Granilite%20Verde.jpg')">
+      <span>Granilite Verde</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Jardim%20Aquarela%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Jardim%20Aquarela%20%28STILL%29.jpg" alt="Jardim Aquarela (STILL)" onclick="abrirModal('adolescente/Jardim%20Aquarela%20%28STILL%29.jpg')">
+      <span>Jardim Aquarela (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Jardim%20Aquarela.jpg', this)">🤍</button>
+      <img src="adolescente/Jardim%20Aquarela.jpg" alt="Jardim Aquarela" onclick="abrirModal('adolescente/Jardim%20Aquarela.jpg')">
+      <span>Jardim Aquarela</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Jardim%20de%20Flores%20Delicadas%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Jardim%20de%20Flores%20Delicadas%20%28STILL%29.jpg" alt="Jardim de Flores Delicadas (STILL)" onclick="abrirModal('adolescente/Jardim%20de%20Flores%20Delicadas%20%28STILL%29.jpg')">
+      <span>Jardim de Flores Delicadas (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Jardim%20Delicado.jpg', this)">🤍</button>
+      <img src="adolescente/Jardim%20Delicado.jpg" alt="Jardim Delicado" onclick="abrirModal('adolescente/Jardim%20Delicado.jpg')">
+      <span>Jardim Delicado</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Jardim%20Suspenso%20Aquarela%20Fancy%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Jardim%20Suspenso%20Aquarela%20Fancy%20%28STILL%29.jpg" alt="Jardim Suspenso Aquarela Fancy (STILL)" onclick="abrirModal('adolescente/Jardim%20Suspenso%20Aquarela%20Fancy%20%28STILL%29.jpg')">
+      <span>Jardim Suspenso Aquarela Fancy (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Jardim%20Suspenso%20Aquarela%20Fancy.jpg', this)">🤍</button>
+      <img src="adolescente/Jardim%20Suspenso%20Aquarela%20Fancy.jpg" alt="Jardim Suspenso Aquarela Fancy" onclick="abrirModal('adolescente/Jardim%20Suspenso%20Aquarela%20Fancy.jpg')">
+      <span>Jardim Suspenso Aquarela Fancy</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Jardim%20Suspenso%20Delicado%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Jardim%20Suspenso%20Delicado%20%28STILL%29.jpg" alt="Jardim Suspenso Delicado (STILL)" onclick="abrirModal('adolescente/Jardim%20Suspenso%20Delicado%20%28STILL%29.jpg')">
+      <span>Jardim Suspenso Delicado (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Jardim%20Suspenso%20Floral%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Jardim%20Suspenso%20Floral%20%28STILL%29.jpg" alt="Jardim Suspenso Floral (STILL)" onclick="abrirModal('adolescente/Jardim%20Suspenso%20Floral%20%28STILL%29.jpg')">
+      <span>Jardim Suspenso Floral (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Jardim%20Suspenso%20Floral.jpg', this)">🤍</button>
+      <img src="adolescente/Jardim%20Suspenso%20Floral.jpg" alt="Jardim Suspenso Floral" onclick="abrirModal('adolescente/Jardim%20Suspenso%20Floral.jpg')">
+      <span>Jardim Suspenso Floral</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Jardim%20Vertical%20Colorido.jpg', this)">🤍</button>
+      <img src="adolescente/Jardim%20Vertical%20Colorido.jpg" alt="Jardim Vertical Colorido" onclick="abrirModal('adolescente/Jardim%20Vertical%20Colorido.jpg')">
+      <span>Jardim Vertical Colorido</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Lets%20Dance%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Lets%20Dance%20%282%29.jpg" alt="Lets Dance" onclick="abrirModal('adolescente/Lets%20Dance%20%282%29.jpg')">
+      <span>Lets Dance</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Lets%20dance%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Lets%20dance%20%28STILL%29.jpg" alt="Lets dance (STILL)" onclick="abrirModal('adolescente/Lets%20dance%20%28STILL%29.jpg')">
+      <span>Lets dance (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Lets%20dance.jpg', this)">🤍</button>
+      <img src="adolescente/Lets%20dance.jpg" alt="Lets dance" onclick="abrirModal('adolescente/Lets%20dance.jpg')">
+      <span>Lets dance</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/L%C3%ADrios%20Pendentes%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/L%C3%ADrios%20Pendentes%20%28STILL%29.jpg" alt="Lírios Pendentes (STILL)" onclick="abrirModal('adolescente/L%C3%ADrios%20Pendentes%20%28STILL%29.jpg')">
+      <span>Lírios Pendentes (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Mapa%20Mundo%20Aquarela%20Areia%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Mapa%20Mundo%20Aquarela%20Areia%20%28STILL%29.jpg" alt="Mapa Mundo Aquarela Areia (STILL)" onclick="abrirModal('adolescente/Mapa%20Mundo%20Aquarela%20Areia%20%28STILL%29.jpg')">
+      <span>Mapa Mundo Aquarela Areia (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Mapa%20Mundo%20Aquarela%20Azul%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Mapa%20Mundo%20Aquarela%20Azul%20%28STILL%29.jpg" alt="Mapa Mundo Aquarela Azul (STILL)" onclick="abrirModal('adolescente/Mapa%20Mundo%20Aquarela%20Azul%20%28STILL%29.jpg')">
+      <span>Mapa Mundo Aquarela Azul (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Mapa%20Mundo%20Aquarela%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Mapa%20Mundo%20Aquarela%20Cinza%20%28STILL%29.jpg" alt="Mapa Mundo Aquarela Cinza (STILL)" onclick="abrirModal('adolescente/Mapa%20Mundo%20Aquarela%20Cinza%20%28STILL%29.jpg')">
+      <span>Mapa Mundo Aquarela Cinza (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Mapa%20Mundo%20Aquarela%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Mapa%20Mundo%20Aquarela%20Rosa%20%28STILL%29.jpg" alt="Mapa Mundo Aquarela Rosa (STILL)" onclick="abrirModal('adolescente/Mapa%20Mundo%20Aquarela%20Rosa%20%28STILL%29.jpg')">
+      <span>Mapa Mundo Aquarela Rosa (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Mapa%20Mundo%20Aquarela%20Verde%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Mapa%20Mundo%20Aquarela%20Verde%20%28STILL%29.jpg" alt="Mapa Mundo Aquarela Verde (STILL)" onclick="abrirModal('adolescente/Mapa%20Mundo%20Aquarela%20Verde%20%28STILL%29.jpg')">
+      <span>Mapa Mundo Aquarela Verde (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Mundo%20Infantil%20Verde%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Mundo%20Infantil%20Verde%20%28STILL%29.jpg" alt="Mundo Infantil Verde (STILL)" onclick="abrirModal('adolescente/Mundo%20Infantil%20Verde%20%28STILL%29.jpg')">
+      <span>Mundo Infantil Verde (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Pendente%20com%20Flores.jpg', this)">🤍</button>
+      <img src="adolescente/Pendente%20com%20Flores.jpg" alt="Pendente com Flores" onclick="abrirModal('adolescente/Pendente%20com%20Flores.jpg')">
+      <span>Pendente com Flores</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Pendente%20de%20Flores%20Rosa.jpg', this)">🤍</button>
+      <img src="adolescente/Pendente%20de%20Flores%20Rosa.jpg" alt="Pendente de Flores Rosa" onclick="abrirModal('adolescente/Pendente%20de%20Flores%20Rosa.jpg')">
+      <span>Pendente de Flores Rosa</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Plantas%20Clean%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Plantas%20Clean%20%28STILL%29.jpg" alt="Plantas Clean (STILL)" onclick="abrirModal('adolescente/Plantas%20Clean%20%28STILL%29.jpg')">
+      <span>Plantas Clean (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Plantas%20Clean%202%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Plantas%20Clean%202%20%282%29.jpg" alt="Plantas Clean 2" onclick="abrirModal('adolescente/Plantas%20Clean%202%20%282%29.jpg')">
+      <span>Plantas Clean 2</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Plantas%20Clean%202.jpg', this)">🤍</button>
+      <img src="adolescente/Plantas%20Clean%202.jpg" alt="Plantas Clean" onclick="abrirModal('adolescente/Plantas%20Clean%202.jpg')">
+      <span>Plantas Clean</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Plantas%20Clean.jpg', this)">🤍</button>
+      <img src="adolescente/Plantas%20Clean.jpg" alt="Plantas Clean" onclick="abrirModal('adolescente/Plantas%20Clean.jpg')">
+      <span>Plantas Clean</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Raminhos%20Aquarela%20%282%29.jpg', this)">🤍</button>
+      <img src="adolescente/Raminhos%20Aquarela%20%282%29.jpg" alt="Raminhos Aquarela" onclick="abrirModal('adolescente/Raminhos%20Aquarela%20%282%29.jpg')">
+      <span>Raminhos Aquarela</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Raminhos%20Aquarela%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Raminhos%20Aquarela%20%28STILL%29.jpg" alt="Raminhos Aquarela (STILL)" onclick="abrirModal('adolescente/Raminhos%20Aquarela%20%28STILL%29.jpg')">
+      <span>Raminhos Aquarela (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Raminhos%20Aquarela%202.jpg', this)">🤍</button>
+      <img src="adolescente/Raminhos%20Aquarela%202.jpg" alt="Raminhos Aquarela" onclick="abrirModal('adolescente/Raminhos%20Aquarela%202.jpg')">
+      <span>Raminhos Aquarela</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Raminhos%20Aquarela.jpg', this)">🤍</button>
+      <img src="adolescente/Raminhos%20Aquarela.jpg" alt="Raminhos Aquarela" onclick="abrirModal('adolescente/Raminhos%20Aquarela.jpg')">
+      <span>Raminhos Aquarela</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Ramos%20de%20Salgueiro%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Ramos%20de%20Salgueiro%20%28STILL%29.jpg" alt="Ramos de Salgueiro (STILL)" onclick="abrirModal('adolescente/Ramos%20de%20Salgueiro%20%28STILL%29.jpg')">
+      <span>Ramos de Salgueiro (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Surf%20Girls%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Surf%20Girls%20%28STILL%29.jpg" alt="Surf Girls (STILL)" onclick="abrirModal('adolescente/Surf%20Girls%20%28STILL%29.jpg')">
+      <span>Surf Girls (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Textura%20Degrade%20Areia%20e%20Azul.jpg', this)">🤍</button>
+      <img src="adolescente/Textura%20Degrade%20Areia%20e%20Azul.jpg" alt="Textura Degrade Areia e Azul" onclick="abrirModal('adolescente/Textura%20Degrade%20Areia%20e%20Azul.jpg')">
+      <span>Textura Degrade Areia e Azul</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Urban%20Buildings%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Urban%20Buildings%20%28STILL%29.jpg" alt="Urban Buildings (STILL)" onclick="abrirModal('adolescente/Urban%20Buildings%20%28STILL%29.jpg')">
+      <span>Urban Buildings (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Urban%20Buildings.jpg', this)">🤍</button>
+      <img src="adolescente/Urban%20Buildings.jpg" alt="Urban Buildings" onclick="abrirModal('adolescente/Urban%20Buildings.jpg')">
+      <span>Urban Buildings</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Vintage%20Kids%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Vintage%20Kids%20%28STILL%29.jpg" alt="Vintage Kids (STILL)" onclick="abrirModal('adolescente/Vintage%20Kids%20%28STILL%29.jpg')">
+      <span>Vintage Kids (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Vintage%20Kids.jpg', this)">🤍</button>
+      <img src="adolescente/Vintage%20Kids.jpg" alt="Vintage Kids" onclick="abrirModal('adolescente/Vintage%20Kids.jpg')">
+      <span>Vintage Kids</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Zara%20Cimento%20Queimado%20Black%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Zara%20Cimento%20Queimado%20Black%20%28STILL%29.jpg" alt="Zara Cimento Queimado Black (STILL)" onclick="abrirModal('adolescente/Zara%20Cimento%20Queimado%20Black%20%28STILL%29.jpg')">
+      <span>Zara Cimento Queimado Black (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Zara%20Cimento%20Queimado%20Black.jpg', this)">🤍</button>
+      <img src="adolescente/Zara%20Cimento%20Queimado%20Black.jpg" alt="Zara Cimento Queimado Black" onclick="abrirModal('adolescente/Zara%20Cimento%20Queimado%20Black.jpg')">
+      <span>Zara Cimento Queimado Black</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Zara%20Marmore%20Gold%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Zara%20Marmore%20Gold%20%28STILL%29.jpg" alt="Zara Marmore Gold (STILL)" onclick="abrirModal('adolescente/Zara%20Marmore%20Gold%20%28STILL%29.jpg')">
+      <span>Zara Marmore Gold (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Zara%20Marmore%20Rose%20Gold%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Zara%20Marmore%20Rose%20Gold%20%28STILL%29.jpg" alt="Zara Marmore Rose Gold (STILL)" onclick="abrirModal('adolescente/Zara%20Marmore%20Rose%20Gold%20%28STILL%29.jpg')">
+      <span>Zara Marmore Rose Gold (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Zara%20Marmore%20Rose%20Gold.jpg', this)">🤍</button>
+      <img src="adolescente/Zara%20Marmore%20Rose%20Gold.jpg" alt="Zara Marmore Rose Gold" onclick="abrirModal('adolescente/Zara%20Marmore%20Rose%20Gold.jpg')">
+      <span>Zara Marmore Rose Gold</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Zara%20Prata%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Zara%20Prata%20Cinza%20%28STILL%29.jpg" alt="Zara Prata Cinza (STILL)" onclick="abrirModal('adolescente/Zara%20Prata%20Cinza%20%28STILL%29.jpg')">
+      <span>Zara Prata Cinza (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Zara%20Prata%20Cinza.jpg', this)">🤍</button>
+      <img src="adolescente/Zara%20Prata%20Cinza.jpg" alt="Zara Prata Cinza" onclick="abrirModal('adolescente/Zara%20Prata%20Cinza.jpg')">
+      <span>Zara Prata Cinza</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Zara%20Rose%20Gold%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Zara%20Rose%20Gold%20%28STILL%29.jpg" alt="Zara Rose Gold (STILL)" onclick="abrirModal('adolescente/Zara%20Rose%20Gold%20%28STILL%29.jpg')">
+      <span>Zara Rose Gold (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Zara%20Rose%20Gold%20Clean%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/Zara%20Rose%20Gold%20Clean%20%28STILL%29.jpg" alt="Zara Rose Gold Clean (STILL)" onclick="abrirModal('adolescente/Zara%20Rose%20Gold%20Clean%20%28STILL%29.jpg')">
+      <span>Zara Rose Gold Clean (STILL)</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Zara%20Rose%20Gold%20Clean.jpg', this)">🤍</button>
+      <img src="adolescente/Zara%20Rose%20Gold%20Clean.jpg" alt="Zara Rose Gold Clean" onclick="abrirModal('adolescente/Zara%20Rose%20Gold%20Clean.jpg')">
+      <span>Zara Rose Gold Clean</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/Zara%20Rose%20Gold.jpg', this)">🤍</button>
+      <img src="adolescente/Zara%20Rose%20Gold.jpg" alt="Zara Rose Gold" onclick="abrirModal('adolescente/Zara%20Rose%20Gold.jpg')">
+      <span>Zara Rose Gold</span>
+    </div><div class="card">
+      <button class="favorito-btn" onclick="toggleFavorito('infantil/adolescente/%C3%81rvore%20Cerejeira%20de%20Outono%20%28STILL%29.jpg', this)">🤍</button>
+      <img src="adolescente/%C3%81rvore%20Cerejeira%20de%20Outono%20%28STILL%29.jpg" alt="Árvore Cerejeira de Outono (STILL)" onclick="abrirModal('adolescente/%C3%81rvore%20Cerejeira%20de%20Outono%20%28STILL%29.jpg')">
+      <span>Árvore Cerejeira de Outono (STILL)</span>
+    </div>
+</div>
+<div class="modal" id="modal">
+  <img id="modal-img" src="">
+  <div class="modal-btns">
+    <button onclick="baixarAtual()" class="btn">📥 Salvar imagem</button>
+    <button onclick="fecharModal()" class="btn">✖ Fechar</button>
+  </div>
+</div>
+<script src="https://unpkg.com/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
+<script>
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  let panzoomInstance;
+  function abrirModal(src) { modal.style.display = 'flex'; modalImg.src = src; panzoomInstance = Panzoom(modalImg); }
+  function fecharModal() { modal.style.display = 'none'; if (panzoomInstance) panzoomInstance.destroy(); }
+  function baixarAtual() {
+    const link = document.createElement('a');
+    link.href = modalImg.src;
+    link.download = decodeURIComponent(modalImg.src.split('/').pop());
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+  function toggleFavorito(src, el) { let f = JSON.parse(localStorage.getItem('favoritos'))||[]; const i = f.indexOf(src); if (i>=0) { f.splice(i,1); el.textContent='🤍'; } else { f.push(src); el.textContent='❤️'; } localStorage.setItem('favoritos', JSON.stringify(f)); }
+</script>
+</body>
+</html>
