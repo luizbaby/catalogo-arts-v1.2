@@ -16,6 +16,7 @@
     .card { background: white; color: black; padding: 10px; border-radius: 10px; box-shadow: 0 2px 8px rgba(255,255,255,0.1); text-align: center; position: relative; text-decoration: none; }
     .card img { width: 100%; border-radius: 8px; cursor: pointer; }
     .card span { display: block; margin-top: 8px; font-weight: 400; color: black; text-decoration: none; }
+    a.card:link, a.card:visited, a.card:hover, a.card:active { text-decoration: none; color: inherit; }
     .favorito-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer; }
     .favorito-btn.favorito { color: red; }
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; }
@@ -33,299 +34,299 @@
 </div>
 <div class="grid">
 <div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Caminho%20da%20Floresta%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Caminho%20da%20Floresta%20%282%29.jpg" onclick="toggleFavorito('adulto/paisagem/Caminho%20da%20Floresta%20%282%29.jpg', this)">🤍</button>
       <img src="paisagem/Caminho%20da%20Floresta%20%282%29.jpg" alt="Caminho da Floresta" onclick="abrirModal('paisagem/Caminho%20da%20Floresta%20%282%29.jpg')">
       <span>Caminho da Floresta</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Caminho%20da%20Floresta%20%283%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Caminho%20da%20Floresta%20%283%29.jpg" onclick="toggleFavorito('adulto/paisagem/Caminho%20da%20Floresta%20%283%29.jpg', this)">🤍</button>
       <img src="paisagem/Caminho%20da%20Floresta%20%283%29.jpg" alt="Caminho da Floresta" onclick="abrirModal('paisagem/Caminho%20da%20Floresta%20%283%29.jpg')">
       <span>Caminho da Floresta</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Caminho%20da%20Floresta%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Caminho%20da%20Floresta%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Caminho%20da%20Floresta%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Caminho%20da%20Floresta%20%28STILL%29.jpg" alt="Caminho da Floresta (STILL)" onclick="abrirModal('paisagem/Caminho%20da%20Floresta%20%28STILL%29.jpg')">
       <span>Caminho da Floresta (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Caminho%20da%20Floresta.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Caminho%20da%20Floresta.jpg" onclick="toggleFavorito('adulto/paisagem/Caminho%20da%20Floresta.jpg', this)">🤍</button>
       <img src="paisagem/Caminho%20da%20Floresta.jpg" alt="Caminho da Floresta" onclick="abrirModal('paisagem/Caminho%20da%20Floresta.jpg')">
       <span>Caminho da Floresta</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Capim%20dos%20Pampas%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Capim%20dos%20Pampas%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Capim%20dos%20Pampas%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Capim%20dos%20Pampas%20%28STILL%29.jpg" alt="Capim dos Pampas (STILL)" onclick="abrirModal('paisagem/Capim%20dos%20Pampas%20%28STILL%29.jpg')">
       <span>Capim dos Pampas (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Capim%20dos%20Pampas.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Capim%20dos%20Pampas.jpg" onclick="toggleFavorito('adulto/paisagem/Capim%20dos%20Pampas.jpg', this)">🤍</button>
       <img src="paisagem/Capim%20dos%20Pampas.jpg" alt="Capim dos Pampas" onclick="abrirModal('paisagem/Capim%20dos%20Pampas.jpg')">
       <span>Capim dos Pampas</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Areia%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Cisnes%20Areia%20%282%29.jpg" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Areia%20%282%29.jpg', this)">🤍</button>
       <img src="paisagem/Cisnes%20Areia%20%282%29.jpg" alt="Cisnes Areia" onclick="abrirModal('paisagem/Cisnes%20Areia%20%282%29.jpg')">
       <span>Cisnes Areia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Cisnes%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Cisnes%20Areia%20%28STILL%29.jpg" alt="Cisnes Areia (STILL)" onclick="abrirModal('paisagem/Cisnes%20Areia%20%28STILL%29.jpg')">
       <span>Cisnes Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Areia.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Cisnes%20Areia.jpg" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Areia.jpg', this)">🤍</button>
       <img src="paisagem/Cisnes%20Areia.jpg" alt="Cisnes Areia" onclick="abrirModal('paisagem/Cisnes%20Areia.jpg')">
       <span>Cisnes Areia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Azul%20Marinho%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Cisnes%20Azul%20Marinho%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Azul%20Marinho%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Cisnes%20Azul%20Marinho%20%28STILL%29.jpg" alt="Cisnes Azul Marinho (STILL)" onclick="abrirModal('paisagem/Cisnes%20Azul%20Marinho%20%28STILL%29.jpg')">
       <span>Cisnes Azul Marinho (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Azul%20Marinho.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Cisnes%20Azul%20Marinho.jpg" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Azul%20Marinho.jpg', this)">🤍</button>
       <img src="paisagem/Cisnes%20Azul%20Marinho.jpg" alt="Cisnes Azul Marinho" onclick="abrirModal('paisagem/Cisnes%20Azul%20Marinho.jpg')">
       <span>Cisnes Azul Marinho</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Azul.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Cisnes%20Azul.jpg" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Azul.jpg', this)">🤍</button>
       <img src="paisagem/Cisnes%20Azul.jpg" alt="Cisnes Azul" onclick="abrirModal('paisagem/Cisnes%20Azul.jpg')">
       <span>Cisnes Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Rosa%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Cisnes%20Rosa%20%282%29.jpg" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Rosa%20%282%29.jpg', this)">🤍</button>
       <img src="paisagem/Cisnes%20Rosa%20%282%29.jpg" alt="Cisnes Rosa" onclick="abrirModal('paisagem/Cisnes%20Rosa%20%282%29.jpg')">
       <span>Cisnes Rosa</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Cisnes%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Cisnes%20Rosa%20%28STILL%29.jpg" alt="Cisnes Rosa (STILL)" onclick="abrirModal('paisagem/Cisnes%20Rosa%20%28STILL%29.jpg')">
       <span>Cisnes Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Rosa.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Cisnes%20Rosa.jpg" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Rosa.jpg', this)">🤍</button>
       <img src="paisagem/Cisnes%20Rosa.jpg" alt="Cisnes Rosa" onclick="abrirModal('paisagem/Cisnes%20Rosa.jpg')">
       <span>Cisnes Rosa</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Verde%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Cisnes%20Verde%20%282%29.jpg" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Verde%20%282%29.jpg', this)">🤍</button>
       <img src="paisagem/Cisnes%20Verde%20%282%29.jpg" alt="Cisnes Verde" onclick="abrirModal('paisagem/Cisnes%20Verde%20%282%29.jpg')">
       <span>Cisnes Verde</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Cisnes%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Cisnes%20Verde%20%28STILL%29.jpg" alt="Cisnes Verde (STILL)" onclick="abrirModal('paisagem/Cisnes%20Verde%20%28STILL%29.jpg')">
       <span>Cisnes Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Verde%20Claro%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Cisnes%20Verde%20Claro%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Verde%20Claro%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Cisnes%20Verde%20Claro%20%28STILL%29.jpg" alt="Cisnes Verde Claro (STILL)" onclick="abrirModal('paisagem/Cisnes%20Verde%20Claro%20%28STILL%29.jpg')">
       <span>Cisnes Verde Claro (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Verde.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Cisnes%20Verde.jpg" onclick="toggleFavorito('adulto/paisagem/Cisnes%20Verde.jpg', this)">🤍</button>
       <img src="paisagem/Cisnes%20Verde.jpg" alt="Cisnes Verde" onclick="abrirModal('paisagem/Cisnes%20Verde.jpg')">
       <span>Cisnes Verde</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Fim%20de%20Tarde%20na%20Praia%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Fim%20de%20Tarde%20na%20Praia%20%282%29.jpg" onclick="toggleFavorito('adulto/paisagem/Fim%20de%20Tarde%20na%20Praia%20%282%29.jpg', this)">🤍</button>
       <img src="paisagem/Fim%20de%20Tarde%20na%20Praia%20%282%29.jpg" alt="Fim de Tarde na Praia" onclick="abrirModal('paisagem/Fim%20de%20Tarde%20na%20Praia%20%282%29.jpg')">
       <span>Fim de Tarde na Praia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Fim%20de%20Tarde%20na%20Praia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Fim%20de%20Tarde%20na%20Praia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Fim%20de%20Tarde%20na%20Praia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Fim%20de%20Tarde%20na%20Praia%20%28STILL%29.jpg" alt="Fim de Tarde na Praia (STILL)" onclick="abrirModal('paisagem/Fim%20de%20Tarde%20na%20Praia%20%28STILL%29.jpg')">
       <span>Fim de Tarde na Praia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Fim%20de%20Tarde%20na%20Praia.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Fim%20de%20Tarde%20na%20Praia.jpg" onclick="toggleFavorito('adulto/paisagem/Fim%20de%20Tarde%20na%20Praia.jpg', this)">🤍</button>
       <img src="paisagem/Fim%20de%20Tarde%20na%20Praia.jpg" alt="Fim de Tarde na Praia" onclick="abrirModal('paisagem/Fim%20de%20Tarde%20na%20Praia.jpg')">
       <span>Fim de Tarde na Praia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta%20%282%29.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta%20%282%29.jpg', this)">🤍</button>
       <img src="paisagem/Floresta%20%282%29.jpg" alt="Floresta" onclick="abrirModal('paisagem/Floresta%20%282%29.jpg')">
       <span>Floresta</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Floresta%20%28STILL%29.jpg" alt="Floresta (STILL)" onclick="abrirModal('paisagem/Floresta%20%28STILL%29.jpg')">
       <span>Floresta (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta%20Encanto%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta%20Encanto%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta%20Encanto%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Floresta%20Encanto%20%28STILL%29.jpg" alt="Floresta Encanto (STILL)" onclick="abrirModal('paisagem/Floresta%20Encanto%20%28STILL%29.jpg')">
       <span>Floresta Encanto (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta%20Laranja%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta%20Laranja%20%282%29.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta%20Laranja%20%282%29.jpg', this)">🤍</button>
       <img src="paisagem/Floresta%20Laranja%20%282%29.jpg" alt="Floresta Laranja" onclick="abrirModal('paisagem/Floresta%20Laranja%20%282%29.jpg')">
       <span>Floresta Laranja</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta%20Laranja%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta%20Laranja%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta%20Laranja%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Floresta%20Laranja%20%28STILL%29.jpg" alt="Floresta Laranja (STILL)" onclick="abrirModal('paisagem/Floresta%20Laranja%20%28STILL%29.jpg')">
       <span>Floresta Laranja (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta%20Laranja.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta%20Laranja.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta%20Laranja.jpg', this)">🤍</button>
       <img src="paisagem/Floresta%20Laranja.jpg" alt="Floresta Laranja" onclick="abrirModal('paisagem/Floresta%20Laranja.jpg')">
       <span>Floresta Laranja</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta%20nas%20Montanhas%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta%20nas%20Montanhas%20%282%29.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta%20nas%20Montanhas%20%282%29.jpg', this)">🤍</button>
       <img src="paisagem/Floresta%20nas%20Montanhas%20%282%29.jpg" alt="Floresta nas Montanhas" onclick="abrirModal('paisagem/Floresta%20nas%20Montanhas%20%282%29.jpg')">
       <span>Floresta nas Montanhas</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta%20nas%20Montanhas%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta%20nas%20Montanhas%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta%20nas%20Montanhas%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Floresta%20nas%20Montanhas%20%28STILL%29.jpg" alt="Floresta nas Montanhas (STILL)" onclick="abrirModal('paisagem/Floresta%20nas%20Montanhas%20%28STILL%29.jpg')">
       <span>Floresta nas Montanhas (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta%20nas%20Montanhas.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta%20nas%20Montanhas.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta%20nas%20Montanhas.jpg', this)">🤍</button>
       <img src="paisagem/Floresta%20nas%20Montanhas.jpg" alt="Floresta nas Montanhas" onclick="abrirModal('paisagem/Floresta%20nas%20Montanhas.jpg')">
       <span>Floresta nas Montanhas</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta%20Nebulosa%20Azul%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta%20Nebulosa%20Azul%20%282%29.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta%20Nebulosa%20Azul%20%282%29.jpg', this)">🤍</button>
       <img src="paisagem/Floresta%20Nebulosa%20Azul%20%282%29.jpg" alt="Floresta Nebulosa Azul" onclick="abrirModal('paisagem/Floresta%20Nebulosa%20Azul%20%282%29.jpg')">
       <span>Floresta Nebulosa Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta%20Nebulosa%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta%20Nebulosa%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta%20Nebulosa%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Floresta%20Nebulosa%20Azul%20%28STILL%29.jpg" alt="Floresta Nebulosa Azul (STILL)" onclick="abrirModal('paisagem/Floresta%20Nebulosa%20Azul%20%28STILL%29.jpg')">
       <span>Floresta Nebulosa Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta%20Nebulosa%20Azul.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta%20Nebulosa%20Azul.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta%20Nebulosa%20Azul.jpg', this)">🤍</button>
       <img src="paisagem/Floresta%20Nebulosa%20Azul.jpg" alt="Floresta Nebulosa Azul" onclick="abrirModal('paisagem/Floresta%20Nebulosa%20Azul.jpg')">
       <span>Floresta Nebulosa Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta%20Tropical%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta%20Tropical%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta%20Tropical%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Floresta%20Tropical%20%28STILL%29.jpg" alt="Floresta Tropical (STILL)" onclick="abrirModal('paisagem/Floresta%20Tropical%20%28STILL%29.jpg')">
       <span>Floresta Tropical (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Floresta.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Floresta.jpg" onclick="toggleFavorito('adulto/paisagem/Floresta.jpg', this)">🤍</button>
       <img src="paisagem/Floresta.jpg" alt="Floresta" onclick="abrirModal('paisagem/Floresta.jpg')">
       <span>Floresta</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Folhagem%20Bananeira%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Folhagem%20Bananeira%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Folhagem%20Bananeira%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Folhagem%20Bananeira%20%28STILL%29.jpg" alt="Folhagem Bananeira (STILL)" onclick="abrirModal('paisagem/Folhagem%20Bananeira%20%28STILL%29.jpg')">
       <span>Folhagem Bananeira (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Folhagem%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Folhagem%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Folhagem%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Folhagem%20Verde%20%28STILL%29.jpg" alt="Folhagem Verde (STILL)" onclick="abrirModal('paisagem/Folhagem%20Verde%20%28STILL%29.jpg')">
       <span>Folhagem Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Gal%C3%A1xia%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Gal%C3%A1xia%20%282%29.jpg" onclick="toggleFavorito('adulto/paisagem/Gal%C3%A1xia%20%282%29.jpg', this)">🤍</button>
       <img src="paisagem/Gal%C3%A1xia%20%282%29.jpg" alt="Galáxia" onclick="abrirModal('paisagem/Gal%C3%A1xia%20%282%29.jpg')">
       <span>Galáxia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Gal%C3%A1xia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Gal%C3%A1xia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Gal%C3%A1xia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Gal%C3%A1xia%20%28STILL%29.jpg" alt="Galáxia (STILL)" onclick="abrirModal('paisagem/Gal%C3%A1xia%20%28STILL%29.jpg')">
       <span>Galáxia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Gal%C3%A1xia%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Gal%C3%A1xia%202.jpg" onclick="toggleFavorito('adulto/paisagem/Gal%C3%A1xia%202.jpg', this)">🤍</button>
       <img src="paisagem/Gal%C3%A1xia%202.jpg" alt="Galáxia" onclick="abrirModal('paisagem/Gal%C3%A1xia%202.jpg')">
       <span>Galáxia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Gal%C3%A1xia.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Gal%C3%A1xia.jpg" onclick="toggleFavorito('adulto/paisagem/Gal%C3%A1xia.jpg', this)">🤍</button>
       <img src="paisagem/Gal%C3%A1xia.jpg" alt="Galáxia" onclick="abrirModal('paisagem/Gal%C3%A1xia.jpg')">
       <span>Galáxia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Janela%20para%20Marina%20de%20Dubai%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Janela%20para%20Marina%20de%20Dubai%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Janela%20para%20Marina%20de%20Dubai%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Janela%20para%20Marina%20de%20Dubai%20%28STILL%29.jpg" alt="Janela para Marina de Dubai (STILL)" onclick="abrirModal('paisagem/Janela%20para%20Marina%20de%20Dubai%20%28STILL%29.jpg')">
       <span>Janela para Marina de Dubai (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Janela%20para%20Marina%20de%20Dubai.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Janela%20para%20Marina%20de%20Dubai.jpg" onclick="toggleFavorito('adulto/paisagem/Janela%20para%20Marina%20de%20Dubai.jpg', this)">🤍</button>
       <img src="paisagem/Janela%20para%20Marina%20de%20Dubai.jpg" alt="Janela para Marina de Dubai" onclick="abrirModal('paisagem/Janela%20para%20Marina%20de%20Dubai.jpg')">
       <span>Janela para Marina de Dubai</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Jardim%20Oriental%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Jardim%20Oriental%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Jardim%20Oriental%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Jardim%20Oriental%20%28STILL%29.jpg" alt="Jardim Oriental (STILL)" onclick="abrirModal('paisagem/Jardim%20Oriental%20%28STILL%29.jpg')">
       <span>Jardim Oriental (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Laranjeiras%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Laranjeiras%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Laranjeiras%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Laranjeiras%20%28STILL%29.jpg" alt="Laranjeiras (STILL)" onclick="abrirModal('paisagem/Laranjeiras%20%28STILL%29.jpg')">
       <span>Laranjeiras (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Mata%20Monocrom%C3%A1tica%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Mata%20Monocrom%C3%A1tica%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Mata%20Monocrom%C3%A1tica%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Mata%20Monocrom%C3%A1tica%20%28STILL%29.jpg" alt="Mata Monocromática (STILL)" onclick="abrirModal('paisagem/Mata%20Monocrom%C3%A1tica%20%28STILL%29.jpg')">
       <span>Mata Monocromática (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Mata%20Monocrom%C3%A1tica.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Mata%20Monocrom%C3%A1tica.jpg" onclick="toggleFavorito('adulto/paisagem/Mata%20Monocrom%C3%A1tica.jpg', this)">🤍</button>
       <img src="paisagem/Mata%20Monocrom%C3%A1tica.jpg" alt="Mata Monocromática" onclick="abrirModal('paisagem/Mata%20Monocrom%C3%A1tica.jpg')">
       <span>Mata Monocromática</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Mata%20Natural%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Mata%20Natural%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Mata%20Natural%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Mata%20Natural%20%28STILL%29.jpg" alt="Mata Natural (STILL)" onclick="abrirModal('paisagem/Mata%20Natural%20%28STILL%29.jpg')">
       <span>Mata Natural (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Mata%20Natural%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Mata%20Natural%202.jpg" onclick="toggleFavorito('adulto/paisagem/Mata%20Natural%202.jpg', this)">🤍</button>
       <img src="paisagem/Mata%20Natural%202.jpg" alt="Mata Natural" onclick="abrirModal('paisagem/Mata%20Natural%202.jpg')">
       <span>Mata Natural</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Mata%20Natural.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Mata%20Natural.jpg" onclick="toggleFavorito('adulto/paisagem/Mata%20Natural.jpg', this)">🤍</button>
       <img src="paisagem/Mata%20Natural.jpg" alt="Mata Natural" onclick="abrirModal('paisagem/Mata%20Natural.jpg')">
       <span>Mata Natural</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Mata%20Oriental%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Mata%20Oriental%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Mata%20Oriental%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Mata%20Oriental%20%28STILL%29.jpg" alt="Mata Oriental (STILL)" onclick="abrirModal('paisagem/Mata%20Oriental%20%28STILL%29.jpg')">
       <span>Mata Oriental (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Mata%20Oriental.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Mata%20Oriental.jpg" onclick="toggleFavorito('adulto/paisagem/Mata%20Oriental.jpg', this)">🤍</button>
       <img src="paisagem/Mata%20Oriental.jpg" alt="Mata Oriental" onclick="abrirModal('paisagem/Mata%20Oriental.jpg')">
       <span>Mata Oriental</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Paisagem%20Mata%20Colors%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Paisagem%20Mata%20Colors%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Paisagem%20Mata%20Colors%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Paisagem%20Mata%20Colors%20%28STILL%29.jpg" alt="Paisagem Mata Colors (STILL)" onclick="abrirModal('paisagem/Paisagem%20Mata%20Colors%20%28STILL%29.jpg')">
       <span>Paisagem Mata Colors (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Paisagem%20Mata%20Colors%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Paisagem%20Mata%20Colors%202.jpg" onclick="toggleFavorito('adulto/paisagem/Paisagem%20Mata%20Colors%202.jpg', this)">🤍</button>
       <img src="paisagem/Paisagem%20Mata%20Colors%202.jpg" alt="Paisagem Mata Colors" onclick="abrirModal('paisagem/Paisagem%20Mata%20Colors%202.jpg')">
       <span>Paisagem Mata Colors</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Paisagem%20Mata%20Colors.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Paisagem%20Mata%20Colors.jpg" onclick="toggleFavorito('adulto/paisagem/Paisagem%20Mata%20Colors.jpg', this)">🤍</button>
       <img src="paisagem/Paisagem%20Mata%20Colors.jpg" alt="Paisagem Mata Colors" onclick="abrirModal('paisagem/Paisagem%20Mata%20Colors.jpg')">
       <span>Paisagem Mata Colors</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Paisagem%20Tropical%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Paisagem%20Tropical%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Paisagem%20Tropical%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Paisagem%20Tropical%20%28STILL%29.jpg" alt="Paisagem Tropical (STILL)" onclick="abrirModal('paisagem/Paisagem%20Tropical%20%28STILL%29.jpg')">
       <span>Paisagem Tropical (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Pantanal%20Colors%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Pantanal%20Colors%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Pantanal%20Colors%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Pantanal%20Colors%20%28STILL%29.jpg" alt="Pantanal Colors (STILL)" onclick="abrirModal('paisagem/Pantanal%20Colors%20%28STILL%29.jpg')">
       <span>Pantanal Colors (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Por%20do%20Sol%20na%20Praia%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Por%20do%20Sol%20na%20Praia%20%282%29.jpg" onclick="toggleFavorito('adulto/paisagem/Por%20do%20Sol%20na%20Praia%20%282%29.jpg', this)">🤍</button>
       <img src="paisagem/Por%20do%20Sol%20na%20Praia%20%282%29.jpg" alt="Por do Sol na Praia" onclick="abrirModal('paisagem/Por%20do%20Sol%20na%20Praia%20%282%29.jpg')">
       <span>Por do Sol na Praia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Por%20do%20Sol%20na%20Praia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Por%20do%20Sol%20na%20Praia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Por%20do%20Sol%20na%20Praia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Por%20do%20Sol%20na%20Praia%20%28STILL%29.jpg" alt="Por do Sol na Praia (STILL)" onclick="abrirModal('paisagem/Por%20do%20Sol%20na%20Praia%20%28STILL%29.jpg')">
       <span>Por do Sol na Praia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Por%20do%20Sol%20na%20Praia.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Por%20do%20Sol%20na%20Praia.jpg" onclick="toggleFavorito('adulto/paisagem/Por%20do%20Sol%20na%20Praia.jpg', this)">🤍</button>
       <img src="paisagem/Por%20do%20Sol%20na%20Praia.jpg" alt="Por do Sol na Praia" onclick="abrirModal('paisagem/Por%20do%20Sol%20na%20Praia.jpg')">
       <span>Por do Sol na Praia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Praia%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Praia%20%282%29.jpg" onclick="toggleFavorito('adulto/paisagem/Praia%20%282%29.jpg', this)">🤍</button>
       <img src="paisagem/Praia%20%282%29.jpg" alt="Praia" onclick="abrirModal('paisagem/Praia%20%282%29.jpg')">
       <span>Praia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Praia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Praia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Praia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Praia%20%28STILL%29.jpg" alt="Praia (STILL)" onclick="abrirModal('paisagem/Praia%20%28STILL%29.jpg')">
       <span>Praia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Praia.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Praia.jpg" onclick="toggleFavorito('adulto/paisagem/Praia.jpg', this)">🤍</button>
       <img src="paisagem/Praia.jpg" alt="Praia" onclick="abrirModal('paisagem/Praia.jpg')">
       <span>Praia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/P%C3%A1ssaros%20Grou%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/P%C3%A1ssaros%20Grou%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/P%C3%A1ssaros%20Grou%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/P%C3%A1ssaros%20Grou%20Verde%20%28STILL%29.jpg" alt="Pássaros Grou Verde (STILL)" onclick="abrirModal('paisagem/P%C3%A1ssaros%20Grou%20Verde%20%28STILL%29.jpg')">
       <span>Pássaros Grou Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Ramos%20de%20Salgueiro%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Ramos%20de%20Salgueiro%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Ramos%20de%20Salgueiro%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Ramos%20de%20Salgueiro%20%28STILL%29.jpg" alt="Ramos de Salgueiro (STILL)" onclick="abrirModal('paisagem/Ramos%20de%20Salgueiro%20%28STILL%29.jpg')">
       <span>Ramos de Salgueiro (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Real%20Safari%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Real%20Safari%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Real%20Safari%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Real%20Safari%20%28STILL%29.jpg" alt="Real Safari (STILL)" onclick="abrirModal('paisagem/Real%20Safari%20%28STILL%29.jpg')">
       <span>Real Safari (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Safari%20Animais%20Aquarela%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Safari%20Animais%20Aquarela%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Safari%20Animais%20Aquarela%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Safari%20Animais%20Aquarela%20%28STILL%29.jpg" alt="Safari Animais Aquarela (STILL)" onclick="abrirModal('paisagem/Safari%20Animais%20Aquarela%20%28STILL%29.jpg')">
       <span>Safari Animais Aquarela (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Safari%20Paisagem%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Safari%20Paisagem%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Safari%20Paisagem%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Safari%20Paisagem%20%28STILL%29.jpg" alt="Safari Paisagem (STILL)" onclick="abrirModal('paisagem/Safari%20Paisagem%20%28STILL%29.jpg')">
       <span>Safari Paisagem (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Serra%20de%20Arauc%C3%A1rias%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Serra%20de%20Arauc%C3%A1rias%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Serra%20de%20Arauc%C3%A1rias%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Serra%20de%20Arauc%C3%A1rias%20%28STILL%29.jpg" alt="Serra de Araucárias (STILL)" onclick="abrirModal('paisagem/Serra%20de%20Arauc%C3%A1rias%20%28STILL%29.jpg')">
       <span>Serra de Araucárias (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Serra%20de%20Arauc%C3%A1rias%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Serra%20de%20Arauc%C3%A1rias%202.jpg" onclick="toggleFavorito('adulto/paisagem/Serra%20de%20Arauc%C3%A1rias%202.jpg', this)">🤍</button>
       <img src="paisagem/Serra%20de%20Arauc%C3%A1rias%202.jpg" alt="Serra de Araucárias" onclick="abrirModal('paisagem/Serra%20de%20Arauc%C3%A1rias%202.jpg')">
       <span>Serra de Araucárias</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Serra%20de%20Arauc%C3%A1rias.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Serra%20de%20Arauc%C3%A1rias.jpg" onclick="toggleFavorito('adulto/paisagem/Serra%20de%20Arauc%C3%A1rias.jpg', this)">🤍</button>
       <img src="paisagem/Serra%20de%20Arauc%C3%A1rias.jpg" alt="Serra de Araucárias" onclick="abrirModal('paisagem/Serra%20de%20Arauc%C3%A1rias.jpg')">
       <span>Serra de Araucárias</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Surf%20Girls%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Surf%20Girls%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Surf%20Girls%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Surf%20Girls%20%28STILL%29.jpg" alt="Surf Girls (STILL)" onclick="abrirModal('paisagem/Surf%20Girls%20%28STILL%29.jpg')">
       <span>Surf Girls (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/paisagem/Zoo%20Safari%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/paisagem/Zoo%20Safari%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/paisagem/Zoo%20Safari%20%28STILL%29.jpg', this)">🤍</button>
       <img src="paisagem/Zoo%20Safari%20%28STILL%29.jpg" alt="Zoo Safari (STILL)" onclick="abrirModal('paisagem/Zoo%20Safari%20%28STILL%29.jpg')">
       <span>Zoo Safari (STILL)</span>
     </div>
@@ -333,8 +334,8 @@
 <div class="modal" id="modal">
   <img id="modal-img" src="">
   <div class="modal-btns">
-    <button onclick="baixarAtual()" class="btn">📅 Salvar imagem</button>
-    <button onclick="fecharModal()" class="btn">&times; Fechar</button>
+    <button onclick="baixarAtual()" class="btn">📥 Salvar imagem</button>
+    <button onclick="fecharModal()" class="btn">✖ Fechar</button>
   </div>
 </div>
 <script src="https://unpkg.com/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
@@ -355,15 +356,18 @@
   function toggleFavorito(src, el) {
     let f = JSON.parse(localStorage.getItem('favoritos'))||[];
     const i = f.indexOf(src);
-    if (i>=0) { f.splice(i,1); el.textContent='❤️'; el.classList.remove('favorito'); }
+    if (i>=0) { f.splice(i,1); el.textContent='🤍'; el.classList.remove('favorito'); }
     else { f.push(src); el.textContent='❤️'; el.classList.add('favorito'); }
     localStorage.setItem('favoritos', JSON.stringify(f));
   }
   document.addEventListener('DOMContentLoaded', () => {
     const favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
     document.querySelectorAll('.favorito-btn').forEach(btn => {
-      const src = btn.getAttribute('onclick').match(/'(.*?)'/)[1];
-      if (favoritos.includes(src)) { btn.classList.add('favorito'); btn.textContent = '❤️'; }
+      const src = btn.getAttribute('data-src');
+      if (favoritos.includes(src)) {
+        btn.classList.add('favorito');
+        btn.textContent = '❤️';
+      }
     });
   });
 </script>

@@ -16,6 +16,7 @@
     .card { background: white; color: black; padding: 10px; border-radius: 10px; box-shadow: 0 2px 8px rgba(255,255,255,0.1); text-align: center; position: relative; text-decoration: none; }
     .card img { width: 100%; border-radius: 8px; cursor: pointer; }
     .card span { display: block; margin-top: 8px; font-weight: 400; color: black; text-decoration: none; }
+    a.card:link, a.card:visited, a.card:hover, a.card:active { text-decoration: none; color: inherit; }
     .favorito-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer; }
     .favorito-btn.favorito { color: red; }
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; }
@@ -33,111 +34,111 @@
 </div>
 <div class="grid">
 <div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Aquarela%20Jardim%20com%20Borboletas%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Aquarela%20Jardim%20com%20Borboletas%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Aquarela%20Jardim%20com%20Borboletas%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Aquarela%20Jardim%20com%20Borboletas%20%28STILL%29.jpg" alt="Aquarela Jardim com Borboletas (STILL)" onclick="abrirModal('borboletas/Aquarela%20Jardim%20com%20Borboletas%20%28STILL%29.jpg')">
       <span>Aquarela Jardim com Borboletas (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Borboletas%20Arabesque%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Borboletas%20Arabesque%20%282%29.jpg" onclick="toggleFavorito('infantil/borboletas/Borboletas%20Arabesque%20%282%29.jpg', this)">🤍</button>
       <img src="borboletas/Borboletas%20Arabesque%20%282%29.jpg" alt="Borboletas Arabesque" onclick="abrirModal('borboletas/Borboletas%20Arabesque%20%282%29.jpg')">
       <span>Borboletas Arabesque</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Borboletas%20Arabesque%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Borboletas%20Arabesque%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Borboletas%20Arabesque%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Borboletas%20Arabesque%20%28STILL%29.jpg" alt="Borboletas Arabesque (STILL)" onclick="abrirModal('borboletas/Borboletas%20Arabesque%20%28STILL%29.jpg')">
       <span>Borboletas Arabesque (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Borboletas%20Arabesque.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Borboletas%20Arabesque.jpg" onclick="toggleFavorito('infantil/borboletas/Borboletas%20Arabesque.jpg', this)">🤍</button>
       <img src="borboletas/Borboletas%20Arabesque.jpg" alt="Borboletas Arabesque" onclick="abrirModal('borboletas/Borboletas%20Arabesque.jpg')">
       <span>Borboletas Arabesque</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Borboletas%20em%20Jardim%20Suspenso%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Borboletas%20em%20Jardim%20Suspenso%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Borboletas%20em%20Jardim%20Suspenso%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Borboletas%20em%20Jardim%20Suspenso%20%28STILL%29.jpg" alt="Borboletas em Jardim Suspenso (STILL)" onclick="abrirModal('borboletas/Borboletas%20em%20Jardim%20Suspenso%20%28STILL%29.jpg')">
       <span>Borboletas em Jardim Suspenso (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Borboletas%20em%20Jardim%20Suspenso.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Borboletas%20em%20Jardim%20Suspenso.jpg" onclick="toggleFavorito('infantil/borboletas/Borboletas%20em%20Jardim%20Suspenso.jpg', this)">🤍</button>
       <img src="borboletas/Borboletas%20em%20Jardim%20Suspenso.jpg" alt="Borboletas em Jardim Suspenso" onclick="abrirModal('borboletas/Borboletas%20em%20Jardim%20Suspenso.jpg')">
       <span>Borboletas em Jardim Suspenso</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Borboletas%20Off%20White%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Borboletas%20Off%20White%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Borboletas%20Off%20White%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Borboletas%20Off%20White%20%28STILL%29.jpg" alt="Borboletas Off White (STILL)" onclick="abrirModal('borboletas/Borboletas%20Off%20White%20%28STILL%29.jpg')">
       <span>Borboletas Off White (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Campos%20de%20Primavera%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Campos%20de%20Primavera%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Campos%20de%20Primavera%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Campos%20de%20Primavera%20%28STILL%29.jpg" alt="Campos de Primavera (STILL)" onclick="abrirModal('borboletas/Campos%20de%20Primavera%20%28STILL%29.jpg')">
       <span>Campos de Primavera (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Cogumelos%20e%20Fadinhas%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Cogumelos%20e%20Fadinhas%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Cogumelos%20e%20Fadinhas%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Cogumelos%20e%20Fadinhas%20%28STILL%29.jpg" alt="Cogumelos e Fadinhas (STILL)" onclick="abrirModal('borboletas/Cogumelos%20e%20Fadinhas%20%28STILL%29.jpg')">
       <span>Cogumelos e Fadinhas (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Deitada%20Sob%20as%20%C3%81rvores%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Deitada%20Sob%20as%20%C3%81rvores%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Deitada%20Sob%20as%20%C3%81rvores%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Deitada%20Sob%20as%20%C3%81rvores%20%28STILL%29.jpg" alt="Deitada Sob as Árvores (STILL)" onclick="abrirModal('borboletas/Deitada%20Sob%20as%20%C3%81rvores%20%28STILL%29.jpg')">
       <span>Deitada Sob as Árvores (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Floral%20Aquarela%20com%20Borboletas%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Floral%20Aquarela%20com%20Borboletas%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Floral%20Aquarela%20com%20Borboletas%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Floral%20Aquarela%20com%20Borboletas%20%28STILL%29.jpg" alt="Floral Aquarela com Borboletas (STILL)" onclick="abrirModal('borboletas/Floral%20Aquarela%20com%20Borboletas%20%28STILL%29.jpg')">
       <span>Floral Aquarela com Borboletas (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Flores%20do%20Campo%20Pendente%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Flores%20do%20Campo%20Pendente%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Flores%20do%20Campo%20Pendente%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Flores%20do%20Campo%20Pendente%20%28STILL%29.jpg" alt="Flores do Campo Pendente (STILL)" onclick="abrirModal('borboletas/Flores%20do%20Campo%20Pendente%20%28STILL%29.jpg')">
       <span>Flores do Campo Pendente (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Flores%20e%20Borboletas%20Allover%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Flores%20e%20Borboletas%20Allover%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Flores%20e%20Borboletas%20Allover%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Flores%20e%20Borboletas%20Allover%20%28STILL%29.jpg" alt="Flores e Borboletas Allover (STILL)" onclick="abrirModal('borboletas/Flores%20e%20Borboletas%20Allover%20%28STILL%29.jpg')">
       <span>Flores e Borboletas Allover (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Flores%20e%20Borboletas%20Aquarela%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Flores%20e%20Borboletas%20Aquarela%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Flores%20e%20Borboletas%20Aquarela%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Flores%20e%20Borboletas%20Aquarela%20%28STILL%29.jpg" alt="Flores e Borboletas Aquarela (STILL)" onclick="abrirModal('borboletas/Flores%20e%20Borboletas%20Aquarela%20%28STILL%29.jpg')">
       <span>Flores e Borboletas Aquarela (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Flores%20e%20Borboletas%20Aquarela.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Flores%20e%20Borboletas%20Aquarela.jpg" onclick="toggleFavorito('infantil/borboletas/Flores%20e%20Borboletas%20Aquarela.jpg', this)">🤍</button>
       <img src="borboletas/Flores%20e%20Borboletas%20Aquarela.jpg" alt="Flores e Borboletas Aquarela" onclick="abrirModal('borboletas/Flores%20e%20Borboletas%20Aquarela.jpg')">
       <span>Flores e Borboletas Aquarela</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Folhagem%20Pendente%20Elegance.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Folhagem%20Pendente%20Elegance.jpg" onclick="toggleFavorito('infantil/borboletas/Folhagem%20Pendente%20Elegance.jpg', this)">🤍</button>
       <img src="borboletas/Folhagem%20Pendente%20Elegance.jpg" alt="Folhagem Pendente Elegance" onclick="abrirModal('borboletas/Folhagem%20Pendente%20Elegance.jpg')">
       <span>Folhagem Pendente Elegance</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Folhagens%20Aquarela%20Verde%20e%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Folhagens%20Aquarela%20Verde%20e%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Folhagens%20Aquarela%20Verde%20e%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Folhagens%20Aquarela%20Verde%20e%20Rosa%20%28STILL%29.jpg" alt="Folhagens Aquarela Verde e Rosa (STILL)" onclick="abrirModal('borboletas/Folhagens%20Aquarela%20Verde%20e%20Rosa%20%28STILL%29.jpg')">
       <span>Folhagens Aquarela Verde e Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Infantil%20Arco%20%C3%8Dris%20e%20Cerejeira%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Infantil%20Arco%20%C3%8Dris%20e%20Cerejeira%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Infantil%20Arco%20%C3%8Dris%20e%20Cerejeira%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Infantil%20Arco%20%C3%8Dris%20e%20Cerejeira%20%28STILL%29.jpg" alt="Infantil Arco Íris e Cerejeira (STILL)" onclick="abrirModal('borboletas/Infantil%20Arco%20%C3%8Dris%20e%20Cerejeira%20%28STILL%29.jpg')">
       <span>Infantil Arco Íris e Cerejeira (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Infantil%20Primavera%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Infantil%20Primavera%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Infantil%20Primavera%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Infantil%20Primavera%20%28STILL%29.jpg" alt="Infantil Primavera (STILL)" onclick="abrirModal('borboletas/Infantil%20Primavera%20%28STILL%29.jpg')">
       <span>Infantil Primavera (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Jardim%20das%20Borboletas%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Jardim%20das%20Borboletas%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Jardim%20das%20Borboletas%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Jardim%20das%20Borboletas%20%28STILL%29.jpg" alt="Jardim das Borboletas (STILL)" onclick="abrirModal('borboletas/Jardim%20das%20Borboletas%20%28STILL%29.jpg')">
       <span>Jardim das Borboletas (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Jardim%20das%20Borboletas.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Jardim%20das%20Borboletas.jpg" onclick="toggleFavorito('infantil/borboletas/Jardim%20das%20Borboletas.jpg', this)">🤍</button>
       <img src="borboletas/Jardim%20das%20Borboletas.jpg" alt="Jardim das Borboletas" onclick="abrirModal('borboletas/Jardim%20das%20Borboletas.jpg')">
       <span>Jardim das Borboletas</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Jardim%20de%20Flores%20Delicadas%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Jardim%20de%20Flores%20Delicadas%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Jardim%20de%20Flores%20Delicadas%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Jardim%20de%20Flores%20Delicadas%20%28STILL%29.jpg" alt="Jardim de Flores Delicadas (STILL)" onclick="abrirModal('borboletas/Jardim%20de%20Flores%20Delicadas%20%28STILL%29.jpg')">
       <span>Jardim de Flores Delicadas (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Jardim%20Degrad%C3%AA%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Jardim%20Degrad%C3%AA%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Jardim%20Degrad%C3%AA%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Jardim%20Degrad%C3%AA%20%28STILL%29.jpg" alt="Jardim Degradê (STILL)" onclick="abrirModal('borboletas/Jardim%20Degrad%C3%AA%20%28STILL%29.jpg')">
       <span>Jardim Degradê (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Jardim%20Suave%20Falls%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Jardim%20Suave%20Falls%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Jardim%20Suave%20Falls%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Jardim%20Suave%20Falls%20%28STILL%29.jpg" alt="Jardim Suave Falls (STILL)" onclick="abrirModal('borboletas/Jardim%20Suave%20Falls%20%28STILL%29.jpg')">
       <span>Jardim Suave Falls (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Jardim%20Suspenso%20Clean%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Jardim%20Suspenso%20Clean%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Jardim%20Suspenso%20Clean%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Jardim%20Suspenso%20Clean%20%28STILL%29.jpg" alt="Jardim Suspenso Clean (STILL)" onclick="abrirModal('borboletas/Jardim%20Suspenso%20Clean%20%28STILL%29.jpg')">
       <span>Jardim Suspenso Clean (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Jardim%20Suspenso%20Soft%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Jardim%20Suspenso%20Soft%20%28STILL%29.jpg" onclick="toggleFavorito('infantil/borboletas/Jardim%20Suspenso%20Soft%20%28STILL%29.jpg', this)">🤍</button>
       <img src="borboletas/Jardim%20Suspenso%20Soft%20%28STILL%29.jpg" alt="Jardim Suspenso Soft (STILL)" onclick="abrirModal('borboletas/Jardim%20Suspenso%20Soft%20%28STILL%29.jpg')">
       <span>Jardim Suspenso Soft (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('infantil/borboletas/Jardim%20Vertical%20Colorido.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="infantil/borboletas/Jardim%20Vertical%20Colorido.jpg" onclick="toggleFavorito('infantil/borboletas/Jardim%20Vertical%20Colorido.jpg', this)">🤍</button>
       <img src="borboletas/Jardim%20Vertical%20Colorido.jpg" alt="Jardim Vertical Colorido" onclick="abrirModal('borboletas/Jardim%20Vertical%20Colorido.jpg')">
       <span>Jardim Vertical Colorido</span>
     </div>
@@ -145,8 +146,8 @@
 <div class="modal" id="modal">
   <img id="modal-img" src="">
   <div class="modal-btns">
-    <button onclick="baixarAtual()" class="btn">📅 Salvar imagem</button>
-    <button onclick="fecharModal()" class="btn">&times; Fechar</button>
+    <button onclick="baixarAtual()" class="btn">📥 Salvar imagem</button>
+    <button onclick="fecharModal()" class="btn">✖ Fechar</button>
   </div>
 </div>
 <script src="https://unpkg.com/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
@@ -167,15 +168,18 @@
   function toggleFavorito(src, el) {
     let f = JSON.parse(localStorage.getItem('favoritos'))||[];
     const i = f.indexOf(src);
-    if (i>=0) { f.splice(i,1); el.textContent='❤️'; el.classList.remove('favorito'); }
+    if (i>=0) { f.splice(i,1); el.textContent='🤍'; el.classList.remove('favorito'); }
     else { f.push(src); el.textContent='❤️'; el.classList.add('favorito'); }
     localStorage.setItem('favoritos', JSON.stringify(f));
   }
   document.addEventListener('DOMContentLoaded', () => {
     const favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
     document.querySelectorAll('.favorito-btn').forEach(btn => {
-      const src = btn.getAttribute('onclick').match(/'(.*?)'/)[1];
-      if (favoritos.includes(src)) { btn.classList.add('favorito'); btn.textContent = '❤️'; }
+      const src = btn.getAttribute('data-src');
+      if (favoritos.includes(src)) {
+        btn.classList.add('favorito');
+        btn.textContent = '❤️';
+      }
     });
   });
 </script>

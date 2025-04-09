@@ -16,6 +16,7 @@
     .card { background: white; color: black; padding: 10px; border-radius: 10px; box-shadow: 0 2px 8px rgba(255,255,255,0.1); text-align: center; position: relative; text-decoration: none; }
     .card img { width: 100%; border-radius: 8px; cursor: pointer; }
     .card span { display: block; margin-top: 8px; font-weight: 400; color: black; text-decoration: none; }
+    a.card:link, a.card:visited, a.card:hover, a.card:active { text-decoration: none; color: inherit; }
     .favorito-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer; }
     .favorito-btn.favorito { color: red; }
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; }
@@ -33,39 +34,39 @@
 </div>
 <div class="grid">
 <div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/pedras/Mosaico%20Pedra%20Ferro%20Ferrugem%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/pedras/Mosaico%20Pedra%20Ferro%20Ferrugem%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/pedras/Mosaico%20Pedra%20Ferro%20Ferrugem%20%28STILL%29.jpg', this)">🤍</button>
       <img src="pedras/Mosaico%20Pedra%20Ferro%20Ferrugem%20%28STILL%29.jpg" alt="Mosaico Pedra Ferro Ferrugem (STILL)" onclick="abrirModal('pedras/Mosaico%20Pedra%20Ferro%20Ferrugem%20%28STILL%29.jpg')">
       <span>Mosaico Pedra Ferro Ferrugem (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/pedras/Mosaico%20Pedra%20Ferro%20Ferrugem%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/pedras/Mosaico%20Pedra%20Ferro%20Ferrugem%202.jpg" onclick="toggleFavorito('adulto/pedras/Mosaico%20Pedra%20Ferro%20Ferrugem%202.jpg', this)">🤍</button>
       <img src="pedras/Mosaico%20Pedra%20Ferro%20Ferrugem%202.jpg" alt="Mosaico Pedra Ferro Ferrugem" onclick="abrirModal('pedras/Mosaico%20Pedra%20Ferro%20Ferrugem%202.jpg')">
       <span>Mosaico Pedra Ferro Ferrugem</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/pedras/Mosaico%20Pedra%20Ferro%20Ferrugem.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/pedras/Mosaico%20Pedra%20Ferro%20Ferrugem.jpg" onclick="toggleFavorito('adulto/pedras/Mosaico%20Pedra%20Ferro%20Ferrugem.jpg', this)">🤍</button>
       <img src="pedras/Mosaico%20Pedra%20Ferro%20Ferrugem.jpg" alt="Mosaico Pedra Ferro Ferrugem" onclick="abrirModal('pedras/Mosaico%20Pedra%20Ferro%20Ferrugem.jpg')">
       <span>Mosaico Pedra Ferro Ferrugem</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/pedras/Pedra%20Canjiquinha%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/pedras/Pedra%20Canjiquinha%20%282%29.jpg" onclick="toggleFavorito('adulto/pedras/Pedra%20Canjiquinha%20%282%29.jpg', this)">🤍</button>
       <img src="pedras/Pedra%20Canjiquinha%20%282%29.jpg" alt="Pedra Canjiquinha" onclick="abrirModal('pedras/Pedra%20Canjiquinha%20%282%29.jpg')">
       <span>Pedra Canjiquinha</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/pedras/Pedra%20Canjiquinha%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/pedras/Pedra%20Canjiquinha%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/pedras/Pedra%20Canjiquinha%20%28STILL%29.jpg', this)">🤍</button>
       <img src="pedras/Pedra%20Canjiquinha%20%28STILL%29.jpg" alt="Pedra Canjiquinha (STILL)" onclick="abrirModal('pedras/Pedra%20Canjiquinha%20%28STILL%29.jpg')">
       <span>Pedra Canjiquinha (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/pedras/Pedra%20Canjiquinha.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/pedras/Pedra%20Canjiquinha.jpg" onclick="toggleFavorito('adulto/pedras/Pedra%20Canjiquinha.jpg', this)">🤍</button>
       <img src="pedras/Pedra%20Canjiquinha.jpg" alt="Pedra Canjiquinha" onclick="abrirModal('pedras/Pedra%20Canjiquinha.jpg')">
       <span>Pedra Canjiquinha</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/pedras/Pedras%20Bege%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/pedras/Pedras%20Bege%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/pedras/Pedras%20Bege%20%28STILL%29.jpg', this)">🤍</button>
       <img src="pedras/Pedras%20Bege%20%28STILL%29.jpg" alt="Pedras Bege (STILL)" onclick="abrirModal('pedras/Pedras%20Bege%20%28STILL%29.jpg')">
       <span>Pedras Bege (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/pedras/Pedras%20Bege.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/pedras/Pedras%20Bege.jpg" onclick="toggleFavorito('adulto/pedras/Pedras%20Bege.jpg', this)">🤍</button>
       <img src="pedras/Pedras%20Bege.jpg" alt="Pedras Bege" onclick="abrirModal('pedras/Pedras%20Bege.jpg')">
       <span>Pedras Bege</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/pedras/Pedras%20Beges.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/pedras/Pedras%20Beges.jpg" onclick="toggleFavorito('adulto/pedras/Pedras%20Beges.jpg', this)">🤍</button>
       <img src="pedras/Pedras%20Beges.jpg" alt="Pedras Beges" onclick="abrirModal('pedras/Pedras%20Beges.jpg')">
       <span>Pedras Beges</span>
     </div>
@@ -73,8 +74,8 @@
 <div class="modal" id="modal">
   <img id="modal-img" src="">
   <div class="modal-btns">
-    <button onclick="baixarAtual()" class="btn">📅 Salvar imagem</button>
-    <button onclick="fecharModal()" class="btn">&times; Fechar</button>
+    <button onclick="baixarAtual()" class="btn">📥 Salvar imagem</button>
+    <button onclick="fecharModal()" class="btn">✖ Fechar</button>
   </div>
 </div>
 <script src="https://unpkg.com/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
@@ -95,15 +96,18 @@
   function toggleFavorito(src, el) {
     let f = JSON.parse(localStorage.getItem('favoritos'))||[];
     const i = f.indexOf(src);
-    if (i>=0) { f.splice(i,1); el.textContent='❤️'; el.classList.remove('favorito'); }
+    if (i>=0) { f.splice(i,1); el.textContent='🤍'; el.classList.remove('favorito'); }
     else { f.push(src); el.textContent='❤️'; el.classList.add('favorito'); }
     localStorage.setItem('favoritos', JSON.stringify(f));
   }
   document.addEventListener('DOMContentLoaded', () => {
     const favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
     document.querySelectorAll('.favorito-btn').forEach(btn => {
-      const src = btn.getAttribute('onclick').match(/'(.*?)'/)[1];
-      if (favoritos.includes(src)) { btn.classList.add('favorito'); btn.textContent = '❤️'; }
+      const src = btn.getAttribute('data-src');
+      if (favoritos.includes(src)) {
+        btn.classList.add('favorito');
+        btn.textContent = '❤️';
+      }
     });
   });
 </script>

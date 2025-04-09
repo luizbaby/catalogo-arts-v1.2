@@ -16,6 +16,7 @@
     .card { background: white; color: black; padding: 10px; border-radius: 10px; box-shadow: 0 2px 8px rgba(255,255,255,0.1); text-align: center; position: relative; text-decoration: none; }
     .card img { width: 100%; border-radius: 8px; cursor: pointer; }
     .card span { display: block; margin-top: 8px; font-weight: 400; color: black; text-decoration: none; }
+    a.card:link, a.card:visited, a.card:hover, a.card:active { text-decoration: none; color: inherit; }
     .favorito-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer; }
     .favorito-btn.favorito { color: red; }
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; }
@@ -33,411 +34,411 @@
 </div>
 <div class="grid">
 <div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Abstrato%20Cinza%20e%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Abstrato%20Cinza%20e%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Abstrato%20Cinza%20e%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Abstrato%20Cinza%20e%20Azul%20%28STILL%29.jpg" alt="Abstrato Cinza e Azul (STILL)" onclick="abrirModal('abstrato/Abstrato%20Cinza%20e%20Azul%20%28STILL%29.jpg')">
       <span>Abstrato Cinza e Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Abstrato%20Cinza%20e%20Azul.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Abstrato%20Cinza%20e%20Azul.jpg" onclick="toggleFavorito('adulto/abstrato/Abstrato%20Cinza%20e%20Azul.jpg', this)">🤍</button>
       <img src="abstrato/Abstrato%20Cinza%20e%20Azul.jpg" alt="Abstrato Cinza e Azul" onclick="abrirModal('abstrato/Abstrato%20Cinza%20e%20Azul.jpg')">
       <span>Abstrato Cinza e Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Abstrato%20Cinza%20e%20Rose%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Abstrato%20Cinza%20e%20Rose%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Abstrato%20Cinza%20e%20Rose%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Abstrato%20Cinza%20e%20Rose%20%28STILL%29.jpg" alt="Abstrato Cinza e Rose (STILL)" onclick="abrirModal('abstrato/Abstrato%20Cinza%20e%20Rose%20%28STILL%29.jpg')">
       <span>Abstrato Cinza e Rose (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Abstrato%20Cinza%20e%20Rose.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Abstrato%20Cinza%20e%20Rose.jpg" onclick="toggleFavorito('adulto/abstrato/Abstrato%20Cinza%20e%20Rose.jpg', this)">🤍</button>
       <img src="abstrato/Abstrato%20Cinza%20e%20Rose.jpg" alt="Abstrato Cinza e Rose" onclick="abrirModal('abstrato/Abstrato%20Cinza%20e%20Rose.jpg')">
       <span>Abstrato Cinza e Rose</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Abstrato%20Marrom%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Abstrato%20Marrom%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Abstrato%20Marrom%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Abstrato%20Marrom%20%28STILL%29.jpg" alt="Abstrato Marrom (STILL)" onclick="abrirModal('abstrato/Abstrato%20Marrom%20%28STILL%29.jpg')">
       <span>Abstrato Marrom (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Abstrato%20Marrom.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Abstrato%20Marrom.jpg" onclick="toggleFavorito('adulto/abstrato/Abstrato%20Marrom.jpg', this)">🤍</button>
       <img src="abstrato/Abstrato%20Marrom.jpg" alt="Abstrato Marrom" onclick="abrirModal('abstrato/Abstrato%20Marrom.jpg')">
       <span>Abstrato Marrom</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Arte%20Urbana%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Arte%20Urbana%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Arte%20Urbana%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Arte%20Urbana%20%28STILL%29.jpg" alt="Arte Urbana (STILL)" onclick="abrirModal('abstrato/Arte%20Urbana%20%28STILL%29.jpg')">
       <span>Arte Urbana (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Arte%20Urbana.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Arte%20Urbana.jpg" onclick="toggleFavorito('adulto/abstrato/Arte%20Urbana.jpg', this)">🤍</button>
       <img src="abstrato/Arte%20Urbana.jpg" alt="Arte Urbana" onclick="abrirModal('abstrato/Arte%20Urbana.jpg')">
       <span>Arte Urbana</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/City%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/City%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/City%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/City%20Areia%20%28STILL%29.jpg" alt="City Areia (STILL)" onclick="abrirModal('abstrato/City%20Areia%20%28STILL%29.jpg')">
       <span>City Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/City%20Areia.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/City%20Areia.jpg" onclick="toggleFavorito('adulto/abstrato/City%20Areia.jpg', this)">🤍</button>
       <img src="abstrato/City%20Areia.jpg" alt="City Areia" onclick="abrirModal('abstrato/City%20Areia.jpg')">
       <span>City Areia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/City%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/City%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/City%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/City%20Cinza%20%28STILL%29.jpg" alt="City Cinza (STILL)" onclick="abrirModal('abstrato/City%20Cinza%20%28STILL%29.jpg')">
       <span>City Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/City%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/City%20Cinza.jpg" onclick="toggleFavorito('adulto/abstrato/City%20Cinza.jpg', this)">🤍</button>
       <img src="abstrato/City%20Cinza.jpg" alt="City Cinza" onclick="abrirModal('abstrato/City%20Cinza.jpg')">
       <span>City Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Elegance%20Cinza%20%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Elegance%20Cinza%20%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Elegance%20Cinza%20%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Elegance%20Cinza%20%20%28STILL%29.jpg" alt="Elegance Cinza  (STILL)" onclick="abrirModal('abstrato/Elegance%20Cinza%20%20%28STILL%29.jpg')">
       <span>Elegance Cinza  (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Elegance%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Elegance%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Elegance%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Elegance%20Cinza%20%28STILL%29.jpg" alt="Elegance Cinza (STILL)" onclick="abrirModal('abstrato/Elegance%20Cinza%20%28STILL%29.jpg')">
       <span>Elegance Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Elegance%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Elegance%20Cinza.jpg" onclick="toggleFavorito('adulto/abstrato/Elegance%20Cinza.jpg', this)">🤍</button>
       <img src="abstrato/Elegance%20Cinza.jpg" alt="Elegance Cinza" onclick="abrirModal('abstrato/Elegance%20Cinza.jpg')">
       <span>Elegance Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Elegance%20Creme%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Elegance%20Creme%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Elegance%20Creme%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Elegance%20Creme%20%28STILL%29.jpg" alt="Elegance Creme (STILL)" onclick="abrirModal('abstrato/Elegance%20Creme%20%28STILL%29.jpg')">
       <span>Elegance Creme (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Elegance%20Creme.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Elegance%20Creme.jpg" onclick="toggleFavorito('adulto/abstrato/Elegance%20Creme.jpg', this)">🤍</button>
       <img src="abstrato/Elegance%20Creme.jpg" alt="Elegance Creme" onclick="abrirModal('abstrato/Elegance%20Creme.jpg')">
       <span>Elegance Creme</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Escandinavo%20Leaves%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Escandinavo%20Leaves%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Escandinavo%20Leaves%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Escandinavo%20Leaves%20Areia%20%28STILL%29.jpg" alt="Escandinavo Leaves Areia (STILL)" onclick="abrirModal('abstrato/Escandinavo%20Leaves%20Areia%20%28STILL%29.jpg')">
       <span>Escandinavo Leaves Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Escandinavo%20Leaves%20Areia%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Escandinavo%20Leaves%20Areia%202.jpg" onclick="toggleFavorito('adulto/abstrato/Escandinavo%20Leaves%20Areia%202.jpg', this)">🤍</button>
       <img src="abstrato/Escandinavo%20Leaves%20Areia%202.jpg" alt="Escandinavo Leaves Areia" onclick="abrirModal('abstrato/Escandinavo%20Leaves%20Areia%202.jpg')">
       <span>Escandinavo Leaves Areia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Escandinavo%20Leaves%20Areia.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Escandinavo%20Leaves%20Areia.jpg" onclick="toggleFavorito('adulto/abstrato/Escandinavo%20Leaves%20Areia.jpg', this)">🤍</button>
       <img src="abstrato/Escandinavo%20Leaves%20Areia.jpg" alt="Escandinavo Leaves Areia" onclick="abrirModal('abstrato/Escandinavo%20Leaves%20Areia.jpg')">
       <span>Escandinavo Leaves Areia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Etternity%20Azul%20Marinho%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Etternity%20Azul%20Marinho%20%282%29.jpg" onclick="toggleFavorito('adulto/abstrato/Etternity%20Azul%20Marinho%20%282%29.jpg', this)">🤍</button>
       <img src="abstrato/Etternity%20Azul%20Marinho%20%282%29.jpg" alt="Etternity Azul Marinho" onclick="abrirModal('abstrato/Etternity%20Azul%20Marinho%20%282%29.jpg')">
       <span>Etternity Azul Marinho</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Etternity%20Azul%20Marinho%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Etternity%20Azul%20Marinho%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Etternity%20Azul%20Marinho%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Etternity%20Azul%20Marinho%20%28STILL%29.jpg" alt="Etternity Azul Marinho (STILL)" onclick="abrirModal('abstrato/Etternity%20Azul%20Marinho%20%28STILL%29.jpg')">
       <span>Etternity Azul Marinho (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Etternity%20Azul%20Marinho.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Etternity%20Azul%20Marinho.jpg" onclick="toggleFavorito('adulto/abstrato/Etternity%20Azul%20Marinho.jpg', this)">🤍</button>
       <img src="abstrato/Etternity%20Azul%20Marinho.jpg" alt="Etternity Azul Marinho" onclick="abrirModal('abstrato/Etternity%20Azul%20Marinho.jpg')">
       <span>Etternity Azul Marinho</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Etternity%20Cinza%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Etternity%20Cinza%20%282%29.jpg" onclick="toggleFavorito('adulto/abstrato/Etternity%20Cinza%20%282%29.jpg', this)">🤍</button>
       <img src="abstrato/Etternity%20Cinza%20%282%29.jpg" alt="Etternity Cinza" onclick="abrirModal('abstrato/Etternity%20Cinza%20%282%29.jpg')">
       <span>Etternity Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Etternity%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Etternity%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Etternity%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Etternity%20Cinza%20%28STILL%29.jpg" alt="Etternity Cinza (STILL)" onclick="abrirModal('abstrato/Etternity%20Cinza%20%28STILL%29.jpg')">
       <span>Etternity Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Etternity%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Etternity%20Cinza.jpg" onclick="toggleFavorito('adulto/abstrato/Etternity%20Cinza.jpg', this)">🤍</button>
       <img src="abstrato/Etternity%20Cinza.jpg" alt="Etternity Cinza" onclick="abrirModal('abstrato/Etternity%20Cinza.jpg')">
       <span>Etternity Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Etternity%20Marrom%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Etternity%20Marrom%20%282%29.jpg" onclick="toggleFavorito('adulto/abstrato/Etternity%20Marrom%20%282%29.jpg', this)">🤍</button>
       <img src="abstrato/Etternity%20Marrom%20%282%29.jpg" alt="Etternity Marrom" onclick="abrirModal('abstrato/Etternity%20Marrom%20%282%29.jpg')">
       <span>Etternity Marrom</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Etternity%20Marrom%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Etternity%20Marrom%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Etternity%20Marrom%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Etternity%20Marrom%20%28STILL%29.jpg" alt="Etternity Marrom (STILL)" onclick="abrirModal('abstrato/Etternity%20Marrom%20%28STILL%29.jpg')">
       <span>Etternity Marrom (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Etternity%20Marrom.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Etternity%20Marrom.jpg" onclick="toggleFavorito('adulto/abstrato/Etternity%20Marrom.jpg', this)">🤍</button>
       <img src="abstrato/Etternity%20Marrom.jpg" alt="Etternity Marrom" onclick="abrirModal('abstrato/Etternity%20Marrom.jpg')">
       <span>Etternity Marrom</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Folhas%20de%20Bananeira%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Folhas%20de%20Bananeira%20Azul%20%28STILL%29.jpg" alt="Folhas de Bananeira Azul (STILL)" onclick="abrirModal('abstrato/Folhas%20de%20Bananeira%20Azul%20%28STILL%29.jpg')">
       <span>Folhas de Bananeira Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Azul%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Folhas%20de%20Bananeira%20Azul%202.jpg" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Azul%202.jpg', this)">🤍</button>
       <img src="abstrato/Folhas%20de%20Bananeira%20Azul%202.jpg" alt="Folhas de Bananeira Azul" onclick="abrirModal('abstrato/Folhas%20de%20Bananeira%20Azul%202.jpg')">
       <span>Folhas de Bananeira Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Azul.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Folhas%20de%20Bananeira%20Azul.jpg" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Azul.jpg', this)">🤍</button>
       <img src="abstrato/Folhas%20de%20Bananeira%20Azul.jpg" alt="Folhas de Bananeira Azul" onclick="abrirModal('abstrato/Folhas%20de%20Bananeira%20Azul.jpg')">
       <span>Folhas de Bananeira Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Gold%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Folhas%20de%20Bananeira%20Gold%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Gold%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Folhas%20de%20Bananeira%20Gold%20%28STILL%29.jpg" alt="Folhas de Bananeira Gold (STILL)" onclick="abrirModal('abstrato/Folhas%20de%20Bananeira%20Gold%20%28STILL%29.jpg')">
       <span>Folhas de Bananeira Gold (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Gold%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Folhas%20de%20Bananeira%20Gold%202.jpg" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Gold%202.jpg', this)">🤍</button>
       <img src="abstrato/Folhas%20de%20Bananeira%20Gold%202.jpg" alt="Folhas de Bananeira Gold" onclick="abrirModal('abstrato/Folhas%20de%20Bananeira%20Gold%202.jpg')">
       <span>Folhas de Bananeira Gold</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Gold.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Folhas%20de%20Bananeira%20Gold.jpg" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Gold.jpg', this)">🤍</button>
       <img src="abstrato/Folhas%20de%20Bananeira%20Gold.jpg" alt="Folhas de Bananeira Gold" onclick="abrirModal('abstrato/Folhas%20de%20Bananeira%20Gold.jpg')">
       <span>Folhas de Bananeira Gold</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Rose%20Gold%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Folhas%20de%20Bananeira%20Rose%20Gold%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Rose%20Gold%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Folhas%20de%20Bananeira%20Rose%20Gold%20%28STILL%29.jpg" alt="Folhas de Bananeira Rose Gold (STILL)" onclick="abrirModal('abstrato/Folhas%20de%20Bananeira%20Rose%20Gold%20%28STILL%29.jpg')">
       <span>Folhas de Bananeira Rose Gold (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Rose%20Gold%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Folhas%20de%20Bananeira%20Rose%20Gold%202.jpg" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Rose%20Gold%202.jpg', this)">🤍</button>
       <img src="abstrato/Folhas%20de%20Bananeira%20Rose%20Gold%202.jpg" alt="Folhas de Bananeira Rose Gold" onclick="abrirModal('abstrato/Folhas%20de%20Bananeira%20Rose%20Gold%202.jpg')">
       <span>Folhas de Bananeira Rose Gold</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Rose%20Gold.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Folhas%20de%20Bananeira%20Rose%20Gold.jpg" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Rose%20Gold.jpg', this)">🤍</button>
       <img src="abstrato/Folhas%20de%20Bananeira%20Rose%20Gold.jpg" alt="Folhas de Bananeira Rose Gold" onclick="abrirModal('abstrato/Folhas%20de%20Bananeira%20Rose%20Gold.jpg')">
       <span>Folhas de Bananeira Rose Gold</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold%20%28STILL%29.jpg" alt="Folhas de Bananeira Tiffany Gold (STILL)" onclick="abrirModal('abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold%20%28STILL%29.jpg')">
       <span>Folhas de Bananeira Tiffany Gold (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold%202.jpg" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold%202.jpg', this)">🤍</button>
       <img src="abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold%202.jpg" alt="Folhas de Bananeira Tiffany Gold" onclick="abrirModal('abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold%202.jpg')">
       <span>Folhas de Bananeira Tiffany Gold</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold.jpg" onclick="toggleFavorito('adulto/abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold.jpg', this)">🤍</button>
       <img src="abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold.jpg" alt="Folhas de Bananeira Tiffany Gold" onclick="abrirModal('abstrato/Folhas%20de%20Bananeira%20Tiffany%20Gold.jpg')">
       <span>Folhas de Bananeira Tiffany Gold</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Geom%C3%A9trico%20Maya%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Geom%C3%A9trico%20Maya%20Areia%20%28STILL%29.jpg" alt="Geométrico Maya Areia (STILL)" onclick="abrirModal('abstrato/Geom%C3%A9trico%20Maya%20Areia%20%28STILL%29.jpg')">
       <span>Geométrico Maya Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Areia%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Geom%C3%A9trico%20Maya%20Areia%202.jpg" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Areia%202.jpg', this)">🤍</button>
       <img src="abstrato/Geom%C3%A9trico%20Maya%20Areia%202.jpg" alt="Geométrico Maya Areia" onclick="abrirModal('abstrato/Geom%C3%A9trico%20Maya%20Areia%202.jpg')">
       <span>Geométrico Maya Areia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Geom%C3%A9trico%20Maya%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Geom%C3%A9trico%20Maya%20Azul%20%28STILL%29.jpg" alt="Geométrico Maya Azul (STILL)" onclick="abrirModal('abstrato/Geom%C3%A9trico%20Maya%20Azul%20%28STILL%29.jpg')">
       <span>Geométrico Maya Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Azul.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Geom%C3%A9trico%20Maya%20Azul.jpg" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Azul.jpg', this)">🤍</button>
       <img src="abstrato/Geom%C3%A9trico%20Maya%20Azul.jpg" alt="Geométrico Maya Azul" onclick="abrirModal('abstrato/Geom%C3%A9trico%20Maya%20Azul.jpg')">
       <span>Geométrico Maya Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Terracota%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Geom%C3%A9trico%20Maya%20Terracota%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Terracota%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Geom%C3%A9trico%20Maya%20Terracota%20%28STILL%29.jpg" alt="Geométrico Maya Terracota (STILL)" onclick="abrirModal('abstrato/Geom%C3%A9trico%20Maya%20Terracota%20%28STILL%29.jpg')">
       <span>Geométrico Maya Terracota (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Terracota%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Geom%C3%A9trico%20Maya%20Terracota%202.jpg" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Terracota%202.jpg', this)">🤍</button>
       <img src="abstrato/Geom%C3%A9trico%20Maya%20Terracota%202.jpg" alt="Geométrico Maya Terracota" onclick="abrirModal('abstrato/Geom%C3%A9trico%20Maya%20Terracota%202.jpg')">
       <span>Geométrico Maya Terracota</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Geom%C3%A9trico%20Maya%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Geom%C3%A9trico%20Maya%20Verde%20%28STILL%29.jpg" alt="Geométrico Maya Verde (STILL)" onclick="abrirModal('abstrato/Geom%C3%A9trico%20Maya%20Verde%20%28STILL%29.jpg')">
       <span>Geométrico Maya Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Verde.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Geom%C3%A9trico%20Maya%20Verde.jpg" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9trico%20Maya%20Verde.jpg', this)">🤍</button>
       <img src="abstrato/Geom%C3%A9trico%20Maya%20Verde.jpg" alt="Geométrico Maya Verde" onclick="abrirModal('abstrato/Geom%C3%A9trico%20Maya%20Verde.jpg')">
       <span>Geométrico Maya Verde</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9tricos%20Art%20Deco%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Geom%C3%A9tricos%20Art%20Deco%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9tricos%20Art%20Deco%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Geom%C3%A9tricos%20Art%20Deco%20%28STILL%29.jpg" alt="Geométricos Art Deco (STILL)" onclick="abrirModal('abstrato/Geom%C3%A9tricos%20Art%20Deco%20%28STILL%29.jpg')">
       <span>Geométricos Art Deco (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9tricos%20Art%20Deco.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Geom%C3%A9tricos%20Art%20Deco.jpg" onclick="toggleFavorito('adulto/abstrato/Geom%C3%A9tricos%20Art%20Deco.jpg', this)">🤍</button>
       <img src="abstrato/Geom%C3%A9tricos%20Art%20Deco.jpg" alt="Geométricos Art Deco" onclick="abrirModal('abstrato/Geom%C3%A9tricos%20Art%20Deco.jpg')">
       <span>Geométricos Art Deco</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Grafite%20Crazy%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Grafite%20Crazy%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Grafite%20Crazy%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Grafite%20Crazy%20%28STILL%29.jpg" alt="Grafite Crazy (STILL)" onclick="abrirModal('abstrato/Grafite%20Crazy%20%28STILL%29.jpg')">
       <span>Grafite Crazy (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Graphic%20Azul%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Graphic%20Azul%20%282%29.jpg" onclick="toggleFavorito('adulto/abstrato/Graphic%20Azul%20%282%29.jpg', this)">🤍</button>
       <img src="abstrato/Graphic%20Azul%20%282%29.jpg" alt="Graphic Azul" onclick="abrirModal('abstrato/Graphic%20Azul%20%282%29.jpg')">
       <span>Graphic Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Graphic%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Graphic%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Graphic%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Graphic%20Azul%20%28STILL%29.jpg" alt="Graphic Azul (STILL)" onclick="abrirModal('abstrato/Graphic%20Azul%20%28STILL%29.jpg')">
       <span>Graphic Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Graphic%20Azul.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Graphic%20Azul.jpg" onclick="toggleFavorito('adulto/abstrato/Graphic%20Azul.jpg', this)">🤍</button>
       <img src="abstrato/Graphic%20Azul.jpg" alt="Graphic Azul" onclick="abrirModal('abstrato/Graphic%20Azul.jpg')">
       <span>Graphic Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Graphic%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Graphic%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Graphic%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Graphic%20Cinza%20%28STILL%29.jpg" alt="Graphic Cinza (STILL)" onclick="abrirModal('abstrato/Graphic%20Cinza%20%28STILL%29.jpg')">
       <span>Graphic Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Graphic%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Graphic%20Cinza.jpg" onclick="toggleFavorito('adulto/abstrato/Graphic%20Cinza.jpg', this)">🤍</button>
       <img src="abstrato/Graphic%20Cinza.jpg" alt="Graphic Cinza" onclick="abrirModal('abstrato/Graphic%20Cinza.jpg')">
       <span>Graphic Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Harmony%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Harmony%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Harmony%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Harmony%20Cinza%20%28STILL%29.jpg" alt="Harmony Cinza (STILL)" onclick="abrirModal('abstrato/Harmony%20Cinza%20%28STILL%29.jpg')">
       <span>Harmony Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Harmony%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Harmony%20Cinza.jpg" onclick="toggleFavorito('adulto/abstrato/Harmony%20Cinza.jpg', this)">🤍</button>
       <img src="abstrato/Harmony%20Cinza.jpg" alt="Harmony Cinza" onclick="abrirModal('abstrato/Harmony%20Cinza.jpg')">
       <span>Harmony Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Harmony%20Rose%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Harmony%20Rose%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Harmony%20Rose%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Harmony%20Rose%20%28STILL%29.jpg" alt="Harmony Rose (STILL)" onclick="abrirModal('abstrato/Harmony%20Rose%20%28STILL%29.jpg')">
       <span>Harmony Rose (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrado%20Favos%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrado%20Favos%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrado%20Favos%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrado%20Favos%20%28STILL%29.jpg" alt="Linen Abstrado Favos (STILL)" onclick="abrirModal('abstrato/Linen%20Abstrado%20Favos%20%28STILL%29.jpg')">
       <span>Linen Abstrado Favos (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Favos.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Favos.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Favos.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Favos.jpg" alt="Linen Abstrato Favos" onclick="abrirModal('abstrato/Linen%20Abstrato%20Favos.jpg')">
       <span>Linen Abstrato Favos</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Folhas%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Folhas%20Azul%20%28STILL%29.jpg" alt="Linen Abstrato Folhas Azul (STILL)" onclick="abrirModal('abstrato/Linen%20Abstrato%20Folhas%20Azul%20%28STILL%29.jpg')">
       <span>Linen Abstrato Folhas Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Azul.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Folhas%20Azul.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Azul.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Folhas%20Azul.jpg" alt="Linen Abstrato Folhas Azul" onclick="abrirModal('abstrato/Linen%20Abstrato%20Folhas%20Azul.jpg')">
       <span>Linen Abstrato Folhas Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Folhas%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Folhas%20Cinza%20%28STILL%29.jpg" alt="Linen Abstrato Folhas Cinza (STILL)" onclick="abrirModal('abstrato/Linen%20Abstrato%20Folhas%20Cinza%20%28STILL%29.jpg')">
       <span>Linen Abstrato Folhas Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Folhas%20Cinza.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Cinza.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Folhas%20Cinza.jpg" alt="Linen Abstrato Folhas Cinza" onclick="abrirModal('abstrato/Linen%20Abstrato%20Folhas%20Cinza.jpg')">
       <span>Linen Abstrato Folhas Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Nude%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Folhas%20Nude%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Nude%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Folhas%20Nude%20%28STILL%29.jpg" alt="Linen Abstrato Folhas Nude (STILL)" onclick="abrirModal('abstrato/Linen%20Abstrato%20Folhas%20Nude%20%28STILL%29.jpg')">
       <span>Linen Abstrato Folhas Nude (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Nude%2048x48%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Folhas%20Nude%2048x48%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Nude%2048x48%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Folhas%20Nude%2048x48%20%28STILL%29.jpg" alt="Linen Abstrato Folhas Nude 48x48 (STILL)" onclick="abrirModal('abstrato/Linen%20Abstrato%20Folhas%20Nude%2048x48%20%28STILL%29.jpg')">
       <span>Linen Abstrato Folhas Nude 48x48 (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Nude.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Folhas%20Nude.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Nude.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Folhas%20Nude.jpg" alt="Linen Abstrato Folhas Nude" onclick="abrirModal('abstrato/Linen%20Abstrato%20Folhas%20Nude.jpg')">
       <span>Linen Abstrato Folhas Nude</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Rose%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Folhas%20Rose%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Rose%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Folhas%20Rose%20%28STILL%29.jpg" alt="Linen Abstrato Folhas Rose (STILL)" onclick="abrirModal('abstrato/Linen%20Abstrato%20Folhas%20Rose%20%28STILL%29.jpg')">
       <span>Linen Abstrato Folhas Rose (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Rose.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Folhas%20Rose.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Rose.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Folhas%20Rose.jpg" alt="Linen Abstrato Folhas Rose" onclick="abrirModal('abstrato/Linen%20Abstrato%20Folhas%20Rose.jpg')">
       <span>Linen Abstrato Folhas Rose</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Folhas%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Folhas%20Verde%20%28STILL%29.jpg" alt="Linen Abstrato Folhas Verde (STILL)" onclick="abrirModal('abstrato/Linen%20Abstrato%20Folhas%20Verde%20%28STILL%29.jpg')">
       <span>Linen Abstrato Folhas Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Verde.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Folhas%20Verde.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Folhas%20Verde.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Folhas%20Verde.jpg" alt="Linen Abstrato Folhas Verde" onclick="abrirModal('abstrato/Linen%20Abstrato%20Folhas%20Verde.jpg')">
       <span>Linen Abstrato Folhas Verde</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Waves%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Waves%20Areia%20%28STILL%29.jpg" alt="Linen Abstrato Waves Areia (STILL)" onclick="abrirModal('abstrato/Linen%20Abstrato%20Waves%20Areia%20%28STILL%29.jpg')">
       <span>Linen Abstrato Waves Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Areia.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Waves%20Areia.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Areia.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Waves%20Areia.jpg" alt="Linen Abstrato Waves Areia" onclick="abrirModal('abstrato/Linen%20Abstrato%20Waves%20Areia.jpg')">
       <span>Linen Abstrato Waves Areia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Waves%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Waves%20Cinza%20%28STILL%29.jpg" alt="Linen Abstrato Waves Cinza (STILL)" onclick="abrirModal('abstrato/Linen%20Abstrato%20Waves%20Cinza%20%28STILL%29.jpg')">
       <span>Linen Abstrato Waves Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Waves%20Cinza.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Cinza.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Waves%20Cinza.jpg" alt="Linen Abstrato Waves Cinza" onclick="abrirModal('abstrato/Linen%20Abstrato%20Waves%20Cinza.jpg')">
       <span>Linen Abstrato Waves Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Nude%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Waves%20Nude%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Nude%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Waves%20Nude%20%28STILL%29.jpg" alt="Linen Abstrato Waves Nude (STILL)" onclick="abrirModal('abstrato/Linen%20Abstrato%20Waves%20Nude%20%28STILL%29.jpg')">
       <span>Linen Abstrato Waves Nude (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Nude.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Waves%20Nude.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Nude.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Waves%20Nude.jpg" alt="Linen Abstrato Waves Nude" onclick="abrirModal('abstrato/Linen%20Abstrato%20Waves%20Nude.jpg')">
       <span>Linen Abstrato Waves Nude</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Waves%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Waves%20Rosa%20%28STILL%29.jpg" alt="Linen Abstrato Waves Rosa (STILL)" onclick="abrirModal('abstrato/Linen%20Abstrato%20Waves%20Rosa%20%28STILL%29.jpg')">
       <span>Linen Abstrato Waves Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Rosa.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Linen%20Abstrato%20Waves%20Rosa.jpg" onclick="toggleFavorito('adulto/abstrato/Linen%20Abstrato%20Waves%20Rosa.jpg', this)">🤍</button>
       <img src="abstrato/Linen%20Abstrato%20Waves%20Rosa.jpg" alt="Linen Abstrato Waves Rosa" onclick="abrirModal('abstrato/Linen%20Abstrato%20Waves%20Rosa.jpg')">
       <span>Linen Abstrato Waves Rosa</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20%20Escuras%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Mosaico%20de%20Linhas%20%20Escuras%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20%20Escuras%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Mosaico%20de%20Linhas%20%20Escuras%20%28STILL%29.jpg" alt="Mosaico de Linhas  Escuras (STILL)" onclick="abrirModal('abstrato/Mosaico%20de%20Linhas%20%20Escuras%20%28STILL%29.jpg')">
       <span>Mosaico de Linhas  Escuras (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Mosaico%20de%20Linhas%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Mosaico%20de%20Linhas%20Cinza%20%28STILL%29.jpg" alt="Mosaico de Linhas Cinza (STILL)" onclick="abrirModal('abstrato/Mosaico%20de%20Linhas%20Cinza%20%28STILL%29.jpg')">
       <span>Mosaico de Linhas Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Mosaico%20de%20Linhas%20Cinza.jpg" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Cinza.jpg', this)">🤍</button>
       <img src="abstrato/Mosaico%20de%20Linhas%20Cinza.jpg" alt="Mosaico de Linhas Cinza" onclick="abrirModal('abstrato/Mosaico%20de%20Linhas%20Cinza.jpg')">
       <span>Mosaico de Linhas Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Escuras.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Mosaico%20de%20Linhas%20Escuras.jpg" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Escuras.jpg', this)">🤍</button>
       <img src="abstrato/Mosaico%20de%20Linhas%20Escuras.jpg" alt="Mosaico de Linhas Escuras" onclick="abrirModal('abstrato/Mosaico%20de%20Linhas%20Escuras.jpg')">
       <span>Mosaico de Linhas Escuras</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Marrom%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Mosaico%20de%20Linhas%20Marrom%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Marrom%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Mosaico%20de%20Linhas%20Marrom%20%28STILL%29.jpg" alt="Mosaico de Linhas Marrom (STILL)" onclick="abrirModal('abstrato/Mosaico%20de%20Linhas%20Marrom%20%28STILL%29.jpg')">
       <span>Mosaico de Linhas Marrom (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Marrom.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Mosaico%20de%20Linhas%20Marrom.jpg" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Marrom.jpg', this)">🤍</button>
       <img src="abstrato/Mosaico%20de%20Linhas%20Marrom.jpg" alt="Mosaico de Linhas Marrom" onclick="abrirModal('abstrato/Mosaico%20de%20Linhas%20Marrom.jpg')">
       <span>Mosaico de Linhas Marrom</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Rose%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Mosaico%20de%20Linhas%20Rose%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Rose%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Mosaico%20de%20Linhas%20Rose%20%28STILL%29.jpg" alt="Mosaico de Linhas Rose (STILL)" onclick="abrirModal('abstrato/Mosaico%20de%20Linhas%20Rose%20%28STILL%29.jpg')">
       <span>Mosaico de Linhas Rose (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Rose.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Mosaico%20de%20Linhas%20Rose.jpg" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Rose.jpg', this)">🤍</button>
       <img src="abstrato/Mosaico%20de%20Linhas%20Rose.jpg" alt="Mosaico de Linhas Rose" onclick="abrirModal('abstrato/Mosaico%20de%20Linhas%20Rose.jpg')">
       <span>Mosaico de Linhas Rose</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Mosaico%20de%20Linhas%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Mosaico%20de%20Linhas%20Verde%20%28STILL%29.jpg" alt="Mosaico de Linhas Verde (STILL)" onclick="abrirModal('abstrato/Mosaico%20de%20Linhas%20Verde%20%28STILL%29.jpg')">
       <span>Mosaico de Linhas Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Verde.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Mosaico%20de%20Linhas%20Verde.jpg" onclick="toggleFavorito('adulto/abstrato/Mosaico%20de%20Linhas%20Verde.jpg', this)">🤍</button>
       <img src="abstrato/Mosaico%20de%20Linhas%20Verde.jpg" alt="Mosaico de Linhas Verde" onclick="abrirModal('abstrato/Mosaico%20de%20Linhas%20Verde.jpg')">
       <span>Mosaico de Linhas Verde</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Praia%20Abstrata%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Praia%20Abstrata%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Praia%20Abstrata%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Praia%20Abstrata%20%28STILL%29.jpg" alt="Praia Abstrata (STILL)" onclick="abrirModal('abstrato/Praia%20Abstrata%20%28STILL%29.jpg')">
       <span>Praia Abstrata (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Praia%20Abstrata%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Praia%20Abstrata%202.jpg" onclick="toggleFavorito('adulto/abstrato/Praia%20Abstrata%202.jpg', this)">🤍</button>
       <img src="abstrato/Praia%20Abstrata%202.jpg" alt="Praia Abstrata" onclick="abrirModal('abstrato/Praia%20Abstrata%202.jpg')">
       <span>Praia Abstrata</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Praia%20Abstrata.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Praia%20Abstrata.jpg" onclick="toggleFavorito('adulto/abstrato/Praia%20Abstrata.jpg', this)">🤍</button>
       <img src="abstrato/Praia%20Abstrata.jpg" alt="Praia Abstrata" onclick="abrirModal('abstrato/Praia%20Abstrata.jpg')">
       <span>Praia Abstrata</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Primitive%20Areia%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Primitive%20Areia%20%282%29.jpg" onclick="toggleFavorito('adulto/abstrato/Primitive%20Areia%20%282%29.jpg', this)">🤍</button>
       <img src="abstrato/Primitive%20Areia%20%282%29.jpg" alt="Primitive Areia" onclick="abrirModal('abstrato/Primitive%20Areia%20%282%29.jpg')">
       <span>Primitive Areia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Primitive%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Primitive%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Primitive%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Primitive%20Areia%20%28STILL%29.jpg" alt="Primitive Areia (STILL)" onclick="abrirModal('abstrato/Primitive%20Areia%20%28STILL%29.jpg')">
       <span>Primitive Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Primitive%20Areia.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Primitive%20Areia.jpg" onclick="toggleFavorito('adulto/abstrato/Primitive%20Areia.jpg', this)">🤍</button>
       <img src="abstrato/Primitive%20Areia.jpg" alt="Primitive Areia" onclick="abrirModal('abstrato/Primitive%20Areia.jpg')">
       <span>Primitive Areia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Primitive%20Cinza%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Primitive%20Cinza%20%282%29.jpg" onclick="toggleFavorito('adulto/abstrato/Primitive%20Cinza%20%282%29.jpg', this)">🤍</button>
       <img src="abstrato/Primitive%20Cinza%20%282%29.jpg" alt="Primitive Cinza" onclick="abrirModal('abstrato/Primitive%20Cinza%20%282%29.jpg')">
       <span>Primitive Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Primitive%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Primitive%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Primitive%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Primitive%20Cinza%20%28STILL%29.jpg" alt="Primitive Cinza (STILL)" onclick="abrirModal('abstrato/Primitive%20Cinza%20%28STILL%29.jpg')">
       <span>Primitive Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Primitive%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Primitive%20Cinza.jpg" onclick="toggleFavorito('adulto/abstrato/Primitive%20Cinza.jpg', this)">🤍</button>
       <img src="abstrato/Primitive%20Cinza.jpg" alt="Primitive Cinza" onclick="abrirModal('abstrato/Primitive%20Cinza.jpg')">
       <span>Primitive Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Urban%20Buildings%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Urban%20Buildings%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/abstrato/Urban%20Buildings%20%28STILL%29.jpg', this)">🤍</button>
       <img src="abstrato/Urban%20Buildings%20%28STILL%29.jpg" alt="Urban Buildings (STILL)" onclick="abrirModal('abstrato/Urban%20Buildings%20%28STILL%29.jpg')">
       <span>Urban Buildings (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/abstrato/Urban%20Buildings.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/abstrato/Urban%20Buildings.jpg" onclick="toggleFavorito('adulto/abstrato/Urban%20Buildings.jpg', this)">🤍</button>
       <img src="abstrato/Urban%20Buildings.jpg" alt="Urban Buildings" onclick="abrirModal('abstrato/Urban%20Buildings.jpg')">
       <span>Urban Buildings</span>
     </div>
@@ -445,8 +446,8 @@
 <div class="modal" id="modal">
   <img id="modal-img" src="">
   <div class="modal-btns">
-    <button onclick="baixarAtual()" class="btn">📅 Salvar imagem</button>
-    <button onclick="fecharModal()" class="btn">&times; Fechar</button>
+    <button onclick="baixarAtual()" class="btn">📥 Salvar imagem</button>
+    <button onclick="fecharModal()" class="btn">✖ Fechar</button>
   </div>
 </div>
 <script src="https://unpkg.com/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
@@ -467,15 +468,18 @@
   function toggleFavorito(src, el) {
     let f = JSON.parse(localStorage.getItem('favoritos'))||[];
     const i = f.indexOf(src);
-    if (i>=0) { f.splice(i,1); el.textContent='❤️'; el.classList.remove('favorito'); }
+    if (i>=0) { f.splice(i,1); el.textContent='🤍'; el.classList.remove('favorito'); }
     else { f.push(src); el.textContent='❤️'; el.classList.add('favorito'); }
     localStorage.setItem('favoritos', JSON.stringify(f));
   }
   document.addEventListener('DOMContentLoaded', () => {
     const favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
     document.querySelectorAll('.favorito-btn').forEach(btn => {
-      const src = btn.getAttribute('onclick').match(/'(.*?)'/)[1];
-      if (favoritos.includes(src)) { btn.classList.add('favorito'); btn.textContent = '❤️'; }
+      const src = btn.getAttribute('data-src');
+      if (favoritos.includes(src)) {
+        btn.classList.add('favorito');
+        btn.textContent = '❤️';
+      }
     });
   });
 </script>

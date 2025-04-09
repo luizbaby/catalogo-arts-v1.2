@@ -16,6 +16,7 @@
     .card { background: white; color: black; padding: 10px; border-radius: 10px; box-shadow: 0 2px 8px rgba(255,255,255,0.1); text-align: center; position: relative; text-decoration: none; }
     .card img { width: 100%; border-radius: 8px; cursor: pointer; }
     .card span { display: block; margin-top: 8px; font-weight: 400; color: black; text-decoration: none; }
+    a.card:link, a.card:visited, a.card:hover, a.card:active { text-decoration: none; color: inherit; }
     .favorito-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer; }
     .favorito-btn.favorito { color: red; }
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; }
@@ -33,223 +34,223 @@
 </div>
 <div class="grid">
 <div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Aquarela%20Sereia%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Aquarela%20Sereia%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Aquarela%20Sereia%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Aquarela%20Sereia%20Rosa%20%28STILL%29.jpg" alt="Aquarela Sereia Rosa (STILL)" onclick="abrirModal('Aquarela%20Sereia%20Rosa%20%28STILL%29.jpg')">
       <span>Aquarela Sereia Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Arco%20%C3%8Dris%20Delicado%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Arco%20%C3%8Dris%20Delicado%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Arco%20%C3%8Dris%20Delicado%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Arco%20%C3%8Dris%20Delicado%20%28STILL%29.jpg" alt="Arco Íris Delicado (STILL)" onclick="abrirModal('Arco%20%C3%8Dris%20Delicado%20%28STILL%29.jpg')">
       <span>Arco Íris Delicado (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Arco%20%C3%8Dris%20e%20Colinas%20Aquarela%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Arco%20%C3%8Dris%20e%20Colinas%20Aquarela%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Arco%20%C3%8Dris%20e%20Colinas%20Aquarela%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Arco%20%C3%8Dris%20e%20Colinas%20Aquarela%20%28STILL%29.jpg" alt="Arco Íris e Colinas Aquarela (STILL)" onclick="abrirModal('Arco%20%C3%8Dris%20e%20Colinas%20Aquarela%20%28STILL%29.jpg')">
       <span>Arco Íris e Colinas Aquarela (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Areia%20e%20Mar%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Areia%20e%20Mar%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Areia%20e%20Mar%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Areia%20e%20Mar%20%28STILL%29.jpg" alt="Areia e Mar (STILL)" onclick="abrirModal('Areia%20e%20Mar%20%28STILL%29.jpg')">
       <span>Areia e Mar (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Caminho%20para%20o%20Castelo%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Caminho%20para%20o%20Castelo%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Caminho%20para%20o%20Castelo%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Caminho%20para%20o%20Castelo%20%28STILL%29.jpg" alt="Caminho para o Castelo (STILL)" onclick="abrirModal('Caminho%20para%20o%20Castelo%20%28STILL%29.jpg')">
       <span>Caminho para o Castelo (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Confetes%20Coloridos%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Confetes%20Coloridos%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Confetes%20Coloridos%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Confetes%20Coloridos%20%28STILL%29.jpg" alt="Confetes Coloridos (STILL)" onclick="abrirModal('Confetes%20Coloridos%20%28STILL%29.jpg')">
       <span>Confetes Coloridos (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Dinossauros%20Aquarela%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Dinossauros%20Aquarela%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Dinossauros%20Aquarela%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Dinossauros%20Aquarela%20%28STILL%29.jpg" alt="Dinossauros Aquarela (STILL)" onclick="abrirModal('Dinossauros%20Aquarela%20%28STILL%29.jpg')">
       <span>Dinossauros Aquarela (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Estrelado%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Estrelado%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Estrelado%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Estrelado%20Azul%20%28STILL%29.jpg" alt="Estrelado Azul (STILL)" onclick="abrirModal('Estrelado%20Azul%20%28STILL%29.jpg')">
       <span>Estrelado Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Estrelinhas%20Azul%20e%20Amarelo%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Estrelinhas%20Azul%20e%20Amarelo%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Estrelinhas%20Azul%20e%20Amarelo%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Estrelinhas%20Azul%20e%20Amarelo%20%28STILL%29.jpg" alt="Estrelinhas Azul e Amarelo (STILL)" onclick="abrirModal('Estrelinhas%20Azul%20e%20Amarelo%20%28STILL%29.jpg')">
       <span>Estrelinhas Azul e Amarelo (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Estrelinhas%20Verde%20e%20Bege%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Estrelinhas%20Verde%20e%20Bege%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Estrelinhas%20Verde%20e%20Bege%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Estrelinhas%20Verde%20e%20Bege%20%28STILL%29.jpg" alt="Estrelinhas Verde e Bege (STILL)" onclick="abrirModal('Estrelinhas%20Verde%20e%20Bege%20%28STILL%29.jpg')">
       <span>Estrelinhas Verde e Bege (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Floral%20Delicado%20Listrado%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Floral%20Delicado%20Listrado%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Floral%20Delicado%20Listrado%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Floral%20Delicado%20Listrado%20Areia%20%28STILL%29.jpg" alt="Floral Delicado Listrado Areia (STILL)" onclick="abrirModal('Floral%20Delicado%20Listrado%20Areia%20%28STILL%29.jpg')">
       <span>Floral Delicado Listrado Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Floral%20Delicado%20Listrado%20Rose%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Floral%20Delicado%20Listrado%20Rose%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Floral%20Delicado%20Listrado%20Rose%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Floral%20Delicado%20Listrado%20Rose%20%28STILL%29.jpg" alt="Floral Delicado Listrado Rose (STILL)" onclick="abrirModal('Floral%20Delicado%20Listrado%20Rose%20%28STILL%29.jpg')">
       <span>Floral Delicado Listrado Rose (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Floral%20Delicado%20Listrado%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Floral%20Delicado%20Listrado%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Floral%20Delicado%20Listrado%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Floral%20Delicado%20Listrado%20Verde%20%28STILL%29.jpg" alt="Floral Delicado Listrado Verde (STILL)" onclick="abrirModal('Floral%20Delicado%20Listrado%20Verde%20%28STILL%29.jpg')">
       <span>Floral Delicado Listrado Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Flores%20de%20Lavanda%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Flores%20de%20Lavanda%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Flores%20de%20Lavanda%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Flores%20de%20Lavanda%20%28STILL%29.jpg" alt="Flores de Lavanda (STILL)" onclick="abrirModal('Flores%20de%20Lavanda%20%28STILL%29.jpg')">
       <span>Flores de Lavanda (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Grandes%20Borboletas%20Flores%20e%20Arco%20%C3%8Dris%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Grandes%20Borboletas%20Flores%20e%20Arco%20%C3%8Dris%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Grandes%20Borboletas%20Flores%20e%20Arco%20%C3%8Dris%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Grandes%20Borboletas%20Flores%20e%20Arco%20%C3%8Dris%20%28STILL%29.jpg" alt="Grandes Borboletas Flores e Arco Íris (STILL)" onclick="abrirModal('Grandes%20Borboletas%20Flores%20e%20Arco%20%C3%8Dris%20%28STILL%29.jpg')">
       <span>Grandes Borboletas Flores e Arco Íris (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Mapa%20Mundi%20Animais%20e%20Turismo%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Mapa%20Mundi%20Animais%20e%20Turismo%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Mapa%20Mundi%20Animais%20e%20Turismo%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Mapa%20Mundi%20Animais%20e%20Turismo%20%28STILL%29.jpg" alt="Mapa Mundi Animais e Turismo (STILL)" onclick="abrirModal('Mapa%20Mundi%20Animais%20e%20Turismo%20%28STILL%29.jpg')">
       <span>Mapa Mundi Animais e Turismo (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Palm%20Trees%20Monocrom%C3%A1tica%20Areia%20%28STILL%29.jpg" alt="Palm Trees Monocromática Areia (STILL)" onclick="abrirModal('Palm%20Trees%20Monocrom%C3%A1tica%20Areia%20%28STILL%29.jpg')">
       <span>Palm Trees Monocromática Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Palm%20Trees%20Monocrom%C3%A1tica%20Azul%20%28STILL%29.jpg" alt="Palm Trees Monocromática Azul (STILL)" onclick="abrirModal('Palm%20Trees%20Monocrom%C3%A1tica%20Azul%20%28STILL%29.jpg')">
       <span>Palm Trees Monocromática Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Palm%20Trees%20Monocrom%C3%A1tica%20Cinza%20%28STILL%29.jpg" alt="Palm Trees Monocromática Cinza (STILL)" onclick="abrirModal('Palm%20Trees%20Monocrom%C3%A1tica%20Cinza%20%28STILL%29.jpg')">
       <span>Palm Trees Monocromática Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Mocha%20Mousse%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Mocha%20Mousse%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Mocha%20Mousse%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Palm%20Trees%20Monocrom%C3%A1tica%20Mocha%20Mousse%20%28STILL%29.jpg" alt="Palm Trees Monocromática Mocha Mousse (STILL)" onclick="abrirModal('Palm%20Trees%20Monocrom%C3%A1tica%20Mocha%20Mousse%20%28STILL%29.jpg')">
       <span>Palm Trees Monocromática Mocha Mousse (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Rose%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Rose%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Rose%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Palm%20Trees%20Monocrom%C3%A1tica%20Rose%20%28STILL%29.jpg" alt="Palm Trees Monocromática Rose (STILL)" onclick="abrirModal('Palm%20Trees%20Monocrom%C3%A1tica%20Rose%20%28STILL%29.jpg')">
       <span>Palm Trees Monocromática Rose (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Palm%20Trees%20Monocrom%C3%A1tica%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Palm%20Trees%20Monocrom%C3%A1tica%20Verde%20%28STILL%29.jpg" alt="Palm Trees Monocromática Verde (STILL)" onclick="abrirModal('Palm%20Trees%20Monocrom%C3%A1tica%20Verde%20%28STILL%29.jpg')">
       <span>Palm Trees Monocromática Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Quadriculado%20Intercalado%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Quadriculado%20Intercalado%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Quadriculado%20Intercalado%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Quadriculado%20Intercalado%20Azul%20%28STILL%29.jpg" alt="Quadriculado Intercalado Azul (STILL)" onclick="abrirModal('Quadriculado%20Intercalado%20Azul%20%28STILL%29.jpg')">
       <span>Quadriculado Intercalado Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Quadriculado%20Intercalado%20Mocha%20Mousse%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Quadriculado%20Intercalado%20Mocha%20Mousse%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Quadriculado%20Intercalado%20Mocha%20Mousse%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Quadriculado%20Intercalado%20Mocha%20Mousse%20%28STILL%29.jpg" alt="Quadriculado Intercalado Mocha Mousse (STILL)" onclick="abrirModal('Quadriculado%20Intercalado%20Mocha%20Mousse%20%28STILL%29.jpg')">
       <span>Quadriculado Intercalado Mocha Mousse (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Quadriculado%20Intercalado%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Quadriculado%20Intercalado%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Quadriculado%20Intercalado%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Quadriculado%20Intercalado%20Rosa%20%28STILL%29.jpg" alt="Quadriculado Intercalado Rosa (STILL)" onclick="abrirModal('Quadriculado%20Intercalado%20Rosa%20%28STILL%29.jpg')">
       <span>Quadriculado Intercalado Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Quadriculado%20Intercalado%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Quadriculado%20Intercalado%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Quadriculado%20Intercalado%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Quadriculado%20Intercalado%20Verde%20%28STILL%29.jpg" alt="Quadriculado Intercalado Verde (STILL)" onclick="abrirModal('Quadriculado%20Intercalado%20Verde%20%28STILL%29.jpg')">
       <span>Quadriculado Intercalado Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Tra%C3%A7os%20Coloridos%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Tra%C3%A7os%20Coloridos%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Tra%C3%A7os%20Coloridos%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Tra%C3%A7os%20Coloridos%20%28STILL%29.jpg" alt="Traços Coloridos (STILL)" onclick="abrirModal('Tra%C3%A7os%20Coloridos%20%28STILL%29.jpg')">
       <span>Traços Coloridos (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Trenzinho%20Infantil%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Trenzinho%20Infantil%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Trenzinho%20Infantil%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Trenzinho%20Infantil%20%28STILL%29.jpg" alt="Trenzinho Infantil (STILL)" onclick="abrirModal('Trenzinho%20Infantil%20%28STILL%29.jpg')">
       <span>Trenzinho Infantil (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Ursinho%20Aviador%20Sobre%20Nuvens%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Ursinho%20Aviador%20Sobre%20Nuvens%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Ursinho%20Aviador%20Sobre%20Nuvens%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Ursinho%20Aviador%20Sobre%20Nuvens%20%28STILL%29.jpg" alt="Ursinho Aviador Sobre Nuvens (STILL)" onclick="abrirModal('Ursinho%20Aviador%20Sobre%20Nuvens%20%28STILL%29.jpg')">
       <span>Ursinho Aviador Sobre Nuvens (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Aquarela%20Standard%20Areia%20%28STILL%29.jpg" alt="Xadrez Aquarela Standard Areia (STILL)" onclick="abrirModal('Xadrez%20Aquarela%20Standard%20Areia%20%28STILL%29.jpg')">
       <span>Xadrez Aquarela Standard Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Aquarela%20Standard%20Azul%20%28STILL%29.jpg" alt="Xadrez Aquarela Standard Azul (STILL)" onclick="abrirModal('Xadrez%20Aquarela%20Standard%20Azul%20%28STILL%29.jpg')">
       <span>Xadrez Aquarela Standard Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Aquarela%20Standard%20Cinza%20%28STILL%29.jpg" alt="Xadrez Aquarela Standard Cinza (STILL)" onclick="abrirModal('Xadrez%20Aquarela%20Standard%20Cinza%20%28STILL%29.jpg')">
       <span>Xadrez Aquarela Standard Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Aquarela%20Standard%20Rosa%20%28STILL%29.jpg" alt="Xadrez Aquarela Standard Rosa (STILL)" onclick="abrirModal('Xadrez%20Aquarela%20Standard%20Rosa%20%28STILL%29.jpg')">
       <span>Xadrez Aquarela Standard Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Aquarela%20Standard%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Aquarela%20Standard%20Verde%20%28STILL%29.jpg" alt="Xadrez Aquarela Standard Verde (STILL)" onclick="abrirModal('Xadrez%20Aquarela%20Standard%20Verde%20%28STILL%29.jpg')">
       <span>Xadrez Aquarela Standard Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Estonado%20Soft%20Areia%20%28STILL%29.jpg" alt="Xadrez Estonado Soft Areia (STILL)" onclick="abrirModal('Xadrez%20Estonado%20Soft%20Areia%20%28STILL%29.jpg')">
       <span>Xadrez Estonado Soft Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Azul%20Escuro%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Azul%20Escuro%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Azul%20Escuro%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Estonado%20Soft%20Azul%20Escuro%20%28STILL%29.jpg" alt="Xadrez Estonado Soft Azul Escuro (STILL)" onclick="abrirModal('Xadrez%20Estonado%20Soft%20Azul%20Escuro%20%28STILL%29.jpg')">
       <span>Xadrez Estonado Soft Azul Escuro (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Camur%C3%A7a%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Camur%C3%A7a%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Camur%C3%A7a%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Estonado%20Soft%20Camur%C3%A7a%20%28STILL%29.jpg" alt="Xadrez Estonado Soft Camurça (STILL)" onclick="abrirModal('Xadrez%20Estonado%20Soft%20Camur%C3%A7a%20%28STILL%29.jpg')">
       <span>Xadrez Estonado Soft Camurça (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Mocha%20Mousse%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Mocha%20Mousse%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Mocha%20Mousse%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Estonado%20Soft%20Mocha%20Mousse%20%28STILL%29.jpg" alt="Xadrez Estonado Soft Mocha Mousse (STILL)" onclick="abrirModal('Xadrez%20Estonado%20Soft%20Mocha%20Mousse%20%28STILL%29.jpg')">
       <span>Xadrez Estonado Soft Mocha Mousse (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Estonado%20Soft%20Rosa%20%28STILL%29.jpg" alt="Xadrez Estonado Soft Rosa (STILL)" onclick="abrirModal('Xadrez%20Estonado%20Soft%20Rosa%20%28STILL%29.jpg')">
       <span>Xadrez Estonado Soft Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Estonado%20Soft%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Estonado%20Soft%20Verde%20%28STILL%29.jpg" alt="Xadrez Estonado Soft Verde (STILL)" onclick="abrirModal('Xadrez%20Estonado%20Soft%20Verde%20%28STILL%29.jpg')">
       <span>Xadrez Estonado Soft Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Lux%20Areia%20%28STILL%29.jpg" alt="Xadrez Lux Areia (STILL)" onclick="abrirModal('Xadrez%20Lux%20Areia%20%28STILL%29.jpg')">
       <span>Xadrez Lux Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Camur%C3%A7a%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Camur%C3%A7a%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Camur%C3%A7a%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Lux%20Camur%C3%A7a%20%28STILL%29.jpg" alt="Xadrez Lux Camurça (STILL)" onclick="abrirModal('Xadrez%20Lux%20Camur%C3%A7a%20%28STILL%29.jpg')">
       <span>Xadrez Lux Camurça (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Lux%20Cinza%20%28STILL%29.jpg" alt="Xadrez Lux Cinza (STILL)" onclick="abrirModal('Xadrez%20Lux%20Cinza%20%28STILL%29.jpg')">
       <span>Xadrez Lux Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Mocha%20Mousse%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Mocha%20Mousse%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Mocha%20Mousse%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Lux%20Mocha%20Mousse%20%28STILL%29.jpg" alt="Xadrez Lux Mocha Mousse (STILL)" onclick="abrirModal('Xadrez%20Lux%20Mocha%20Mousse%20%28STILL%29.jpg')">
       <span>Xadrez Lux Mocha Mousse (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Lux%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Lux%20Rosa%20%28STILL%29.jpg" alt="Xadrez Lux Rosa (STILL)" onclick="abrirModal('Xadrez%20Lux%20Rosa%20%28STILL%29.jpg')">
       <span>Xadrez Lux Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Point%20Azul%20e%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Point%20Azul%20e%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Point%20Azul%20e%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Point%20Azul%20e%20Verde%20%28STILL%29.jpg" alt="Xadrez Point Azul e Verde (STILL)" onclick="abrirModal('Xadrez%20Point%20Azul%20e%20Verde%20%28STILL%29.jpg')">
       <span>Xadrez Point Azul e Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Point%20Camur%C3%A7a%20e%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Point%20Camur%C3%A7a%20e%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Point%20Camur%C3%A7a%20e%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Point%20Camur%C3%A7a%20e%20Verde%20%28STILL%29.jpg" alt="Xadrez Point Camurça e Verde (STILL)" onclick="abrirModal('Xadrez%20Point%20Camur%C3%A7a%20e%20Verde%20%28STILL%29.jpg')">
       <span>Xadrez Point Camurça e Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Point%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Point%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Point%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Point%20Rosa%20%28STILL%29.jpg" alt="Xadrez Point Rosa (STILL)" onclick="abrirModal('Xadrez%20Point%20Rosa%20%28STILL%29.jpg')">
       <span>Xadrez Point Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Point%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Point%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Point%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Point%20Verde%20%28STILL%29.jpg" alt="Xadrez Point Verde (STILL)" onclick="abrirModal('Xadrez%20Point%20Verde%20%28STILL%29.jpg')">
       <span>Xadrez Point Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Prince%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Prince%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Prince%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Prince%20Areia%20%28STILL%29.jpg" alt="Xadrez Prince Areia (STILL)" onclick="abrirModal('Xadrez%20Prince%20Areia%20%28STILL%29.jpg')">
       <span>Xadrez Prince Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Prince%20Camur%C3%A7a%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Prince%20Camur%C3%A7a%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Prince%20Camur%C3%A7a%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Prince%20Camur%C3%A7a%20%28STILL%29.jpg" alt="Xadrez Prince Camurça (STILL)" onclick="abrirModal('Xadrez%20Prince%20Camur%C3%A7a%20%28STILL%29.jpg')">
       <span>Xadrez Prince Camurça (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Prince%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Prince%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Prince%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Prince%20Cinza%20%28STILL%29.jpg" alt="Xadrez Prince Cinza (STILL)" onclick="abrirModal('Xadrez%20Prince%20Cinza%20%28STILL%29.jpg')">
       <span>Xadrez Prince Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Scot%20Azul%20Marinho%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Scot%20Azul%20Marinho%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Scot%20Azul%20Marinho%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Scot%20Azul%20Marinho%20%28STILL%29.jpg" alt="Xadrez Scot Azul Marinho (STILL)" onclick="abrirModal('Xadrez%20Scot%20Azul%20Marinho%20%28STILL%29.jpg')">
       <span>Xadrez Scot Azul Marinho (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Scot%20Grafite%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/Xadrez%20Scot%20Grafite%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/Xadrez%20Scot%20Grafite%20%28STILL%29.jpg', this)">🤍</button>
       <img src="Xadrez%20Scot%20Grafite%20%28STILL%29.jpg" alt="Xadrez Scot Grafite (STILL)" onclick="abrirModal('Xadrez%20Scot%20Grafite%20%28STILL%29.jpg')">
       <span>Xadrez Scot Grafite (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/%C3%81rvores%20Aquarela%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="lan%C3%A7amentos-fevereiro/%C3%81rvores%20Aquarela%20%28STILL%29.jpg" onclick="toggleFavorito('lan%C3%A7amentos-fevereiro/%C3%81rvores%20Aquarela%20%28STILL%29.jpg', this)">🤍</button>
       <img src="%C3%81rvores%20Aquarela%20%28STILL%29.jpg" alt="Árvores Aquarela (STILL)" onclick="abrirModal('%C3%81rvores%20Aquarela%20%28STILL%29.jpg')">
       <span>Árvores Aquarela (STILL)</span>
     </div>
@@ -257,8 +258,8 @@
 <div class="modal" id="modal">
   <img id="modal-img" src="">
   <div class="modal-btns">
-    <button onclick="baixarAtual()" class="btn">📅 Salvar imagem</button>
-    <button onclick="fecharModal()" class="btn">&times; Fechar</button>
+    <button onclick="baixarAtual()" class="btn">📥 Salvar imagem</button>
+    <button onclick="fecharModal()" class="btn">✖ Fechar</button>
   </div>
 </div>
 <script src="https://unpkg.com/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
@@ -279,15 +280,18 @@
   function toggleFavorito(src, el) {
     let f = JSON.parse(localStorage.getItem('favoritos'))||[];
     const i = f.indexOf(src);
-    if (i>=0) { f.splice(i,1); el.textContent='❤️'; el.classList.remove('favorito'); }
+    if (i>=0) { f.splice(i,1); el.textContent='🤍'; el.classList.remove('favorito'); }
     else { f.push(src); el.textContent='❤️'; el.classList.add('favorito'); }
     localStorage.setItem('favoritos', JSON.stringify(f));
   }
   document.addEventListener('DOMContentLoaded', () => {
     const favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
     document.querySelectorAll('.favorito-btn').forEach(btn => {
-      const src = btn.getAttribute('onclick').match(/'(.*?)'/)[1];
-      if (favoritos.includes(src)) { btn.classList.add('favorito'); btn.textContent = '❤️'; }
+      const src = btn.getAttribute('data-src');
+      if (favoritos.includes(src)) {
+        btn.classList.add('favorito');
+        btn.textContent = '❤️';
+      }
     });
   });
 </script>

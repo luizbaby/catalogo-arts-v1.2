@@ -16,6 +16,7 @@
     .card { background: white; color: black; padding: 10px; border-radius: 10px; box-shadow: 0 2px 8px rgba(255,255,255,0.1); text-align: center; position: relative; text-decoration: none; }
     .card img { width: 100%; border-radius: 8px; cursor: pointer; }
     .card span { display: block; margin-top: 8px; font-weight: 400; color: black; text-decoration: none; }
+    a.card:link, a.card:visited, a.card:hover, a.card:active { text-decoration: none; color: inherit; }
     .favorito-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer; }
     .favorito-btn.favorito { color: red; }
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; }
@@ -33,199 +34,199 @@
 </div>
 <div class="grid">
 <div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Azul%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Carrara%20Chains%20Azul%20%282%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Azul%20%282%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Carrara%20Chains%20Azul%20%282%29.jpg" alt="Carrara Chains Azul" onclick="abrirModal('m%C3%A1rmore/Carrara%20Chains%20Azul%20%282%29.jpg')">
       <span>Carrara Chains Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Carrara%20Chains%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Carrara%20Chains%20Azul%20%28STILL%29.jpg" alt="Carrara Chains Azul (STILL)" onclick="abrirModal('m%C3%A1rmore/Carrara%20Chains%20Azul%20%28STILL%29.jpg')">
       <span>Carrara Chains Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Azul%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Carrara%20Chains%20Azul%202.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Azul%202.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Carrara%20Chains%20Azul%202.jpg" alt="Carrara Chains Azul" onclick="abrirModal('m%C3%A1rmore/Carrara%20Chains%20Azul%202.jpg')">
       <span>Carrara Chains Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Azul.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Carrara%20Chains%20Azul.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Azul.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Carrara%20Chains%20Azul.jpg" alt="Carrara Chains Azul" onclick="abrirModal('m%C3%A1rmore/Carrara%20Chains%20Azul.jpg')">
       <span>Carrara Chains Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Preto%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Carrara%20Chains%20Preto%20%282%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Preto%20%282%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Carrara%20Chains%20Preto%20%282%29.jpg" alt="Carrara Chains Preto" onclick="abrirModal('m%C3%A1rmore/Carrara%20Chains%20Preto%20%282%29.jpg')">
       <span>Carrara Chains Preto</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Preto%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Carrara%20Chains%20Preto%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Preto%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Carrara%20Chains%20Preto%20%28STILL%29.jpg" alt="Carrara Chains Preto (STILL)" onclick="abrirModal('m%C3%A1rmore/Carrara%20Chains%20Preto%20%28STILL%29.jpg')">
       <span>Carrara Chains Preto (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Preto.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Carrara%20Chains%20Preto.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Chains%20Preto.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Carrara%20Chains%20Preto.jpg" alt="Carrara Chains Preto" onclick="abrirModal('m%C3%A1rmore/Carrara%20Chains%20Preto.jpg')">
       <span>Carrara Chains Preto</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Losango%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Carrara%20Losango%20%282%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Losango%20%282%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Carrara%20Losango%20%282%29.jpg" alt="Carrara Losango" onclick="abrirModal('m%C3%A1rmore/Carrara%20Losango%20%282%29.jpg')">
       <span>Carrara Losango</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Losango%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Carrara%20Losango%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Losango%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Carrara%20Losango%20%28STILL%29.jpg" alt="Carrara Losango (STILL)" onclick="abrirModal('m%C3%A1rmore/Carrara%20Losango%20%28STILL%29.jpg')">
       <span>Carrara Losango (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Losango%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Carrara%20Losango%202.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Losango%202.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Carrara%20Losango%202.jpg" alt="Carrara Losango" onclick="abrirModal('m%C3%A1rmore/Carrara%20Losango%202.jpg')">
       <span>Carrara Losango</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Losango.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Carrara%20Losango.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Carrara%20Losango.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Carrara%20Losango.jpg" alt="Carrara Losango" onclick="abrirModal('m%C3%A1rmore/Carrara%20Losango.jpg')">
       <span>Carrara Losango</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Carrara%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Carrara%20%282%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Carrara%20%282%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Carrara%20%282%29.jpg" alt="Marmore Carrara" onclick="abrirModal('m%C3%A1rmore/Marmore%20Carrara%20%282%29.jpg')">
       <span>Marmore Carrara</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Carrara%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Carrara%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Carrara%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Carrara%20%28STILL%29.jpg" alt="Marmore Carrara (STILL)" onclick="abrirModal('m%C3%A1rmore/Marmore%20Carrara%20%28STILL%29.jpg')">
       <span>Marmore Carrara (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Carrara%20Gold%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Carrara%20Gold%20%282%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Carrara%20Gold%20%282%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Carrara%20Gold%20%282%29.jpg" alt="Marmore Carrara Gold" onclick="abrirModal('m%C3%A1rmore/Marmore%20Carrara%20Gold%20%282%29.jpg')">
       <span>Marmore Carrara Gold</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Carrara%20Gold%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Carrara%20Gold%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Carrara%20Gold%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Carrara%20Gold%20%28STILL%29.jpg" alt="Marmore Carrara Gold (STILL)" onclick="abrirModal('m%C3%A1rmore/Marmore%20Carrara%20Gold%20%28STILL%29.jpg')">
       <span>Marmore Carrara Gold (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Carrara%20Gold.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Carrara%20Gold.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Carrara%20Gold.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Carrara%20Gold.jpg" alt="Marmore Carrara Gold" onclick="abrirModal('m%C3%A1rmore/Marmore%20Carrara%20Gold.jpg')">
       <span>Marmore Carrara Gold</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Carrara.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Carrara.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Carrara.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Carrara.jpg" alt="Marmore Carrara" onclick="abrirModal('m%C3%A1rmore/Marmore%20Carrara.jpg')">
       <span>Marmore Carrara</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Onix%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Onix%20%282%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Onix%20%282%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Onix%20%282%29.jpg" alt="Marmore Onix" onclick="abrirModal('m%C3%A1rmore/Marmore%20Onix%20%282%29.jpg')">
       <span>Marmore Onix</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Onix%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Onix%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Onix%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Onix%20%28STILL%29.jpg" alt="Marmore Onix (STILL)" onclick="abrirModal('m%C3%A1rmore/Marmore%20Onix%20%28STILL%29.jpg')">
       <span>Marmore Onix (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Onix.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Onix.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Onix.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Onix.jpg" alt="Marmore Onix" onclick="abrirModal('m%C3%A1rmore/Marmore%20Onix.jpg')">
       <span>Marmore Onix</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%204.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Pietra%204.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%204.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Pietra%204.jpg" alt="Marmore Pietra" onclick="abrirModal('m%C3%A1rmore/Marmore%20Pietra%204.jpg')">
       <span>Marmore Pietra</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28STILL%29.jpg" alt="Marmore Pietra Cinza (STILL)" onclick="abrirModal('m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28STILL%29.jpg')">
       <span>Marmore Pietra Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29%202.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29%202.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29%202.jpg" alt="Marmore Pietra Cinza (WIDE)" onclick="abrirModal('m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29%202.jpg')">
       <span>Marmore Pietra Cinza (WIDE)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29%203.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29%203.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29%203.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29%203.jpg" alt="Marmore Pietra Cinza (WIDE)" onclick="abrirModal('m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29%203.jpg')">
       <span>Marmore Pietra Cinza (WIDE)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29.jpg" alt="Marmore Pietra Cinza (WIDE)" onclick="abrirModal('m%C3%A1rmore/Marmore%20Pietra%20Cinza%20%28WIDE%29.jpg')">
       <span>Marmore Pietra Cinza (WIDE)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%201.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%201.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%201.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Pietra%20Cinza%201.jpg" alt="Marmore Pietra Cinza" onclick="abrirModal('m%C3%A1rmore/Marmore%20Pietra%20Cinza%201.jpg')">
       <span>Marmore Pietra Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%202.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%202.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%202.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Pietra%20Cinza%202.jpg" alt="Marmore Pietra Cinza" onclick="abrirModal('m%C3%A1rmore/Marmore%20Pietra%20Cinza%202.jpg')">
       <span>Marmore Pietra Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%203.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%203.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza%203.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Pietra%20Cinza%203.jpg" alt="Marmore Pietra Cinza" onclick="abrirModal('m%C3%A1rmore/Marmore%20Pietra%20Cinza%203.jpg')">
       <span>Marmore Pietra Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/MArmore%20Pietra%20Cinza%20Youtube.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/MArmore%20Pietra%20Cinza%20Youtube.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/MArmore%20Pietra%20Cinza%20Youtube.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/MArmore%20Pietra%20Cinza%20Youtube.jpg" alt="MArmore Pietra Cinza Youtube" onclick="abrirModal('m%C3%A1rmore/MArmore%20Pietra%20Cinza%20Youtube.jpg')">
       <span>MArmore Pietra Cinza Youtube</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Marmore%20Pietra%20Cinza.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Marmore%20Pietra%20Cinza.jpg" alt="Marmore Pietra Cinza" onclick="abrirModal('m%C3%A1rmore/Marmore%20Pietra%20Cinza.jpg')">
       <span>Marmore Pietra Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Mosaico%20Carrara%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Mosaico%20Carrara%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Mosaico%20Carrara%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Mosaico%20Carrara%20%28STILL%29.jpg" alt="Mosaico Carrara (STILL)" onclick="abrirModal('m%C3%A1rmore/Mosaico%20Carrara%20%28STILL%29.jpg')">
       <span>Mosaico Carrara (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Mosaico%20Carrara.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Mosaico%20Carrara.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Mosaico%20Carrara.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Mosaico%20Carrara.jpg" alt="Mosaico Carrara" onclick="abrirModal('m%C3%A1rmore/Mosaico%20Carrara.jpg')">
       <span>Mosaico Carrara</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Cinza%20%28STILL%29.jpg" alt="Mármore Calacata Cinza (STILL)" onclick="abrirModal('m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Cinza%20%28STILL%29.jpg')">
       <span>Mármore Calacata Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Dourado%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Dourado%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Dourado%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Dourado%20%28STILL%29.jpg" alt="Mármore Calacata Dourado (STILL)" onclick="abrirModal('m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Dourado%20%28STILL%29.jpg')">
       <span>Mármore Calacata Dourado (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Dourado.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Dourado.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Dourado.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Dourado.jpg" alt="Mármore Calacata Dourado" onclick="abrirModal('m%C3%A1rmore/M%C3%A1rmore%20Calacata%20Dourado.jpg')">
       <span>Mármore Calacata Dourado</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Pietra%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/M%C3%A1rmore%20Pietra%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Pietra%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/M%C3%A1rmore%20Pietra%20Cinza%20%28STILL%29.jpg" alt="Mármore Pietra Cinza (STILL)" onclick="abrirModal('m%C3%A1rmore/M%C3%A1rmore%20Pietra%20Cinza%20%28STILL%29.jpg')">
       <span>Mármore Pietra Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Pietra%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/M%C3%A1rmore%20Pietra%20Cinza.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Pietra%20Cinza.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/M%C3%A1rmore%20Pietra%20Cinza.jpg" alt="Mármore Pietra Cinza" onclick="abrirModal('m%C3%A1rmore/M%C3%A1rmore%20Pietra%20Cinza.jpg')">
       <span>Mármore Pietra Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza%20%282%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza%20%282%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza%20%282%29.jpg" alt="Mármore Zaha Cinza" onclick="abrirModal('m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza%20%282%29.jpg')">
       <span>Mármore Zaha Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza%20%28STILL%29.jpg" alt="Mármore Zaha Cinza (STILL)" onclick="abrirModal('m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza%20%28STILL%29.jpg')">
       <span>Mármore Zaha Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza.jpg" alt="Mármore Zaha Cinza" onclick="abrirModal('m%C3%A1rmore/M%C3%A1rmore%20Zaha%20Cinza.jpg')">
       <span>Mármore Zaha Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Carra%20Rose%20Gold%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Zara%20Marmore%20Carra%20Rose%20Gold%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Carra%20Rose%20Gold%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Zara%20Marmore%20Carra%20Rose%20Gold%20%28STILL%29.jpg" alt="Zara Marmore Carra Rose Gold (STILL)" onclick="abrirModal('m%C3%A1rmore/Zara%20Marmore%20Carra%20Rose%20Gold%20%28STILL%29.jpg')">
       <span>Zara Marmore Carra Rose Gold (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Carrara%20Rose%20Gold%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Zara%20Marmore%20Carrara%20Rose%20Gold%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Carrara%20Rose%20Gold%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Zara%20Marmore%20Carrara%20Rose%20Gold%20%28STILL%29.jpg" alt="Zara Marmore Carrara Rose Gold (STILL)" onclick="abrirModal('m%C3%A1rmore/Zara%20Marmore%20Carrara%20Rose%20Gold%20%28STILL%29.jpg')">
       <span>Zara Marmore Carrara Rose Gold (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Carrara%20Rose%20Gold.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Zara%20Marmore%20Carrara%20Rose%20Gold.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Carrara%20Rose%20Gold.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Zara%20Marmore%20Carrara%20Rose%20Gold.jpg" alt="Zara Marmore Carrara Rose Gold" onclick="abrirModal('m%C3%A1rmore/Zara%20Marmore%20Carrara%20Rose%20Gold.jpg')">
       <span>Zara Marmore Carrara Rose Gold</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Gold%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Zara%20Marmore%20Gold%20%282%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Gold%20%282%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Zara%20Marmore%20Gold%20%282%29.jpg" alt="Zara Marmore Gold" onclick="abrirModal('m%C3%A1rmore/Zara%20Marmore%20Gold%20%282%29.jpg')">
       <span>Zara Marmore Gold</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Gold%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Zara%20Marmore%20Gold%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Gold%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Zara%20Marmore%20Gold%20%28STILL%29.jpg" alt="Zara Marmore Gold (STILL)" onclick="abrirModal('m%C3%A1rmore/Zara%20Marmore%20Gold%20%28STILL%29.jpg')">
       <span>Zara Marmore Gold (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Gold.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Zara%20Marmore%20Gold.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Gold.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Zara%20Marmore%20Gold.jpg" alt="Zara Marmore Gold" onclick="abrirModal('m%C3%A1rmore/Zara%20Marmore%20Gold.jpg')">
       <span>Zara Marmore Gold</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold%20%282%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold%20%282%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold%20%282%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold%20%282%29.jpg" alt="Zara Marmore Rose Gold" onclick="abrirModal('m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold%20%282%29.jpg')">
       <span>Zara Marmore Rose Gold</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold%20%28STILL%29.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold%20%28STILL%29.jpg" alt="Zara Marmore Rose Gold (STILL)" onclick="abrirModal('m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold%20%28STILL%29.jpg')">
       <span>Zara Marmore Rose Gold (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold.jpg" onclick="toggleFavorito('adulto/m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold.jpg', this)">🤍</button>
       <img src="m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold.jpg" alt="Zara Marmore Rose Gold" onclick="abrirModal('m%C3%A1rmore/Zara%20Marmore%20Rose%20Gold.jpg')">
       <span>Zara Marmore Rose Gold</span>
     </div>
@@ -233,8 +234,8 @@
 <div class="modal" id="modal">
   <img id="modal-img" src="">
   <div class="modal-btns">
-    <button onclick="baixarAtual()" class="btn">📅 Salvar imagem</button>
-    <button onclick="fecharModal()" class="btn">&times; Fechar</button>
+    <button onclick="baixarAtual()" class="btn">📥 Salvar imagem</button>
+    <button onclick="fecharModal()" class="btn">✖ Fechar</button>
   </div>
 </div>
 <script src="https://unpkg.com/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
@@ -255,15 +256,18 @@
   function toggleFavorito(src, el) {
     let f = JSON.parse(localStorage.getItem('favoritos'))||[];
     const i = f.indexOf(src);
-    if (i>=0) { f.splice(i,1); el.textContent='❤️'; el.classList.remove('favorito'); }
+    if (i>=0) { f.splice(i,1); el.textContent='🤍'; el.classList.remove('favorito'); }
     else { f.push(src); el.textContent='❤️'; el.classList.add('favorito'); }
     localStorage.setItem('favoritos', JSON.stringify(f));
   }
   document.addEventListener('DOMContentLoaded', () => {
     const favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
     document.querySelectorAll('.favorito-btn').forEach(btn => {
-      const src = btn.getAttribute('onclick').match(/'(.*?)'/)[1];
-      if (favoritos.includes(src)) { btn.classList.add('favorito'); btn.textContent = '❤️'; }
+      const src = btn.getAttribute('data-src');
+      if (favoritos.includes(src)) {
+        btn.classList.add('favorito');
+        btn.textContent = '❤️';
+      }
     });
   });
 </script>

@@ -16,6 +16,7 @@
     .card { background: white; color: black; padding: 10px; border-radius: 10px; box-shadow: 0 2px 8px rgba(255,255,255,0.1); text-align: center; position: relative; text-decoration: none; }
     .card img { width: 100%; border-radius: 8px; cursor: pointer; }
     .card span { display: block; margin-top: 8px; font-weight: 400; color: black; text-decoration: none; }
+    a.card:link, a.card:visited, a.card:hover, a.card:active { text-decoration: none; color: inherit; }
     .favorito-btn { position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer; }
     .favorito-btn.favorito { color: red; }
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; }
@@ -33,163 +34,163 @@
 </div>
 <div class="grid">
 <div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Conex%C3%A3o%20Mundo%20Preto%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Conex%C3%A3o%20Mundo%20Preto%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Conex%C3%A3o%20Mundo%20Preto%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Conex%C3%A3o%20Mundo%20Preto%20%28STILL%29.jpg" alt="Conexão Mundo Preto (STILL)" onclick="abrirModal('mapa/Conex%C3%A3o%20Mundo%20Preto%20%28STILL%29.jpg')">
       <span>Conexão Mundo Preto (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Conex%C3%A3o%20Mundo%20Preto.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Conex%C3%A3o%20Mundo%20Preto.jpg" onclick="toggleFavorito('adulto/mapa/Conex%C3%A3o%20Mundo%20Preto.jpg', this)">🤍</button>
       <img src="mapa/Conex%C3%A3o%20Mundo%20Preto.jpg" alt="Conexão Mundo Preto" onclick="abrirModal('mapa/Conex%C3%A3o%20Mundo%20Preto.jpg')">
       <span>Conexão Mundo Preto</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Desenho%20Mapa%20Mundi%20Infantil%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Desenho%20Mapa%20Mundi%20Infantil%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Desenho%20Mapa%20Mundi%20Infantil%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Desenho%20Mapa%20Mundi%20Infantil%20%28STILL%29.jpg" alt="Desenho Mapa Mundi Infantil (STILL)" onclick="abrirModal('mapa/Desenho%20Mapa%20Mundi%20Infantil%20%28STILL%29.jpg')">
       <span>Desenho Mapa Mundi Infantil (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Estonado%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Estonado%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Estonado%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Estonado%20Cinza%20%28STILL%29.jpg" alt="Mapa Estonado Cinza (STILL)" onclick="abrirModal('mapa/Mapa%20Estonado%20Cinza%20%28STILL%29.jpg')">
       <span>Mapa Estonado Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Estonado%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Estonado%20Cinza.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Estonado%20Cinza.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Estonado%20Cinza.jpg" alt="Mapa Estonado Cinza" onclick="abrirModal('mapa/Mapa%20Estonado%20Cinza.jpg')">
       <span>Mapa Estonado Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Estonado%20Marrom%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Estonado%20Marrom%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Estonado%20Marrom%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Estonado%20Marrom%20%28STILL%29.jpg" alt="Mapa Estonado Marrom (STILL)" onclick="abrirModal('mapa/Mapa%20Estonado%20Marrom%20%28STILL%29.jpg')">
       <span>Mapa Estonado Marrom (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Estonado%20Marrom.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Estonado%20Marrom.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Estonado%20Marrom.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Estonado%20Marrom.jpg" alt="Mapa Estonado Marrom" onclick="abrirModal('mapa/Mapa%20Estonado%20Marrom.jpg')">
       <span>Mapa Estonado Marrom</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Animais%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Animais%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Animais%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Animais%20Areia%20%28STILL%29.jpg" alt="Mapa Mundi Animais Areia (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Animais%20Areia%20%28STILL%29.jpg')">
       <span>Mapa Mundi Animais Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Animais%20Areia.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Animais%20Areia.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Animais%20Areia.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Animais%20Areia.jpg" alt="Mapa Mundi Animais Areia" onclick="abrirModal('mapa/Mapa%20Mundi%20Animais%20Areia.jpg')">
       <span>Mapa Mundi Animais Areia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Animais%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Animais%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Animais%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Animais%20Azul%20%28STILL%29.jpg" alt="Mapa Mundi Animais Azul (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Animais%20Azul%20%28STILL%29.jpg')">
       <span>Mapa Mundi Animais Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Animais%20Azul.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Animais%20Azul.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Animais%20Azul.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Animais%20Azul.jpg" alt="Mapa Mundi Animais Azul" onclick="abrirModal('mapa/Mapa%20Mundi%20Animais%20Azul.jpg')">
       <span>Mapa Mundi Animais Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Animais%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Animais%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Animais%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Animais%20Rosa%20%28STILL%29.jpg" alt="Mapa Mundi Animais Rosa (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Animais%20Rosa%20%28STILL%29.jpg')">
       <span>Mapa Mundi Animais Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Animais%20Rosa.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Animais%20Rosa.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Animais%20Rosa.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Animais%20Rosa.jpg" alt="Mapa Mundi Animais Rosa" onclick="abrirModal('mapa/Mapa%20Mundi%20Animais%20Rosa.jpg')">
       <span>Mapa Mundi Animais Rosa</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Cimento%20Queimado%20%28STILL%29.jpg" alt="Mapa Mundi Cimento Queimado (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Cimento%20Queimado%20%28STILL%29.jpg')">
       <span>Mapa Mundi Cimento Queimado (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Cimento%20Queimado%20Azul%20%28STILL%29.jpg" alt="Mapa Mundi Cimento Queimado Azul (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Cimento%20Queimado%20Azul%20%28STILL%29.jpg')">
       <span>Mapa Mundi Cimento Queimado Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20Azul.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20Azul.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20Azul.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Cimento%20Queimado%20Azul.jpg" alt="Mapa Mundi Cimento Queimado Azul" onclick="abrirModal('mapa/Mapa%20Mundi%20Cimento%20Queimado%20Azul.jpg')">
       <span>Mapa Mundi Cimento Queimado Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Cimento%20Queimado%20Rosa%20%28STILL%29.jpg" alt="Mapa Mundi Cimento Queimado Rosa (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Cimento%20Queimado%20Rosa%20%28STILL%29.jpg')">
       <span>Mapa Mundi Cimento Queimado Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20Rosa.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20Rosa.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado%20Rosa.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Cimento%20Queimado%20Rosa.jpg" alt="Mapa Mundi Cimento Queimado Rosa" onclick="abrirModal('mapa/Mapa%20Mundi%20Cimento%20Queimado%20Rosa.jpg')">
       <span>Mapa Mundi Cimento Queimado Rosa</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Cimento%20Queimado.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Cimento%20Queimado.jpg" alt="Mapa Mundi Cimento Queimado" onclick="abrirModal('mapa/Mapa%20Mundi%20Cimento%20Queimado.jpg')">
       <span>Mapa Mundi Cimento Queimado</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Aquarela%20%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Infantil%20Aquarela%20%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Aquarela%20%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Infantil%20Aquarela%20%20Azul%20%28STILL%29.jpg" alt="Mapa Mundi Infantil Aquarela  Azul (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Infantil%20Aquarela%20%20Azul%20%28STILL%29.jpg')">
       <span>Mapa Mundi Infantil Aquarela  Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Aquarela%20%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Infantil%20Aquarela%20%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Aquarela%20%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Infantil%20Aquarela%20%20Cinza%20%28STILL%29.jpg" alt="Mapa Mundi Infantil Aquarela  Cinza (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Infantil%20Aquarela%20%20Cinza%20%28STILL%29.jpg')">
       <span>Mapa Mundi Infantil Aquarela  Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Aquarela%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Infantil%20Aquarela%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Aquarela%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Infantil%20Aquarela%20Areia%20%28STILL%29.jpg" alt="Mapa Mundi Infantil Aquarela Areia (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Infantil%20Aquarela%20Areia%20%28STILL%29.jpg')">
       <span>Mapa Mundi Infantil Aquarela Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Aquarela%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Infantil%20Aquarela%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Aquarela%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Infantil%20Aquarela%20Rosa%20%28STILL%29.jpg" alt="Mapa Mundi Infantil Aquarela Rosa (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Infantil%20Aquarela%20Rosa%20%28STILL%29.jpg')">
       <span>Mapa Mundi Infantil Aquarela Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Infantil%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Infantil%20Areia%20%28STILL%29.jpg" alt="Mapa Mundi Infantil Areia (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Infantil%20Areia%20%28STILL%29.jpg')">
       <span>Mapa Mundi Infantil Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Areia.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Infantil%20Areia.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Areia.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Infantil%20Areia.jpg" alt="Mapa Mundi Infantil Areia" onclick="abrirModal('mapa/Mapa%20Mundi%20Infantil%20Areia.jpg')">
       <span>Mapa Mundi Infantil Areia</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Infantil%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Infantil%20Azul%20%28STILL%29.jpg" alt="Mapa Mundi Infantil Azul (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Infantil%20Azul%20%28STILL%29.jpg')">
       <span>Mapa Mundi Infantil Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Azul.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Infantil%20Azul.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Azul.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Infantil%20Azul.jpg" alt="Mapa Mundi Infantil Azul" onclick="abrirModal('mapa/Mapa%20Mundi%20Infantil%20Azul.jpg')">
       <span>Mapa Mundi Infantil Azul</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Infantil%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Infantil%20Cinza%20%28STILL%29.jpg" alt="Mapa Mundi Infantil Cinza (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Infantil%20Cinza%20%28STILL%29.jpg')">
       <span>Mapa Mundi Infantil Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Cinza.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Infantil%20Cinza.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Cinza.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Infantil%20Cinza.jpg" alt="Mapa Mundi Infantil Cinza" onclick="abrirModal('mapa/Mapa%20Mundi%20Infantil%20Cinza.jpg')">
       <span>Mapa Mundi Infantil Cinza</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Infantil%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Infantil%20Rosa%20%28STILL%29.jpg" alt="Mapa Mundi Infantil Rosa (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Infantil%20Rosa%20%28STILL%29.jpg')">
       <span>Mapa Mundi Infantil Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Rosa.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Infantil%20Rosa.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Infantil%20Rosa.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Infantil%20Rosa.jpg" alt="Mapa Mundi Infantil Rosa" onclick="abrirModal('mapa/Mapa%20Mundi%20Infantil%20Rosa.jpg')">
       <span>Mapa Mundi Infantil Rosa</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Preto%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Preto%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Preto%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Preto%20%28STILL%29.jpg" alt="Mapa Mundi Preto (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Preto%20%28STILL%29.jpg')">
       <span>Mapa Mundi Preto (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Preto.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Preto.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Preto.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Preto.jpg" alt="Mapa Mundi Preto" onclick="abrirModal('mapa/Mapa%20Mundi%20Preto.jpg')">
       <span>Mapa Mundi Preto</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Sele%C3%A7%C3%B5es%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundi%20Sele%C3%A7%C3%B5es%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundi%20Sele%C3%A7%C3%B5es%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundi%20Sele%C3%A7%C3%B5es%20%28STILL%29.jpg" alt="Mapa Mundi Seleções (STILL)" onclick="abrirModal('mapa/Mapa%20Mundi%20Sele%C3%A7%C3%B5es%20%28STILL%29.jpg')">
       <span>Mapa Mundi Seleções (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundo%20Aquarela%20Areia%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundo%20Aquarela%20Areia%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundo%20Aquarela%20Areia%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundo%20Aquarela%20Areia%20%28STILL%29.jpg" alt="Mapa Mundo Aquarela Areia (STILL)" onclick="abrirModal('mapa/Mapa%20Mundo%20Aquarela%20Areia%20%28STILL%29.jpg')">
       <span>Mapa Mundo Aquarela Areia (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundo%20Aquarela%20Azul%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundo%20Aquarela%20Azul%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundo%20Aquarela%20Azul%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundo%20Aquarela%20Azul%20%28STILL%29.jpg" alt="Mapa Mundo Aquarela Azul (STILL)" onclick="abrirModal('mapa/Mapa%20Mundo%20Aquarela%20Azul%20%28STILL%29.jpg')">
       <span>Mapa Mundo Aquarela Azul (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundo%20Aquarela%20Cinza%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundo%20Aquarela%20Cinza%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundo%20Aquarela%20Cinza%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundo%20Aquarela%20Cinza%20%28STILL%29.jpg" alt="Mapa Mundo Aquarela Cinza (STILL)" onclick="abrirModal('mapa/Mapa%20Mundo%20Aquarela%20Cinza%20%28STILL%29.jpg')">
       <span>Mapa Mundo Aquarela Cinza (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundo%20Aquarela%20Rosa%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundo%20Aquarela%20Rosa%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundo%20Aquarela%20Rosa%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundo%20Aquarela%20Rosa%20%28STILL%29.jpg" alt="Mapa Mundo Aquarela Rosa (STILL)" onclick="abrirModal('mapa/Mapa%20Mundo%20Aquarela%20Rosa%20%28STILL%29.jpg')">
       <span>Mapa Mundo Aquarela Rosa (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundo%20Aquarela%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mapa%20Mundo%20Aquarela%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mapa%20Mundo%20Aquarela%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mapa%20Mundo%20Aquarela%20Verde%20%28STILL%29.jpg" alt="Mapa Mundo Aquarela Verde (STILL)" onclick="abrirModal('mapa/Mapa%20Mundo%20Aquarela%20Verde%20%28STILL%29.jpg')">
       <span>Mapa Mundo Aquarela Verde (STILL)</span>
     </div><div class="card">
-      <button class="favorito-btn" onclick="toggleFavorito('adulto/mapa/Mundo%20Infantil%20Verde%20%28STILL%29.jpg', this)">❤️</button>
+      <button class="favorito-btn" data-src="adulto/mapa/Mundo%20Infantil%20Verde%20%28STILL%29.jpg" onclick="toggleFavorito('adulto/mapa/Mundo%20Infantil%20Verde%20%28STILL%29.jpg', this)">🤍</button>
       <img src="mapa/Mundo%20Infantil%20Verde%20%28STILL%29.jpg" alt="Mundo Infantil Verde (STILL)" onclick="abrirModal('mapa/Mundo%20Infantil%20Verde%20%28STILL%29.jpg')">
       <span>Mundo Infantil Verde (STILL)</span>
     </div>
@@ -197,8 +198,8 @@
 <div class="modal" id="modal">
   <img id="modal-img" src="">
   <div class="modal-btns">
-    <button onclick="baixarAtual()" class="btn">📅 Salvar imagem</button>
-    <button onclick="fecharModal()" class="btn">&times; Fechar</button>
+    <button onclick="baixarAtual()" class="btn">📥 Salvar imagem</button>
+    <button onclick="fecharModal()" class="btn">✖ Fechar</button>
   </div>
 </div>
 <script src="https://unpkg.com/@panzoom/panzoom@9.4.0/dist/panzoom.min.js"></script>
@@ -219,15 +220,18 @@
   function toggleFavorito(src, el) {
     let f = JSON.parse(localStorage.getItem('favoritos'))||[];
     const i = f.indexOf(src);
-    if (i>=0) { f.splice(i,1); el.textContent='❤️'; el.classList.remove('favorito'); }
+    if (i>=0) { f.splice(i,1); el.textContent='🤍'; el.classList.remove('favorito'); }
     else { f.push(src); el.textContent='❤️'; el.classList.add('favorito'); }
     localStorage.setItem('favoritos', JSON.stringify(f));
   }
   document.addEventListener('DOMContentLoaded', () => {
     const favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
     document.querySelectorAll('.favorito-btn').forEach(btn => {
-      const src = btn.getAttribute('onclick').match(/'(.*?)'/)[1];
-      if (favoritos.includes(src)) { btn.classList.add('favorito'); btn.textContent = '❤️'; }
+      const src = btn.getAttribute('data-src');
+      if (favoritos.includes(src)) {
+        btn.classList.add('favorito');
+        btn.textContent = '❤️';
+      }
     });
   });
 </script>
